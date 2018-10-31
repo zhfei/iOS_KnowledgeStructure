@@ -7,7 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
-class GCDUtility_Swift: NSObject {
-
+class GCDUtility_Swift {
+    //单例
+    //异步主线程
+    //延时执行
+    //定时器
+    //异步任务组
+    //信号量（深层异步任务同步）
+    
 }
