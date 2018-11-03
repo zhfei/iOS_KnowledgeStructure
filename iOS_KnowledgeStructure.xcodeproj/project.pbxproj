@@ -168,8 +168,8 @@
 		917B79122189F92C00425A05 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				917B79132189F92C00425A05 /* GCDUtility_OC.m */,
 				917B79142189F92C00425A05 /* GCDUtility_OC.h */,
+				917B79132189F92C00425A05 /* GCDUtility_OC.m */,
 				917B79172189F95300425A05 /* GCDUtility_Swift.swift */,
 				917B7920218A09DA00425A05 /* GCDUtility.md */,
 			);

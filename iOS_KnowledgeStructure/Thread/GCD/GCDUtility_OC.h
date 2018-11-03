@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 //定时器
 //异步任务组
 //信号量（深层异步任务同步）
+//dipatch_barrier(栅栏函数，同一个queue中，dipatch_barrier前面的任务全部执行完成，然后执行dipatch_barrier函数，然后执行dipatch_barrier后面的函数)
 
 @end
 
