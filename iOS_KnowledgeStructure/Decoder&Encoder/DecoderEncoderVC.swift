@@ -22,7 +22,10 @@ class DecoderEncoderVC: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let model = TestModel(content: "内容", age: 18, name: "姓名")
         
-        model.archive(fileName: "helloFileName")
+        model.archive(fileName: "test1")
+        
+        let modd = TestModel.unarchive(fileName: "test1")
+        print("modd: \(modd)")
     }
 
 }

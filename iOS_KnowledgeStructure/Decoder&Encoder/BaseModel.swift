@@ -58,7 +58,16 @@ class BaseModel: NSObject, NSCoding {
     func archive(fileName: String) {
         let filePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!
         let savePath = filePath + "/" + fileName + ".plist"
-        NSKeyedArchiver.archiveRootObject(self, toFile: savePath)
+        // MARK: 方法废弃
+//        NSKeyedArchiver.archiveRootObject(self, toFile: savePath)
+        do {
+            let url = URL(fileURLWithPath: savePath)
+            let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
+            try data.write(to: url)
+        } catch let error {
+            print("报错了！\(error)")
+        }
+
     }
     
     /// 类方法，开始解码
@@ -68,7 +77,17 @@ class BaseModel: NSObject, NSCoding {
     static func unarchive(fileName: String) -> Any? {
         let filePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!
         let savePath = filePath + "/" + fileName + ".plist"
-        return NSKeyedUnarchiver.unarchiveObject(withFile: savePath)
+        // MARK: 方法废弃
+//        return NSKeyedUnarchiver.unarchiveObject(withFile: savePath)
+        var result: BaseModel?
+        do {
+            let url = URL(fileURLWithPath: savePath)
+            let data = NSData(contentsOf: url)
+            result = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data! as Data) as! BaseModel
+        } catch let error {
+            print("报错了！\(error)")
+        }
+        return result
     }
 }
 

@@ -52,6 +52,9 @@ class MainTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             coor.pushStoryBoardVC("ThreadViewController")
+        case 1:
+            let vc = DecoderEncoderVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("未知...")
         }
