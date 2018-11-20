@@ -9,8 +9,21 @@
 import UIKit
 
 class TestModel: BaseModel {
-     let content: String
-     let age: Int
-     let name: String
-     let gender: Bool
+    
+     var content: String = ""
+     var age: Int = 10
+     var name: String = ""
+     var gender: Bool = true
+    
+    init(content:String, age:Int, name:String, gender: Bool = true) {
+        super.init()
+        self.content = content
+        self.age = age
+        self.name = name
+        self.gender = gender
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

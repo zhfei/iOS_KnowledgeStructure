@@ -15,12 +15,8 @@ class DecoderEncoderVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-//        let model = TestModel()
-//        model.content = "BBH"
-//        model.age = 22
-//        model.name = "BBH"
-//        model.gender = true
-//        model.archive(fileName: "helloFileName")
+        let model = TestModel(content: "内容", age: 18, name: "姓名")
+        model.archive(fileName: "helloFileName")
     }
     
 
