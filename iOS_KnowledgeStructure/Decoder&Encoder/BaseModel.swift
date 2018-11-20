@@ -12,26 +12,21 @@ import UIKit
 class BaseModel: NSObject, NSCoding {
     override init() {}
     
-    /// 获取所有的属性名字
-    ///
-    /// - Returns: 返回一个数组，带有属性名字
-    func getPropertyNameList() -> [String] {
-        var count : UInt32 = 0
-        var names : [String] = []
-        let properties = class_copyPropertyList(type(of: self), &count)
-        guard let propertyList = properties else { return [] }
+    func getPropertyNameList()->[String]{  //和description属性一样
+        var selfProperties = [String]()
+        var count:UInt32 =  0
+        let vars = class_copyIvarList(type(of: self), &count)
         for i in 0..<count {
-            let property = propertyList[Int(i)]
-            let char_b = property_getName(property)
-            guard char_b != nil else {
-                continue //到下一个循环
-            }
-            if let key = NSString(cString: char_b, encoding: String.Encoding.utf8.rawValue) as String? {
-                names.append(key)
+            let t = ivar_getName((vars?[Int(i)])!)
+            if let n = NSString(cString: t!, encoding: String.Encoding.utf8.rawValue) as String?
+            {
+                selfProperties.append(n)
             }
         }
-        return names
+        free(vars)
+        return selfProperties
     }
+    
     
     /// 协议方法
     ///
