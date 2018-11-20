@@ -15,19 +15,14 @@ class DecoderEncoderVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let model = TestModel(content: "内容", age: 18, name: "姓名")
-        model.archive(fileName: "helloFileName")
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let model = TestModel(content: "内容", age: 18, name: "姓名")
+        
+        model.archive(fileName: "helloFileName")
     }
-    */
 
 }
