@@ -34,7 +34,8 @@ class BaseModel: NSObject, NSCoding {
     func encode(with aCoder: NSCoder) {
         let propertyList = getPropertyNameList()
         for p_name in propertyList {
-            aCoder.encode(value(forKey: p_name), forKey: p_name)
+            let value = self.value(forKey: p_name)
+            aCoder.encode(value, forKey: p_name)
         }
         print("encode successful")
     }

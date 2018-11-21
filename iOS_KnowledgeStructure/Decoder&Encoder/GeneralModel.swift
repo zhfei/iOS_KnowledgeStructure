@@ -31,7 +31,7 @@ class GeneralModel: NSObject, NSCoding {
     required init?(coder aDecoder: NSCoder) {
         super.init()
         self.content = aDecoder.decodeObject(forKey: "content") as! String
-        self.age = aDecoder.decodeObject(forKey: "age") as! Int
+        self.age = aDecoder.decodeInteger(forKey: "age") as! NSInteger
         self.name = aDecoder.decodeObject(forKey: "name") as! String
         self.gender = aDecoder.decodeBool(forKey: "gender")
     }
