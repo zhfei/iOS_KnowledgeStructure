@@ -10,6 +10,12 @@
 
 @implementation HybirdViewController (delegate)
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSURL *url = request.URL;
+    if ([[url scheme] isEqualToString:@"gap"]) {
+        
+        [webView stringByEvaluatingJavaScriptFromString:@"alert('done')"];
+        return NO;
+    }
     
     NSLog(@"%@",request);
     return YES;

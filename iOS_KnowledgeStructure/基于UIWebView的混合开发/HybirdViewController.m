@@ -33,10 +33,13 @@
 - (IBAction)btnAction:(UIButton *)sender {
     id result = [self.webView stringByEvaluatingJavaScriptFromString:@"htmlSum(1,2)"];
     NSLog(@"%@",result);
+
+    id result2 = [self.webView stringByEvaluatingJavaScriptFromString:@"loadURL('gap://alert')"];
+    NSLog(@"%@",result2);
 }
 
 - (IBAction)loadAction:(UIButton *)sender {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https:www.baidu.com"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     [self.webView loadRequest:request];
 }
 
