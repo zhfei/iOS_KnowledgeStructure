@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D858221A469CD00DE6BEC /* GeneralModel.swift */; };
+		915C829621B229F700A7567B /* Hybird.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 915C829521B229F700A7567B /* Hybird.README.md */; };
+		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
 		917B78DD2189F5B000425A05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78DC2189F5B000425A05 /* ViewController.m */; };
 		917B78E02189F5B000425A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917B78DE2189F5B000425A05 /* Main.storyboard */; };
@@ -46,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		914D858221A469CD00DE6BEC /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		915C829521B229F700A7567B /* Hybird.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Hybird.README.md; sourceTree = "<group>"; };
+		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
+		915C829821B22AC400A7567B /* HybirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdViewController.m; sourceTree = "<group>"; };
 		917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KnowledgeStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917B78D82189F5B000425A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		917B78D92189F5B000425A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		915C829421B2296200A7567B /* 基于UIWebView的混合开发 */ = {
+			isa = PBXGroup;
+			children = (
+				915C829521B229F700A7567B /* Hybird.README.md */,
+				915C829721B22AC400A7567B /* HybirdViewController.h */,
+				915C829821B22AC400A7567B /* HybirdViewController.m */,
+			);
+			path = "基于UIWebView的混合开发";
+			sourceTree = "<group>";
+		};
 		917B78CC2189F5B000425A05 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				915C829421B2296200A7567B /* 基于UIWebView的混合开发 */,
 				91ACEA9521A446A800249FA8 /* Decoder&Encoder */,
 				917B790B2189F7B400425A05 /* Thread */,
 				917B78D82189F5B000425A05 /* AppDelegate.h */,
@@ -301,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
+				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
 			);
@@ -337,6 +354,7 @@
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */,
+				915C829921B22AC400A7567B /* HybirdViewController.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,

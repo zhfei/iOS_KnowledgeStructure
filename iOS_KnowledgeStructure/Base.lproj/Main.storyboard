@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="seg-Lr-l3G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="seg-Lr-l3G">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,6 +22,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Hybird View Controller-->
+        <scene sceneID="WIH-ea-Lhl">
+            <objects>
+                <viewController storyboardIdentifier="HybirdViewController" id="zdJ-qn-zoH" customClass="HybirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kaQ-QQ-BZD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syL-Mu-PwU">
+                                <rect key="frame" x="0.0" y="40" width="375" height="567"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqH-ir-Jsy">
+                                <rect key="frame" x="125.5" y="626" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="3R0-Q6-1Ck"/>
+                                    <constraint firstAttribute="height" constant="30" id="W5L-xM-7Wk"/>
+                                </constraints>
+                                <state key="normal" title="点击按钮"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="zdJ-qn-zoH" eventType="touchUpInside" id="vkJ-4e-5RH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-jK-bOP">
+                                <rect key="frame" x="0.0" y="626" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Idk-yf-TLe"/>
+                                    <constraint firstAttribute="width" constant="124" id="tFK-vh-via"/>
+                                </constraints>
+                                <state key="normal" title="加载页面"/>
+                                <connections>
+                                    <action selector="loadAction:" destination="zdJ-qn-zoH" eventType="touchUpInside" id="wEg-j2-u7S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcl-TU-Lpy">
+                                <rect key="frame" x="251" y="626" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5pt-y4-ecV"/>
+                                    <constraint firstAttribute="width" constant="124" id="fNC-O1-1mp"/>
+                                </constraints>
+                                <state key="normal" title="待用..."/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="syL-Mu-PwU" firstAttribute="leading" secondItem="i8v-bz-ji8" secondAttribute="leading" id="0IP-Y1-LEi"/>
+                            <constraint firstItem="i8v-bz-ji8" firstAttribute="bottom" secondItem="syL-Mu-PwU" secondAttribute="bottom" constant="60" id="3o7-8u-Cmm"/>
+                            <constraint firstItem="zcl-TU-Lpy" firstAttribute="trailing" secondItem="i8v-bz-ji8" secondAttribute="trailing" id="6kU-QN-DR5"/>
+                            <constraint firstItem="i8v-bz-ji8" firstAttribute="bottom" secondItem="zcl-TU-Lpy" secondAttribute="bottom" constant="11" id="AhA-ux-zOB"/>
+                            <constraint firstItem="i8v-bz-ji8" firstAttribute="bottom" secondItem="iqH-ir-Jsy" secondAttribute="bottom" constant="11" id="BtA-wB-Avt"/>
+                            <constraint firstItem="i8v-bz-ji8" firstAttribute="bottom" secondItem="tbd-jK-bOP" secondAttribute="bottom" constant="11" id="F4v-WK-Tkh"/>
+                            <constraint firstItem="tbd-jK-bOP" firstAttribute="leading" secondItem="i8v-bz-ji8" secondAttribute="leading" id="XLl-2O-WY0"/>
+                            <constraint firstItem="syL-Mu-PwU" firstAttribute="top" secondItem="i8v-bz-ji8" secondAttribute="top" constant="20" id="evq-Zp-pvf"/>
+                            <constraint firstItem="syL-Mu-PwU" firstAttribute="trailing" secondItem="i8v-bz-ji8" secondAttribute="trailing" id="hOh-Ar-JGh"/>
+                            <constraint firstItem="iqH-ir-Jsy" firstAttribute="centerX" secondItem="kaQ-QQ-BZD" secondAttribute="centerX" id="pSH-I0-YKV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i8v-bz-ji8"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="syL-Mu-PwU" id="3wX-qr-dR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVA-7e-3MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.8" y="166.8665667166417"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="8KZ-3X-obc">

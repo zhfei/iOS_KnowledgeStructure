@@ -55,11 +55,14 @@ class MainTableViewController: UITableViewController {
         case 1:
             let vc = DecoderEncoderVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            coor.pushStoryBoardVC("HybirdViewController")
         default:
             print("未知...")
         }
     }
 
+   
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
