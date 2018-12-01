@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="width" constant="124" id="3R0-Q6-1Ck"/>
                                     <constraint firstAttribute="height" constant="30" id="W5L-xM-7Wk"/>
                                 </constraints>
-                                <state key="normal" title="点击按钮"/>
+                                <state key="normal" title="JS交互"/>
                                 <connections>
                                     <action selector="btnAction:" destination="zdJ-qn-zoH" eventType="touchUpInside" id="vkJ-4e-5RH"/>
                                 </connections>
@@ -54,7 +54,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Idk-yf-TLe"/>
                                     <constraint firstAttribute="width" constant="124" id="tFK-vh-via"/>
                                 </constraints>
-                                <state key="normal" title="加载页面"/>
+                                <state key="normal" title="加载百度网页"/>
                                 <connections>
                                     <action selector="loadAction:" destination="zdJ-qn-zoH" eventType="touchUpInside" id="wEg-j2-u7S"/>
                                 </connections>
@@ -66,7 +66,10 @@
                                     <constraint firstAttribute="height" constant="30" id="5pt-y4-ecV"/>
                                     <constraint firstAttribute="width" constant="124" id="fNC-O1-1mp"/>
                                 </constraints>
-                                <state key="normal" title="待用..."/>
+                                <state key="normal" title="加载本地html"/>
+                                <connections>
+                                    <action selector="localAction:" destination="zdJ-qn-zoH" eventType="touchUpInside" id="F8k-ln-b9L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

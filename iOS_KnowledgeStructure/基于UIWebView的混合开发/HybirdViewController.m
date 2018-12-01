@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)btnAction:(UIButton *)sender;
 - (IBAction)loadAction:(UIButton *)sender;
+- (IBAction)localAction:(UIButton *)sender;
 
 @end
 
@@ -28,10 +29,31 @@
 }
 
 - (IBAction)btnAction:(UIButton *)sender {
+    
 }
 
 - (IBAction)loadAction:(UIButton *)sender {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https:www.baidu.com"]];
     [self.webView loadRequest:request];
 }
+
+- (IBAction)localAction:(UIButton *)sender {
+    [self.webView loadHTMLString:[self htmlString] baseURL:nil];
+}
+
+- (NSString *)htmlString {
+    
+    NSString *str = @"<html>"
+    "<head>"
+    "<meta charset='UTF-8'>"
+    "</head>"
+    "<body>"
+    "<h1>%@</h1>"
+    "<p>%@</p>"
+    "</body>"
+    "</html>";
+    
+    return [NSString stringWithFormat:str,[UIDevice currentDevice].model,[UIDevice currentDevice].systemName];
+}
+
 @end
