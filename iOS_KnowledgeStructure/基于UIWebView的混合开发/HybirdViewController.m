@@ -7,6 +7,7 @@
 //
 
 #import "HybirdViewController.h"
+#import <GRMustacheTemplate.h>
 
 @interface HybirdViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -42,18 +43,27 @@
 }
 
 - (NSString *)htmlString {
+//    NSString *str = @"<html>"
+//    "<head>"
+//    "<meta charset='UTF-8'>"
+//    "</head>"
+//    "<body>"
+//    "<h1>%@</h1>"
+//    "<p>%@</p>"
+//    "</body>"
+//    "</html>";
+//    return [NSString stringWithFormat:str,[UIDevice currentDevice].model,[UIDevice currentDevice].systemName];
     
-    NSString *str = @"<html>"
-    "<head>"
-    "<meta charset='UTF-8'>"
-    "</head>"
-    "<body>"
-    "<h1>%@</h1>"
-    "<p>%@</p>"
-    "</body>"
-    "</html>";
+    NSString *fileName = @"template.html";
+    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:fileName];
+    NSString *templete = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     
-    return [NSString stringWithFormat:str,[UIDevice currentDevice].model,[UIDevice currentDevice].systemName];
+    
+    NSDictionary *dict = @{@"name":@"hello", @"content":@"wooooood"};
+    NSString *content = [GRMustacheTemplate renderObject:dict fromString:templete error:nil];
+    
+    
+    return content;
 }
 
 @end
