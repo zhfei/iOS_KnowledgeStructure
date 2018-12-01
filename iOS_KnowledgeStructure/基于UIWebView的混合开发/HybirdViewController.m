@@ -7,6 +7,7 @@
 //
 
 #import "HybirdViewController.h"
+#import "HybirdViewController+delegate.h"
 #import <GRMustacheTemplate.h>
 
 @interface HybirdViewController ()
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.webView.delegate = self;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -30,7 +31,8 @@
 }
 
 - (IBAction)btnAction:(UIButton *)sender {
-    
+    id result = [self.webView stringByEvaluatingJavaScriptFromString:@"htmlSum(1,2)"];
+    NSLog(@"%@",result);
 }
 
 - (IBAction)loadAction:(UIButton *)sender {

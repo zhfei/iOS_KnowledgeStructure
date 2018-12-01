@@ -11,6 +11,7 @@
 		915C829621B229F700A7567B /* Hybird.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 915C829521B229F700A7567B /* Hybird.README.md */; };
 		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
 		915C829B21B2368100A7567B /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 915C829A21B2368100A7567B /* template.html */; };
+		915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
 		917B78DD2189F5B000425A05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78DC2189F5B000425A05 /* ViewController.m */; };
 		917B78E02189F5B000425A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917B78DE2189F5B000425A05 /* Main.storyboard */; };
@@ -55,6 +56,8 @@
 		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
 		915C829821B22AC400A7567B /* HybirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdViewController.m; sourceTree = "<group>"; };
 		915C829A21B2368100A7567B /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
+		915C829C21B23AFA00A7567B /* HybirdViewController+delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HybirdViewController+delegate.h"; sourceTree = "<group>"; };
+		915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HybirdViewController+delegate.m"; sourceTree = "<group>"; };
 		917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KnowledgeStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917B78D82189F5B000425A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		917B78D92189F5B000425A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				915C829521B229F700A7567B /* Hybird.README.md */,
 				915C829721B22AC400A7567B /* HybirdViewController.h */,
 				915C829821B22AC400A7567B /* HybirdViewController.m */,
+				915C829C21B23AFA00A7567B /* HybirdViewController+delegate.h */,
+				915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */,
 			);
 			path = "基于UIWebView的混合开发";
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
+				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
