@@ -9,8 +9,10 @@
 #import "HybirdViewController.h"
 #import "HybirdViewController+delegate.h"
 #import <GRMustacheTemplate.h>
+#import "WebViewJavascriptBridge.h"
 
 @interface HybirdViewController ()
+@property WebViewJavascriptBridge* bridge;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)btnAction:(UIButton *)sender;
 - (IBAction)loadAction:(UIButton *)sender;
@@ -24,6 +26,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.webView.delegate = self;
+    self.bridge = [WebViewJavascriptBridge bridgeForWebView:_webView];
+    
+    
+    [self.bridge registerHandler:@"ObjC Echo" handler:^(id data, WVJBResponseCallback responseCallback) {
+        NSLog(@"ObjC Echo called with: %@", data);
+        responseCallback(data);
+    }];
+    [self.bridge callHandler:@"JS Echo" data:nil responseCallback:^(id responseData) {
+        NSLog(@"ObjC received response: %@", responseData);
+    }];
+    
+    [self.bridge registerHandler:@"getScreenHeight" handler:^(id data, WVJBResponseCallback responseCallback) {
+        responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]);
+        NSLog(@"收到JS的调用！");
+    }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -33,9 +50,12 @@
 - (IBAction)btnAction:(UIButton *)sender {
     id result = [self.webView stringByEvaluatingJavaScriptFromString:@"htmlSum(1,2)"];
     NSLog(@"%@",result);
-
     id result2 = [self.webView stringByEvaluatingJavaScriptFromString:@"loadURL('gap://alert')"];
     NSLog(@"%@",result2);
+    
+    [self.bridge callHandler:@"JS Echo" data:@"byby" responseCallback:^(id responseData) {
+        NSLog(@"%@",responseData);
+    }];
 }
 
 - (IBAction)loadAction:(UIButton *)sender {
