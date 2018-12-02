@@ -10,7 +10,7 @@ import UIKit
 
 class MainTableViewModel: NSObject {
 
-    var dataSource:[String] = ["多线程技术","自动归档解归档","混合编程"]
+    var dataSource:[String] = ["多线程技术","自动归档解归档","混合编程","自定义弹窗UIWindow"]
     static let shared = MainTableViewModel()
 
 }

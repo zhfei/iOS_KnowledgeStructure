@@ -57,6 +57,9 @@ class MainTableViewController: UITableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         case 2:
             coor.pushStoryBoardVC("HybirdViewController")
+        case 3:
+            let vc = AlertWindowVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("未知...")
         }
