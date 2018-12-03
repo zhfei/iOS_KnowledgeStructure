@@ -7,9 +7,13 @@
 //
 
 #import "AlertWindowVC.h"
+#import "ProgressWindow.h"
+#import "ProgressViewController.h"
+#import <BottomComponentLib/ZHFAlertControlle.h>
+
 
 @interface AlertWindowVC ()
-
+@property (nonatomic, strong)UIWindow *window;
 @end
 
 @implementation AlertWindowVC
@@ -21,27 +25,33 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *ac = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"OK...");
-    }];
-    [alert addAction:ac];
-    
-    [self presentViewController:alert animated:YES completion:nil];
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
+//    UIAlertAction *ac = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"OK...");
+//    }];
+//    [alert addAction:ac];
+//
+//    [self presentViewController:alert animated:YES completion:nil];
     
     
     NSArray *arr = @[@(UIWindowLevelNormal),@(UIWindowLevelAlert),@(UIWindowLevelStatusBar)];
     NSLog(@"arr: %@",arr);
+    
+    [self showProgressWindow];
+//    [self showZHFAlertController];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showProgressWindow {
+    ProgressWindow *window = [ProgressWindow sharedProgressWindow];
+    window.hidden = NO;
+    ProgressViewController *pvc = [ProgressViewController new];
+    [window.rootViewController presentViewController:pvc animated:NO completion:nil];
 }
-*/
+
+- (void)showZHFAlertController {
+    [ZHFAlertControlle showWithTitle:@"标题" message:@"内容" btn1Title:@"子标题" btn1Handle:^(UIAlertAction * _Nullable action) {
+        NSLog(@"点击了。。");
+    }];
+}
 
 @end
