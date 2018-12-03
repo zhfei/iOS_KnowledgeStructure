@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
+		914BA0C321B5049100150992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C221B5049100150992 /* Person.m */; };
+		914BA0C621B504C200150992 /* Person+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C521B504C200150992 /* Person+Eat.m */; };
+		914BA0C921B5050E00150992 /* Person+Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C821B5050E00150992 /* Person+Drink.m */; };
+		914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */; };
 		914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D858221A469CD00DE6BEC /* GeneralModel.swift */; };
 		915C829621B229F700A7567B /* Hybird.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 915C829521B229F700A7567B /* Hybird.README.md */; };
 		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
@@ -58,6 +62,13 @@
 		914BA0BB21B4D54D00150992 /* ProgressWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindow.m; sourceTree = "<group>"; };
 		914BA0BD21B4D56200150992 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		914BA0BE21B4D56200150992 /* ProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		914BA0C121B5049100150992 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		914BA0C221B5049100150992 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		914BA0C421B504C200150992 /* Person+Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Eat.h"; sourceTree = "<group>"; };
+		914BA0C521B504C200150992 /* Person+Eat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Eat.m"; sourceTree = "<group>"; };
+		914BA0C721B5050E00150992 /* Person+Drink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Drink.h"; sourceTree = "<group>"; };
+		914BA0C821B5050E00150992 /* Person+Drink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Drink.m"; sourceTree = "<group>"; };
+		914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CategoryAnalyze.README.md; sourceTree = "<group>"; };
 		914D858221A469CD00DE6BEC /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
 		915C829521B229F700A7567B /* Hybird.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Hybird.README.md; sourceTree = "<group>"; };
 		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
@@ -144,6 +155,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		914BA0C021B5046900150992 /* Category源码分析 */ = {
+			isa = PBXGroup;
+			children = (
+				914BA0C121B5049100150992 /* Person.h */,
+				914BA0C221B5049100150992 /* Person.m */,
+				914BA0C421B504C200150992 /* Person+Eat.h */,
+				914BA0C521B504C200150992 /* Person+Eat.m */,
+				914BA0C721B5050E00150992 /* Person+Drink.h */,
+				914BA0C821B5050E00150992 /* Person+Drink.m */,
+				914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */,
+			);
+			path = "Category源码分析";
+			sourceTree = "<group>";
+		};
 		915C829421B2296200A7567B /* 基于UIWebView的混合开发 */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +207,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				914BA0C021B5046900150992 /* Category源码分析 */,
 				91D1771D21B43C4B007DB825 /* 自定义弹窗UIWindow */,
 				915C829421B2296200A7567B /* 基于UIWebView的混合开发 */,
 				91ACEA9521A446A800249FA8 /* Decoder&Encoder */,
@@ -374,6 +400,7 @@
 			files = (
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
+				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
@@ -424,6 +451,9 @@
 			files = (
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
+				914BA0C321B5049100150992 /* Person.m in Sources */,
+				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
+				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
