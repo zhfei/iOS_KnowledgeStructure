@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
 		914BA0C321B5049100150992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C221B5049100150992 /* Person.m */; };
@@ -58,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
+		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		914BA0BA21B4D54D00150992 /* ProgressWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindow.h; sourceTree = "<group>"; };
 		914BA0BB21B4D54D00150992 /* ProgressWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindow.m; sourceTree = "<group>"; };
 		914BA0BD21B4D56200150992 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
@@ -155,6 +158,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9122AD1821BD61D200A9E3BD /* 字符串引用技术 */ = {
+			isa = PBXGroup;
+			children = (
+				9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */,
+				9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */,
+			);
+			path = "字符串引用技术";
+			sourceTree = "<group>";
+		};
 		914BA0C021B5046900150992 /* Category源码分析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +219,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9122AD1821BD61D200A9E3BD /* 字符串引用技术 */,
 				914BA0C021B5046900150992 /* Category源码分析 */,
 				91D1771D21B43C4B007DB825 /* 自定义弹窗UIWindow */,
 				915C829421B2296200A7567B /* 基于UIWebView的混合开发 */,
@@ -453,6 +466,7 @@
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
+				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,

@@ -19,5 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)compareTest {
+    NSArray *arr = [NSArray arrayWithObjects:@"a",@"b",@"c", nil];
+    [arr sortedArrayUsingSelector:@selector(compare:)];
+    
+}
 
 @end

@@ -60,6 +60,9 @@ class MainTableViewController: UITableViewController {
         case 3:
             let vc = AlertWindowVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = StringRetainCountVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("未知...")
         }
