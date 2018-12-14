@@ -37,6 +37,7 @@
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
 		91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D1771F21B43CA1007DB825 /* AlertWindowVC.m */; };
+		91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E442B921C3EB76004F9318 /* TimerViewController.m */; };
 		DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,8 @@
 		91ACEA9A21A44BF300249FA8 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		91D1771E21B43CA1007DB825 /* AlertWindowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertWindowVC.h; sourceTree = "<group>"; };
 		91D1771F21B43CA1007DB825 /* AlertWindowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertWindowVC.m; sourceTree = "<group>"; };
+		91E442B821C3EB76004F9318 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		91E442B921C3EB76004F9318 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		E37298DACB1F43E7C9FB34D1 /* Pods-iOS_KnowledgeStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +222,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91E442B721C3EB54004F9318 /* 定时器的使用 */,
 				9122AD1821BD61D200A9E3BD /* 字符串引用技术 */,
 				914BA0C021B5046900150992 /* Category源码分析 */,
 				91D1771D21B43C4B007DB825 /* 自定义弹窗UIWindow */,
@@ -304,6 +308,15 @@
 				914BA0BE21B4D56200150992 /* ProgressViewController.m */,
 			);
 			path = "自定义弹窗UIWindow";
+			sourceTree = "<group>";
+		};
+		91E442B721C3EB54004F9318 /* 定时器的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				91E442B821C3EB76004F9318 /* TimerViewController.h */,
+				91E442B921C3EB76004F9318 /* TimerViewController.m */,
+			);
+			path = "定时器的使用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +479,7 @@
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
+				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
