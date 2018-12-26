@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
+		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
@@ -66,6 +67,8 @@
 		911976E621D3DA26000DD669 /* UnkonwMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnkonwMessageVC.m; sourceTree = "<group>"; };
 		911976E821D3DA6B000DD669 /* UnknownModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel.h; sourceTree = "<group>"; };
 		911976E921D3DA6B000DD669 /* UnknownModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel.m; sourceTree = "<group>"; };
+		911976EB21D3DFAE000DD669 /* UnknownModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel2.h; sourceTree = "<group>"; };
+		911976EC21D3DFAE000DD669 /* UnknownModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel2.m; sourceTree = "<group>"; };
 		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		914BA0BA21B4D54D00150992 /* ProgressWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindow.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				911976E621D3DA26000DD669 /* UnkonwMessageVC.m */,
 				911976E821D3DA6B000DD669 /* UnknownModel.h */,
 				911976E921D3DA6B000DD669 /* UnknownModel.m */,
+				911976EB21D3DFAE000DD669 /* UnknownModel2.h */,
+				911976EC21D3DFAE000DD669 /* UnknownModel2.m */,
 			);
 			path = "向对象发送未知消息";
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
+				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
