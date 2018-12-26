@@ -63,9 +63,13 @@ class MainTableViewController: UITableViewController {
         case 4:
             let vc = StringRetainCountVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            let vc = UnkonwMessageVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("未知...")
         }
+        
     }
 
    
