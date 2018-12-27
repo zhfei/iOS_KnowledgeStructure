@@ -22,7 +22,13 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UnknownModel *model = [UnknownModel new];
+    
+   
+//为了消除未定义选择器的警告
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wundeclared-selector"
     [model performSelector:@selector(gogogo) withObject:@"666"];
+#pragma clang diagnostic pop
 }
 
 @end

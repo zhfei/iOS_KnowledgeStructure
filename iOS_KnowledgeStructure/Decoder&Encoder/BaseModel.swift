@@ -63,7 +63,7 @@ class BaseModel: NSObject, NSCoding {
 //        NSKeyedArchiver.archiveRootObject(self, toFile: savePath)
         do {
             let url = URL(fileURLWithPath: savePath)
-            let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
+            let data = try NSKeyedArchiver.archivedData(withRootObject: self)
             try data.write(to: url)
         } catch let error {
             print("报错了！\(error)")

@@ -11,5 +11,13 @@
 @implementation UnknownModel2
 - (void)gogogo{
     NSLog(@"lalalalala---%@",NSStringFromSelector(_cmd));
+    
+    Class agogogoClass = [self class];
+    NSLog(@"showSuper---%@",agogogoClass);
+}
+    
+- (void)showSuper{
+    Class aClass = [super class];
+    NSLog(@"showSuper---%@",aClass);
 }
 @end

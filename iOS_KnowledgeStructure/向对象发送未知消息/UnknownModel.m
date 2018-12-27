@@ -8,6 +8,7 @@
 
 #import "UnknownModel.h"
 #import "UnknownModel2.h"
+#import <objc/runtime.h>
 
 @implementation UnknownModel
 //1
@@ -16,35 +17,18 @@
     NSLog(@"1---%@",NSStringFromSelector(_cmd));
     return NO;
 }
-
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     NSLog(@"1---%@",NSStringFromSelector(sel));
     NSLog(@"1---%@",NSStringFromSelector(_cmd));
     return NO;
 }
-
 //2
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     NSLog(@"2---%@",NSStringFromSelector(aSelector));
     NSLog(@"2---%@",NSStringFromSelector(_cmd));
     return nil;
 }
-////3
-//- (void)forwardInvocation:(NSInvocation *)anInvocation {
-//    NSLog(@"4---%@",NSStringFromSelector(_cmd));
-//    NSLog(@"4-最后一步--%@",anInvocation);
-//}
-//
-//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-//    NSLog(@"3---%@",NSStringFromSelector(aSelector));
-//    NSLog(@"3---%@",NSStringFromSelector(_cmd));
-//
-//    return [NSMethodSignature methodSignatureForSelector:@selector(tototo)];
-//}
-
-
-//最后一步，返回方法签名
-//询问此选择器是否是有效的
+//3.最后一步，返回方法签名
 -(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
     NSLog(@"3---%@",NSStringFromSelector(aSelector));
     NSLog(@"3---%@",NSStringFromSelector(_cmd));
@@ -53,7 +37,7 @@
     }
     return [super methodSignatureForSelector:aSelector];
 }
-//处理消息
+//3.1处理返回的方法签名
 -(void)forwardInvocation:(NSInvocation *)anInvocation{
     NSLog(@"4---%@",NSStringFromSelector(_cmd));
     NSLog(@"4-最后一步--%@",anInvocation);
@@ -77,6 +61,10 @@
  2018-12-27 00:14:00.471367+0800 iOS_KnowledgeStructure[7940:110114] 4-最后一步--<NSInvocation: 0x600002442000>
  2018-12-27 00:14:00.471969+0800 iOS_KnowledgeStructure[7940:110114] lalalalala---gogogo
  */
+
+- (void)doesNotRecognizeSelector:(SEL)aSelector {
+    
+}
 
 
 @end
