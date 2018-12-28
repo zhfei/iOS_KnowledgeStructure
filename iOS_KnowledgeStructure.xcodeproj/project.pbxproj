@@ -18,6 +18,7 @@
 		914BA0C921B5050E00150992 /* Person+Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C821B5050E00150992 /* Person+Drink.m */; };
 		914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */; };
 		914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D858221A469CD00DE6BEC /* GeneralModel.swift */; };
+		914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F33F621D5CB47004DAF00 /* CoderModel.m */; };
 		915C829621B229F700A7567B /* Hybird.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 915C829521B229F700A7567B /* Hybird.README.md */; };
 		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
 		915C829B21B2368100A7567B /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 915C829A21B2368100A7567B /* template.html */; };
@@ -83,6 +84,8 @@
 		914BA0C821B5050E00150992 /* Person+Drink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Drink.m"; sourceTree = "<group>"; };
 		914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CategoryAnalyze.README.md; sourceTree = "<group>"; };
 		914D858221A469CD00DE6BEC /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		914F33F521D5CB47004DAF00 /* CoderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoderModel.h; sourceTree = "<group>"; };
+		914F33F621D5CB47004DAF00 /* CoderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoderModel.m; sourceTree = "<group>"; };
 		915C829521B229F700A7567B /* Hybird.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Hybird.README.md; sourceTree = "<group>"; };
 		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
 		915C829821B22AC400A7567B /* HybirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdViewController.m; sourceTree = "<group>"; };
@@ -316,6 +319,8 @@
 				91ACEA9821A446F300249FA8 /* BaseModel.swift */,
 				91ACEA9A21A44BF300249FA8 /* TestModel.swift */,
 				914D858221A469CD00DE6BEC /* GeneralModel.swift */,
+				914F33F521D5CB47004DAF00 /* CoderModel.h */,
+				914F33F621D5CB47004DAF00 /* CoderModel.m */,
 			);
 			path = "Decoder&Encoder";
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
+				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
