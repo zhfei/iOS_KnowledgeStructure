@@ -12,9 +12,10 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-        __block NSMutableArray *friends = [NSMutableArray array];;
+        NSInteger age = 10;
         void(^completeBlock)(NSString *) = ^(NSString *name) {
-            NSLog(@"%@--%@",name,friends);
+            NSString *info = [NSString stringWithFormat:@"name:%@ - age:%d",name,age];
+            NSLog(@"%@",info);
         };
         
         completeBlock(@"jack");

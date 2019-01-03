@@ -23,6 +23,14 @@
 		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
 		915C829B21B2368100A7567B /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 915C829A21B2368100A7567B /* template.html */; };
 		915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */; };
+		916957AB21DE214D0026EB3A /* main3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A021DE214D0026EB3A /* main3.m */; };
+		916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A121DE214D0026EB3A /* main_blockArray.cpp */; };
+		916957AD21DE214D0026EB3A /* main2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A321DE214D0026EB3A /* main2.m */; };
+		916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A421DE214D0026EB3A /* main_blockInt.cpp */; };
+		916957AF21DE214D0026EB3A /* main1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A621DE214D0026EB3A /* main1.m */; };
+		916957B021DE214D0026EB3A /* main_int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A721DE214D0026EB3A /* main_int.cpp */; };
+		916957B121DE214D0026EB3A /* main_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A921DE214D0026EB3A /* main_Array.cpp */; };
+		916957B221DE214D0026EB3A /* main4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957AA21DE214D0026EB3A /* main4.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
 		917B78DD2189F5B000425A05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78DC2189F5B000425A05 /* ViewController.m */; };
 		917B78E02189F5B000425A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917B78DE2189F5B000425A05 /* Main.storyboard */; };
@@ -92,6 +100,14 @@
 		915C829A21B2368100A7567B /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		915C829C21B23AFA00A7567B /* HybirdViewController+delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HybirdViewController+delegate.h"; sourceTree = "<group>"; };
 		915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HybirdViewController+delegate.m"; sourceTree = "<group>"; };
+		916957A021DE214D0026EB3A /* main3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main3.m; sourceTree = "<group>"; };
+		916957A121DE214D0026EB3A /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
+		916957A321DE214D0026EB3A /* main2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main2.m; sourceTree = "<group>"; };
+		916957A421DE214D0026EB3A /* main_blockInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockInt.cpp; sourceTree = "<group>"; };
+		916957A621DE214D0026EB3A /* main1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main1.m; sourceTree = "<group>"; };
+		916957A721DE214D0026EB3A /* main_int.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_int.cpp; sourceTree = "<group>"; };
+		916957A921DE214D0026EB3A /* main_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_Array.cpp; sourceTree = "<group>"; };
+		916957AA21DE214D0026EB3A /* main4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main4.m; sourceTree = "<group>"; };
 		917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KnowledgeStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917B78D82189F5B000425A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		917B78D92189F5B000425A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -222,6 +238,53 @@
 			path = "基于UIWebView的混合开发";
 			sourceTree = "<group>";
 		};
+		9169579E21DE212A0026EB3A /* Block源码分析 */ = {
+			isa = PBXGroup;
+			children = (
+				916957A821DE214D0026EB3A /* block_Array */,
+				9169579F21DE214D0026EB3A /* block_blockArray */,
+				916957A221DE214D0026EB3A /* block_blockInt */,
+				916957A521DE214D0026EB3A /* block_int */,
+			);
+			path = "Block源码分析";
+			sourceTree = "<group>";
+		};
+		9169579F21DE214D0026EB3A /* block_blockArray */ = {
+			isa = PBXGroup;
+			children = (
+				916957A021DE214D0026EB3A /* main3.m */,
+				916957A121DE214D0026EB3A /* main_blockArray.cpp */,
+			);
+			path = block_blockArray;
+			sourceTree = "<group>";
+		};
+		916957A221DE214D0026EB3A /* block_blockInt */ = {
+			isa = PBXGroup;
+			children = (
+				916957A321DE214D0026EB3A /* main2.m */,
+				916957A421DE214D0026EB3A /* main_blockInt.cpp */,
+			);
+			path = block_blockInt;
+			sourceTree = "<group>";
+		};
+		916957A521DE214D0026EB3A /* block_int */ = {
+			isa = PBXGroup;
+			children = (
+				916957A621DE214D0026EB3A /* main1.m */,
+				916957A721DE214D0026EB3A /* main_int.cpp */,
+			);
+			path = block_int;
+			sourceTree = "<group>";
+		};
+		916957A821DE214D0026EB3A /* block_Array */ = {
+			isa = PBXGroup;
+			children = (
+				916957A921DE214D0026EB3A /* main_Array.cpp */,
+				916957AA21DE214D0026EB3A /* main4.m */,
+			);
+			path = block_Array;
+			sourceTree = "<group>";
+		};
 		917B78CC2189F5B000425A05 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +310,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9169579E21DE212A0026EB3A /* Block源码分析 */,
 				911976E421D3D9E6000DD669 /* 向对象发送未知消息 */,
 				91E442B721C3EB54004F9318 /* 定时器的使用 */,
 				9122AD1821BD61D200A9E3BD /* 字符串引用技术 */,
@@ -503,7 +567,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916957B021DE214D0026EB3A /* main_int.cpp in Sources */,
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
+				916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
@@ -511,20 +577,26 @@
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
+				916957AD21DE214D0026EB3A /* main2.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
+				916957AB21DE214D0026EB3A /* main3.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
+				916957B121DE214D0026EB3A /* main_Array.cpp in Sources */,
 				917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */,
+				916957B221DE214D0026EB3A /* main4.m in Sources */,
+				916957AF21DE214D0026EB3A /* main1.m in Sources */,
 				915C829921B22AC400A7567B /* HybirdViewController.m in Sources */,
+				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,

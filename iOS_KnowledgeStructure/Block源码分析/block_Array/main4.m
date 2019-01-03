@@ -12,7 +12,7 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
-        __block NSMutableArray *friends = [NSMutableArray array];;
+        NSMutableArray *friends = [NSMutableArray array];;
         void(^completeBlock)(NSString *) = ^(NSString *name) {
             NSLog(@"%@--%@",name,friends);
         };
