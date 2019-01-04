@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
+int main3(int argc, char * argv[]) {
     @autoreleasepool {
         
         __block NSMutableArray *friends = [NSMutableArray array];;

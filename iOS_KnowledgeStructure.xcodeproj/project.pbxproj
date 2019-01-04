@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9113976921DF3F4600916D59 /* block_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9113976821DF3F4600916D59 /* block_VC.m */; };
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
@@ -72,6 +73,8 @@
 
 /* Begin PBXFileReference section */
 		88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9113976721DF3F4600916D59 /* block_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block_VC.h; sourceTree = "<group>"; };
+		9113976821DF3F4600916D59 /* block_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = block_VC.m; sourceTree = "<group>"; };
 		911976E521D3DA26000DD669 /* UnkonwMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnkonwMessageVC.h; sourceTree = "<group>"; };
 		911976E621D3DA26000DD669 /* UnkonwMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnkonwMessageVC.m; sourceTree = "<group>"; };
 		911976E821D3DA6B000DD669 /* UnknownModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel.h; sourceTree = "<group>"; };
@@ -189,6 +192,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9113976621DF3F2800916D59 /* block_VC */ = {
+			isa = PBXGroup;
+			children = (
+				9113976721DF3F4600916D59 /* block_VC.h */,
+				9113976821DF3F4600916D59 /* block_VC.m */,
+			);
+			path = block_VC;
+			sourceTree = "<group>";
+		};
 		911976E421D3D9E6000DD669 /* 向对象发送未知消息 */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +253,7 @@
 		9169579E21DE212A0026EB3A /* Block源码分析 */ = {
 			isa = PBXGroup;
 			children = (
+				9113976621DF3F2800916D59 /* block_VC */,
 				916957A821DE214D0026EB3A /* block_Array */,
 				9169579F21DE214D0026EB3A /* block_blockArray */,
 				916957A221DE214D0026EB3A /* block_blockInt */,
@@ -583,6 +596,7 @@
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
+				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
