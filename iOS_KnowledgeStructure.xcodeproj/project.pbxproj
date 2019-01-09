@@ -20,6 +20,11 @@
 		914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */; };
 		914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D858221A469CD00DE6BEC /* GeneralModel.swift */; };
 		914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F33F621D5CB47004DAF00 /* CoderModel.m */; };
+		9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487221E594D800A90A14 /* ChainOfTransformVC.m */; };
+		9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9154487321E594D800A90A14 /* ChainOfTransformVC.xib */; };
+		9154487821E597D900A90A14 /* PinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487721E597D900A90A14 /* PinkView.m */; };
+		9154487B21E597F400A90A14 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487A21E597F400A90A14 /* BlueView.m */; };
+		9154487E21E5980600A90A14 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487D21E5980600A90A14 /* RedView.m */; };
 		915C829621B229F700A7567B /* Hybird.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 915C829521B229F700A7567B /* Hybird.README.md */; };
 		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
 		915C829B21B2368100A7567B /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 915C829A21B2368100A7567B /* template.html */; };
@@ -97,6 +102,15 @@
 		914D858221A469CD00DE6BEC /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
 		914F33F521D5CB47004DAF00 /* CoderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoderModel.h; sourceTree = "<group>"; };
 		914F33F621D5CB47004DAF00 /* CoderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoderModel.m; sourceTree = "<group>"; };
+		9154487121E594D800A90A14 /* ChainOfTransformVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainOfTransformVC.h; sourceTree = "<group>"; };
+		9154487221E594D800A90A14 /* ChainOfTransformVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainOfTransformVC.m; sourceTree = "<group>"; };
+		9154487321E594D800A90A14 /* ChainOfTransformVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChainOfTransformVC.xib; sourceTree = "<group>"; };
+		9154487621E597D900A90A14 /* PinkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinkView.h; sourceTree = "<group>"; };
+		9154487721E597D900A90A14 /* PinkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinkView.m; sourceTree = "<group>"; };
+		9154487921E597F400A90A14 /* BlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		9154487A21E597F400A90A14 /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
+		9154487C21E5980600A90A14 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		9154487D21E5980600A90A14 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
 		915C829521B229F700A7567B /* Hybird.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Hybird.README.md; sourceTree = "<group>"; };
 		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
 		915C829821B22AC400A7567B /* HybirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdViewController.m; sourceTree = "<group>"; };
@@ -237,6 +251,22 @@
 			path = "Category源码分析";
 			sourceTree = "<group>";
 		};
+		9154487021E593C500A90A14 /* 事件传输链和响应 */ = {
+			isa = PBXGroup;
+			children = (
+				9154487621E597D900A90A14 /* PinkView.h */,
+				9154487721E597D900A90A14 /* PinkView.m */,
+				9154487921E597F400A90A14 /* BlueView.h */,
+				9154487A21E597F400A90A14 /* BlueView.m */,
+				9154487C21E5980600A90A14 /* RedView.h */,
+				9154487D21E5980600A90A14 /* RedView.m */,
+				9154487121E594D800A90A14 /* ChainOfTransformVC.h */,
+				9154487221E594D800A90A14 /* ChainOfTransformVC.m */,
+				9154487321E594D800A90A14 /* ChainOfTransformVC.xib */,
+			);
+			path = "事件传输链和响应";
+			sourceTree = "<group>";
+		};
 		915C829421B2296200A7567B /* 基于UIWebView的混合开发 */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +353,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9154487021E593C500A90A14 /* 事件传输链和响应 */,
 				9169579E21DE212A0026EB3A /* Block源码分析 */,
 				911976E421D3D9E6000DD669 /* 向对象发送未知消息 */,
 				91E442B721C3EB54004F9318 /* 定时器的使用 */,
@@ -532,6 +563,7 @@
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
+				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
@@ -595,10 +627,13 @@
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
+				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
+				9154487E21E5980600A90A14 /* RedView.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
+				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
@@ -613,6 +648,7 @@
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
+				9154487821E597D900A90A14 /* PinkView.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,
