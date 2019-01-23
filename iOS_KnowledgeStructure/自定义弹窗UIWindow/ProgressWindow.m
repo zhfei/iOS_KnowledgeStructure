@@ -19,8 +19,7 @@ static ProgressWindow *progressWindow;
         self.rootViewController = [UIViewController new];
         [self makeKeyAndVisible];
         [self setHidden:YES];
-        [self setBackgroundColor:[UIColor blackColor]];
-        [self setAlpha:0.5];
+        [self setBackgroundColor:[UIColor clearColor]];
     }
     return self;
 }
