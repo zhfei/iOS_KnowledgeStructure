@@ -10,7 +10,7 @@
 #import "ProgressWindow.h"
 #import "ProgressViewController.h"
 #import <BottomComponentLib/ZHFAlertControlle.h>
-
+#import "ZFAlertViewController.h"
 
 @interface AlertWindowVC ()
 @property (nonatomic, strong)UIWindow *window;
@@ -37,15 +37,23 @@
     NSArray *arr = @[@(UIWindowLevelNormal),@(UIWindowLevelAlert),@(UIWindowLevelStatusBar)];
     NSLog(@"arr: %@",arr);
     
-    [self showProgressWindow];
+    [self showAlertViewController];
 //    [self showZHFAlertController];
 }
 
 - (void)showProgressWindow {
     ProgressWindow *window = [ProgressWindow sharedProgressWindow];
     window.hidden = NO;
-    ProgressViewController *pvc = [ProgressViewController new];
+//    ProgressViewController *pvc = [ProgressViewController new];
+    ZFAlertViewController *pvc = [ZFAlertViewController new];
+    
+    
     [window.rootViewController presentViewController:pvc animated:NO completion:nil];
+}
+
+- (void)showAlertViewController {
+    ZFAlertViewController *alertVC = [ZFAlertViewController alertViewController:ZFAlertTypeInput];
+    [alertVC showAlertVC];
 }
 
 - (void)showZHFAlertController {
