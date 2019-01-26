@@ -69,7 +69,9 @@ class MainTableViewController: UITableViewController {
         case 6:
             let vc = ChainOfTransformVC()
             self.navigationController?.pushViewController(vc, animated: true)
-            
+        case 7:
+            let vc = LocationViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
             
         default:
             print("未知...")
