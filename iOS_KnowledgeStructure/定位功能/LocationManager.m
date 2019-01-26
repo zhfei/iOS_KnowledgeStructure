@@ -8,6 +8,7 @@
 
 #import "LocationManager.h"
 #import <CoreLocation/CoreLocation.h>
+#import <BottomComponentLib/ZHFAlertControlle.h>
 
 @interface LocationManager () <CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -80,6 +81,9 @@ SingletonM(LocationManager)
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"error:%@",error);
+    [ZHFAlertControlle showWithTitle:@"定位失败" message:@"" btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
+        
+    }];
 }
 
 #pragma mark 根据地名确定地理坐标
