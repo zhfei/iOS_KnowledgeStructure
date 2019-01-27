@@ -9,6 +9,7 @@
 #import "PhotoSaveAndVisitVc.h"
 #import <BottomComponentLib/UIImage+Custom.h>
 #import "PhotoCollectionViewController.h"
+#import <BottomComponentLib/ZHFAlertControlle.h>
 
 @interface PhotoSaveAndVisitVc ()
 
@@ -70,6 +71,9 @@
         msg = @"保存图片成功" ;
     }
     NSLog(@"%@",msg);
+    [ZHFAlertControlle showWithTitle:@"截图操作" message:msg btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
+        
+    }];
 }
 
 #pragma mark - Delegate
