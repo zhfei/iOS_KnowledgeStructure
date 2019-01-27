@@ -12,6 +12,9 @@
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
+		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
+		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
 		914BA0C321B5049100150992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C221B5049100150992 /* Person.m */; };
@@ -91,6 +94,11 @@
 		911976EC21D3DFAE000DD669 /* UnknownModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel2.m; sourceTree = "<group>"; };
 		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
+		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
+		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
+		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
+		913B2B9A21FDBC4F00840EDA /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
+		913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
 		914BA0BA21B4D54D00150992 /* ProgressWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindow.h; sourceTree = "<group>"; };
 		914BA0BB21B4D54D00150992 /* ProgressWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindow.m; sourceTree = "<group>"; };
 		914BA0BD21B4D56200150992 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
@@ -245,6 +253,18 @@
 			path = "字符串引用技术";
 			sourceTree = "<group>";
 		};
+		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
+			isa = PBXGroup;
+			children = (
+				913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */,
+				913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */,
+				913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */,
+				913B2B9A21FDBC4F00840EDA /* PhotoCollectionViewController.h */,
+				913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */,
+			);
+			path = "照片的保存和访问";
+			sourceTree = "<group>";
+		};
 		914BA0C021B5046900150992 /* Category源码分析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +393,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				913B2B9421FDB82300840EDA /* 照片的保存和访问 */,
 				9153C03421FC4D7700BBAAED /* 定位功能 */,
 				9154487021E593C500A90A14 /* 事件传输链和响应 */,
 				9169579E21DE212A0026EB3A /* Block源码分析 */,
@@ -586,6 +607,7 @@
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
+				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
@@ -655,6 +677,7 @@
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
 				9154487E21E5980600A90A14 /* RedView.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
+				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
@@ -672,6 +695,7 @@
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
+				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
