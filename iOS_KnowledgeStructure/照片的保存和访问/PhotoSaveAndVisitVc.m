@@ -8,6 +8,7 @@
 
 #import "PhotoSaveAndVisitVc.h"
 #import <BottomComponentLib/UIImage+Custom.h>
+#import "PhotoCollectionViewController.h"
 
 @interface PhotoSaveAndVisitVc ()
 
@@ -31,7 +32,8 @@
     UIImageWriteToSavedPhotosAlbum([UIImage screenshotInView:self.view], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
 }
 - (IBAction)photoLookOver:(UIButton *)sender {
-    
+    PhotoCollectionViewController *pvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PhotoCollectionViewController"];
+    [self.navigationController pushViewController:pvc animated:YES];
 }
 #pragma mark - Public Method
 
