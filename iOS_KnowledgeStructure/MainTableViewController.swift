@@ -75,6 +75,9 @@ class MainTableViewController: UITableViewController {
         case 8:
             let vc = PhotoSaveAndVisitVc()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 9:
+            let vc = ScrolleViewApplyVC()
+            self.navigationController?.pushViewController(vc, animated: true)
             
             
         default:

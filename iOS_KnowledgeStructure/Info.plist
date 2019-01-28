@@ -42,12 +42,10 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
     
-    <key>NSLocationWhenInUseUsageDescription</key><string>使用应用时定位</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key><string>总是使用用户位置定位</string>
+    <key>NSLocationWhenInUseUsageDescription</key><string>是否允许应用时定位</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key><string>是否允许应用访问您的位置信息</string>
     
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>保存图片到相册</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>读取相册的图片</string>
+    <key>NSPhotoLibraryAddUsageDescription</key><string>保存图片到相册</string>
+    <key>NSPhotoLibraryUsageDescription</key><string>读取相册的图片</string>
 </dict>
 </plist>

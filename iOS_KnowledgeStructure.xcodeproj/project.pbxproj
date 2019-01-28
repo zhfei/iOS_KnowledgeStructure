@@ -11,6 +11,7 @@
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
+		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
@@ -92,6 +93,8 @@
 		911976E921D3DA6B000DD669 /* UnknownModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel.m; sourceTree = "<group>"; };
 		911976EB21D3DFAE000DD669 /* UnknownModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel2.h; sourceTree = "<group>"; };
 		911976EC21D3DFAE000DD669 /* UnknownModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel2.m; sourceTree = "<group>"; };
+		9120F20021FEFBA900E5B90C /* ScrolleViewApplyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrolleViewApplyVC.h; sourceTree = "<group>"; };
+		9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrolleViewApplyVC.m; sourceTree = "<group>"; };
 		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
@@ -244,6 +247,15 @@
 			path = "向对象发送未知消息";
 			sourceTree = "<group>";
 		};
+		9120F1FF21FEF9BA00E5B90C /* ScrollView使用 */ = {
+			isa = PBXGroup;
+			children = (
+				9120F20021FEFBA900E5B90C /* ScrolleViewApplyVC.h */,
+				9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */,
+			);
+			path = "ScrollView使用";
+			sourceTree = "<group>";
+		};
 		9122AD1821BD61D200A9E3BD /* 字符串引用技术 */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +405,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9120F1FF21FEF9BA00E5B90C /* ScrollView使用 */,
 				913B2B9421FDB82300840EDA /* 照片的保存和访问 */,
 				9153C03421FC4D7700BBAAED /* 定位功能 */,
 				9154487021E593C500A90A14 /* 事件传输链和响应 */,
@@ -666,6 +679,7 @@
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
+				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,
 				916957AD21DE214D0026EB3A /* main2.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
