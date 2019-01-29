@@ -58,6 +58,7 @@
 		917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791A2189FAE500425A05 /* MainTableViewController.swift */; };
 		917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791C2189FB4C00425A05 /* MainTableViewModel.swift */; };
 		917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791E2189FC9300425A05 /* MainTableCoordinater.swift */; };
+		9193496D2200AE3B00338639 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9193496B2200AE3B00338639 /* Xtrace.mm */; };
 		91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */; };
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
@@ -171,6 +172,8 @@
 		917B791C2189FB4C00425A05 /* MainTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewModel.swift; sourceTree = "<group>"; };
 		917B791E2189FC9300425A05 /* MainTableCoordinater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCoordinater.swift; sourceTree = "<group>"; };
 		917B7920218A09DA00425A05 /* GCDUtility.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GCDUtility.md; sourceTree = "<group>"; };
+		9193496B2200AE3B00338639 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
+		9193496C2200AE3B00338639 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
 		91A800208392FC65C632F464 /* Pods-iOS_KnowledgeStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.release.xcconfig"; sourceTree = "<group>"; };
 		91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderEncoderVC.swift; sourceTree = "<group>"; };
 		91ACEA9821A446F300249FA8 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -405,6 +408,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9193496A2200AE1200338639 /* Xtrace函数调用追踪 */,
 				9120F1FF21FEF9BA00E5B90C /* ScrollView使用 */,
 				913B2B9421FDB82300840EDA /* 照片的保存和访问 */,
 				9153C03421FC4D7700BBAAED /* 定位功能 */,
@@ -473,6 +477,15 @@
 				917B7920218A09DA00425A05 /* GCDUtility.md */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		9193496A2200AE1200338639 /* Xtrace函数调用追踪 */ = {
+			isa = PBXGroup;
+			children = (
+				9193496C2200AE3B00338639 /* Xtrace.h */,
+				9193496B2200AE3B00338639 /* Xtrace.mm */,
+			);
+			path = "Xtrace函数调用追踪";
 			sourceTree = "<group>";
 		};
 		91ACEA9521A446A800249FA8 /* Decoder&Encoder */ = {
@@ -677,6 +690,7 @@
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
+				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,

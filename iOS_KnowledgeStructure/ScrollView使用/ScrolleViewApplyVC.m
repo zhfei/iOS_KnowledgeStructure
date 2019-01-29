@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import <BottomComponentLib/UIFactory.h>
 #import <BottomComponentLib/UIColor+Transform.h>
+#import "Xtrace.h"
 
 #define widthS [UIScreen mainScreen].bounds.size.width
 #define heightS [UIScreen mainScreen].bounds.size.height
@@ -68,6 +69,9 @@
 #pragma mark - Private Method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [Xtrace showReturns:NO];
+    [Xtrace traceInstance:self.scrollView];
 
     [self.view addSubview:self.scrollView];
     [self scrollImageView];
