@@ -11,8 +11,13 @@
 #import <BottomComponentLib/UIFactory.h>
 #import <BottomComponentLib/UIColor+Transform.h>
 
+#define widthS [UIScreen mainScreen].bounds.size.width
+#define heightS [UIScreen mainScreen].bounds.size.height
+
+
 @interface ScrolleViewApplyVC () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation ScrolleViewApplyVC
@@ -25,26 +30,37 @@
     [self setupData];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    //取消内容边界扩展
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 #pragma mark - Getter, Setter
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
-        CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, widthS, heightS)];
-        
-        CGFloat heighBtn = 100;
-        
-        for (int i = 0; i < 10; i++) {
-            UIButton *btn = [UIFactory buttonFactory:@"text"];
-            [btn setBackgroundColor:[UIColor randomColor]];
-            [btn setFrame:CGRectMake(0, (heighBtn+20)*i, widthS, heighBtn)];
-            [_scrollView addSubview:btn];
-        }
-        [_scrollView setContentSize:CGSizeMake(widthS, (heighBtn+20)*10)];
         _scrollView.delegate = self;
     }
     return _scrollView;
 }
+
+- (UIImageView *)imageView {
+    if (!_imageView) {
+        UIImageView *imageV = [UIImageView new];
+        imageV.contentMode = UIViewContentModeCenter;
+        _imageView = imageV;
+    }
+    return _imageView;
+}
+
 #pragma mark - Event
 
 #pragma mark - Public Method
@@ -52,8 +68,9 @@
 #pragma mark - Private Method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     [self.view addSubview:self.scrollView];
+    [self scrollImageView];
     if (@available(iOS 11.0, *)) {
         
     }
@@ -84,13 +101,44 @@
     
 }
 
+- (void)scrollImageView {
+    self.imageView.frame = self.scrollView.bounds;
+    self.imageView.image = [UIImage imageNamed:@"dogAndDuck"];
+    [self.scrollView addSubview:self.imageView];
+    self.scrollView.contentSize = self.imageView.image.size;
+    
+    self.scrollView.maximumZoomScale = 3.0;
+    self.scrollView.minimumZoomScale = 0.5;
+}
 
+- (void)btnList {
+    CGFloat heighBtn = 100;
+    for (int i = 0; i < 10; i++) {
+        UIButton *btn = [UIFactory buttonFactory:@"text"];
+        [btn setBackgroundColor:[UIColor randomColor]];
+        [btn setFrame:CGRectMake(0, (heighBtn+20)*i, widthS, heighBtn)];
+        [_scrollView addSubview:btn];
+    }
+    [_scrollView setContentSize:CGSizeMake(widthS, (heighBtn+20)*10)];
+}
 
 #pragma mark - Delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSLog(@"scrollView:%@",NSStringFromCGPoint(scrollView.contentOffset));
 }
+
+
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
+    
+}
+
+- (nullable UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return self.imageView;
+}
+- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(nullable UIView *)view {
+    
+}
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(nullable UIView *)view atScale:(CGFloat)scale {
     
 }
 
