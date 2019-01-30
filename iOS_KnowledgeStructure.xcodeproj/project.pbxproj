@@ -63,6 +63,7 @@
 		919349762201EF0B00338639 /* RuntimeApply1.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349752201EF0B00338639 /* RuntimeApply1.m */; };
 		919349792201F85300338639 /* RuntimePerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349782201F85300338639 /* RuntimePerson2.m */; };
 		9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */; };
+		9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193497E220200A100338639 /* RuntimePerson3Coding.m */; };
 		91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */; };
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
@@ -186,6 +187,8 @@
 		919349782201F85300338639 /* RuntimePerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson2.m; sourceTree = "<group>"; };
 		9193497A2201FE7C00338639 /* RuntimePerson2+Associated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimePerson2+Associated.h"; sourceTree = "<group>"; };
 		9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RuntimePerson2+Associated.m"; sourceTree = "<group>"; };
+		9193497D220200A100338639 /* RuntimePerson3Coding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson3Coding.h; sourceTree = "<group>"; };
+		9193497E220200A100338639 /* RuntimePerson3Coding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson3Coding.m; sourceTree = "<group>"; };
 		91A800208392FC65C632F464 /* Pods-iOS_KnowledgeStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.release.xcconfig"; sourceTree = "<group>"; };
 		91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderEncoderVC.swift; sourceTree = "<group>"; };
 		91ACEA9821A446F300249FA8 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -519,6 +522,8 @@
 				919349782201F85300338639 /* RuntimePerson2.m */,
 				9193497A2201FE7C00338639 /* RuntimePerson2+Associated.h */,
 				9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */,
+				9193497D220200A100338639 /* RuntimePerson3Coding.h */,
+				9193497E220200A100338639 /* RuntimePerson3Coding.m */,
 			);
 			path = "Runtime使用";
 			sourceTree = "<group>";
@@ -760,6 +765,7 @@
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
+				9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */,
 				916957B121DE214D0026EB3A /* main_Array.cpp in Sources */,
 				917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */,
 				916957B221DE214D0026EB3A /* main4.m in Sources */,
