@@ -64,6 +64,7 @@
 		919349792201F85300338639 /* RuntimePerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349782201F85300338639 /* RuntimePerson2.m */; };
 		9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */; };
 		9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193497E220200A100338639 /* RuntimePerson3Coding.m */; };
+		91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 91934981220202A200338639 /* RuntimePerson4jsonDict.m */; };
 		91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */; };
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
@@ -189,6 +190,8 @@
 		9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RuntimePerson2+Associated.m"; sourceTree = "<group>"; };
 		9193497D220200A100338639 /* RuntimePerson3Coding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson3Coding.h; sourceTree = "<group>"; };
 		9193497E220200A100338639 /* RuntimePerson3Coding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson3Coding.m; sourceTree = "<group>"; };
+		91934980220202A200338639 /* RuntimePerson4jsonDict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson4jsonDict.h; sourceTree = "<group>"; };
+		91934981220202A200338639 /* RuntimePerson4jsonDict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson4jsonDict.m; sourceTree = "<group>"; };
 		91A800208392FC65C632F464 /* Pods-iOS_KnowledgeStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.release.xcconfig"; sourceTree = "<group>"; };
 		91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderEncoderVC.swift; sourceTree = "<group>"; };
 		91ACEA9821A446F300249FA8 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -524,6 +527,8 @@
 				9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */,
 				9193497D220200A100338639 /* RuntimePerson3Coding.h */,
 				9193497E220200A100338639 /* RuntimePerson3Coding.m */,
+				91934980220202A200338639 /* RuntimePerson4jsonDict.h */,
+				91934981220202A200338639 /* RuntimePerson4jsonDict.m */,
 			);
 			path = "Runtime使用";
 			sourceTree = "<group>";
@@ -755,6 +760,7 @@
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
 				9154487E21E5980600A90A14 /* RedView.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
+				91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
