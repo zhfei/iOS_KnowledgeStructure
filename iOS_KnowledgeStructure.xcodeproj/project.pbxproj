@@ -44,6 +44,8 @@
 		916957B021DE214D0026EB3A /* main_int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A721DE214D0026EB3A /* main_int.cpp */; };
 		916957B121DE214D0026EB3A /* main_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A921DE214D0026EB3A /* main_Array.cpp */; };
 		916957B221DE214D0026EB3A /* main4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957AA21DE214D0026EB3A /* main4.m */; };
+		917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */; };
+		917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED92202997300590CF1 /* RuntimePerson6methodSign.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
 		917B78DD2189F5B000425A05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78DC2189F5B000425A05 /* ViewController.m */; };
 		917B78E02189F5B000425A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917B78DE2189F5B000425A05 /* Main.storyboard */; };
@@ -151,6 +153,10 @@
 		916957A721DE214D0026EB3A /* main_int.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_int.cpp; sourceTree = "<group>"; };
 		916957A921DE214D0026EB3A /* main_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_Array.cpp; sourceTree = "<group>"; };
 		916957AA21DE214D0026EB3A /* main4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main4.m; sourceTree = "<group>"; };
+		917B4ED52202990E00590CF1 /* RuntimePerson5resolveInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson5resolveInstance.h; sourceTree = "<group>"; };
+		917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson5resolveInstance.m; sourceTree = "<group>"; };
+		917B4ED82202997300590CF1 /* RuntimePerson6methodSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson6methodSign.h; sourceTree = "<group>"; };
+		917B4ED92202997300590CF1 /* RuntimePerson6methodSign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson6methodSign.m; sourceTree = "<group>"; };
 		917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KnowledgeStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917B78D82189F5B000425A05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		917B78D92189F5B000425A05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -529,6 +535,10 @@
 				9193497E220200A100338639 /* RuntimePerson3Coding.m */,
 				91934980220202A200338639 /* RuntimePerson4jsonDict.h */,
 				91934981220202A200338639 /* RuntimePerson4jsonDict.m */,
+				917B4ED52202990E00590CF1 /* RuntimePerson5resolveInstance.h */,
+				917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */,
+				917B4ED82202997300590CF1 /* RuntimePerson6methodSign.h */,
+				917B4ED92202997300590CF1 /* RuntimePerson6methodSign.m */,
 			);
 			path = "Runtime使用";
 			sourceTree = "<group>";
@@ -748,12 +758,14 @@
 				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
+				917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */,
 				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,
 				916957AD21DE214D0026EB3A /* main2.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
+				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
 				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
 				9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
