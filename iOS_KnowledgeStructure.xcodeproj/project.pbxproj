@@ -24,6 +24,7 @@
 		914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 914BA0CA21B505B400150992 /* CategoryAnalyze.README.md */; };
 		914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D858221A469CD00DE6BEC /* GeneralModel.swift */; };
 		914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F33F621D5CB47004DAF00 /* CoderModel.m */; };
+		915106F5220425D500F9EF5D /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915106F4220425D500F9EF5D /* RunLoopViewController.m */; };
 		9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C03621FC4DB400BBAAED /* LocationViewController.m */; };
 		9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9153C03721FC4DB400BBAAED /* LocationViewController.xib */; };
 		9153C03C21FC4F1100BBAAED /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C03B21FC4F1100BBAAED /* LocationManager.m */; };
@@ -125,6 +126,8 @@
 		914D858221A469CD00DE6BEC /* GeneralModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
 		914F33F521D5CB47004DAF00 /* CoderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoderModel.h; sourceTree = "<group>"; };
 		914F33F621D5CB47004DAF00 /* CoderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoderModel.m; sourceTree = "<group>"; };
+		915106F3220425D500F9EF5D /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		915106F4220425D500F9EF5D /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		9153C03521FC4DB400BBAAED /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		9153C03621FC4DB400BBAAED /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		9153C03721FC4DB400BBAAED /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
@@ -318,6 +321,15 @@
 			path = "Category源码分析";
 			sourceTree = "<group>";
 		};
+		915106F2220425A200F9EF5D /* RunLoop点滴 */ = {
+			isa = PBXGroup;
+			children = (
+				915106F3220425D500F9EF5D /* RunLoopViewController.h */,
+				915106F4220425D500F9EF5D /* RunLoopViewController.m */,
+			);
+			path = "RunLoop点滴";
+			sourceTree = "<group>";
+		};
 		9153C03421FC4D7700BBAAED /* 定位功能 */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +444,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				915106F2220425A200F9EF5D /* RunLoop点滴 */,
 				9193496E2201D5FE00338639 /* Runtime点滴 */,
 				9193496A2200AE1200338639 /* Xtrace函数调用追踪 */,
 				9120F1FF21FEF9BA00E5B90C /* ScrollView使用 */,
@@ -797,6 +810,7 @@
 				917B78E82189F5B200425A05 /* main.m in Sources */,
 				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
+				915106F5220425D500F9EF5D /* RunLoopViewController.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,
