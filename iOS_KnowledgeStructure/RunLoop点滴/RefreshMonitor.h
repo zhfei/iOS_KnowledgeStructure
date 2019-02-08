@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <BottomComponentLib/Macro.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RefreshMonitor : NSObject
-
+SingletonH(RefreshMonitor)
 @end
 
 NS_ASSUME_NONNULL_END
