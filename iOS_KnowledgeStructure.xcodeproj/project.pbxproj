@@ -13,6 +13,7 @@
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -107,6 +108,8 @@
 		9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrolleViewApplyVC.m; sourceTree = "<group>"; };
 		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
+		9123EC64220DDBA800E5334D /* RefreshMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshMonitor.h; sourceTree = "<group>"; };
+		9123EC65220DDBA800E5334D /* RefreshMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshMonitor.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -326,6 +329,8 @@
 			children = (
 				915106F3220425D500F9EF5D /* RunLoopViewController.h */,
 				915106F4220425D500F9EF5D /* RunLoopViewController.m */,
+				9123EC64220DDBA800E5334D /* RefreshMonitor.h */,
+				9123EC65220DDBA800E5334D /* RefreshMonitor.m */,
 			);
 			path = "RunLoop点滴";
 			sourceTree = "<group>";
@@ -801,6 +806,7 @@
 				917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */,
 				916957B221DE214D0026EB3A /* main4.m in Sources */,
 				916957AF21DE214D0026EB3A /* main1.m in Sources */,
+				9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */,
 				915C829921B22AC400A7567B /* HybirdViewController.m in Sources */,
 				919349762201EF0B00338639 /* RuntimeApply1.m in Sources */,
 				9153C03C21FC4F1100BBAAED /* LocationManager.m in Sources */,
