@@ -125,6 +125,7 @@ static void runLoopTimerCallBack(CFRunLoopTimerRef timer, void *info)
     }
 }
 
+// 卡屏操作
 - (void)handleStackInfo{
     
 }
