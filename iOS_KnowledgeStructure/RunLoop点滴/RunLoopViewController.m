@@ -22,7 +22,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [[RefreshMonitor sharedRefreshMonitor] start];
+    [[RefreshMonitor sharedRefreshMonitor] startObserver];
 }
 
 - (void)test1 {
