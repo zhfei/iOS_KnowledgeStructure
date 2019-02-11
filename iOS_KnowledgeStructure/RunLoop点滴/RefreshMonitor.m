@@ -26,59 +26,49 @@ SingletonM(RefreshMonitor)
 {
     self = [super init];
     if (self) {
-        self.monitorThread = [[NSThread alloc] initWithTarget:[RefreshMonitor class] selector:@selector(monitorThreadEntryPoint) object:nil];
+        self.monitorThread = [[NSThread alloc] initWithTarget:[RefreshMonitor class] selector:@selector(monitorThreadEntry) object:nil];
         [self.monitorThread start];
     }
     return self;
 }
 
-+ (void)monitorThreadEntryPoint
-{
++ (void)monitorThreadEntry {
     @autoreleasepool {
-        [[NSThread currentThread] setName:@"FluencyMonitor"];
-        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
-        [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
-        [runLoop run];
+        [[NSThread currentThread] setName:@"监听常驻线程"];
+        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSRunLoopCommonModes];
+        [[NSRunLoop currentRunLoop] runMode:NSRunLoopCommonModes beforeDate:[NSDate distantFuture]];
     }
 }
 
-- (void)start
-{
+//观察者在主线程进行观察
+- (void)startObserver {
     if (_observer) {
         return;
     }
-    
-    // 1.创建observer
-    CFRunLoopObserverContext context = {0,(__bridge void*)self, NULL, NULL, NULL};
-    _observer = CFRunLoopObserverCreate(kCFAllocatorDefault,
-                                        kCFRunLoopAllActivities,
-                                        YES,
-                                        0,
-                                        &runLoopObserverCallBack,
-                                        &context);
-    // 2.将observer添加到主线程的RunLoop中
+    //1.创建obserser
+    CFRunLoopObserverContext context = {0,(__bridge void *)self,NULL,NULL,NULL};
+    _observer = CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, YES, 0, &runloopObserverCallBack, &context);
+    //添加obserser到runloop中
     CFRunLoopAddObserver(CFRunLoopGetMain(), _observer, kCFRunLoopCommonModes);
-    
-    // 3.创建一个timer，并添加到子线程的RunLoop中
-    [self performSelector:@selector(addTimerToMonitorThread) onThread:self.monitorThread withObject:nil waitUntilDone:NO modes:@[NSRunLoopCommonModes]];
+    //添加timer到runloop
+    [self performSelector:@selector(addTimerToMonitorThread) onThread:self.monitorThread withObject:nil waitUntilDone:NO
+     modes:@[NSRunLoopCommonModes]];
 }
 
-- (void)addTimerToMonitorThread
-{
+//timer在子线程进行不断调用，判断，打印
+- (void)addTimerToMonitorThread {
     if (_timer) {
         return;
     }
-    // 创建一个timer
-    CFRunLoopRef currentRunLoop = CFRunLoopGetCurrent();
+    //创建一个timer
+    CFRunLoopRef runloop = CFRunLoopGetCurrent();
     CFRunLoopTimerContext context = {0, (__bridge void*)self, NULL, NULL, NULL};
-    _timer = CFRunLoopTimerCreate(kCFAllocatorDefault, 0.1, 0.01, 0, 0,
-                                  &runLoopTimerCallBack, &context);
-    // 添加到子线程的RunLoop中
-    CFRunLoopAddTimer(currentRunLoop, _timer, kCFRunLoopCommonModes);
+    _timer = CFRunLoopTimerCreate(kCFAllocatorDefault, 0.1, 0.01, 0, 0, &runLoopTimerCallBack, &context);
+    CFRunLoopAddTimer(runloop, _timer, kCFRunLoopCommonModes);
 }
 
-static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info){
-    RefreshMonitor *monitor = (__bridge RefreshMonitor*)info;
+static void runloopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info) {
+    RefreshMonitor *monitor = (__bridge RefreshMonitor *)info;
     NSLog(@"MainRunLoop---%@",[NSThread currentThread]);
     switch (activity) {
         case kCFRunLoopEntry:
@@ -107,18 +97,19 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
     }
 }
 
+
 static void runLoopTimerCallBack(CFRunLoopTimerRef timer, void *info)
 {
     RefreshMonitor *monitor = (__bridge RefreshMonitor*)info;
     if (!monitor.excuting) {
         return;
     }
-    
+
     // 如果主线程正在执行任务，并且这一次loop 执行到 现在还没执行完，那就需要计算时间差
     NSTimeInterval excuteTime = [[NSDate date] timeIntervalSinceDate:monitor.startDate];
     NSLog(@"定时器---%@",[NSThread currentThread]);
     NSLog(@"主线程执行了---%f秒",excuteTime);
-    
+
     if (excuteTime >= 0.01) {
         NSLog(@"线程卡顿了%f秒",excuteTime);
         [monitor handleStackInfo];
@@ -127,7 +118,7 @@ static void runLoopTimerCallBack(CFRunLoopTimerRef timer, void *info)
 
 // 卡屏操作
 - (void)handleStackInfo{
-    
+
 }
 
 @end

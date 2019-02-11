@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RefreshMonitor : NSObject
 SingletonH(RefreshMonitor)
-- (void)start;
+- (void)startObserver;
 @end
 
 NS_ASSUME_NONNULL_END
