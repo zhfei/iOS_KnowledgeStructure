@@ -14,6 +14,7 @@
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
+		9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 9131C64C22130A0100BD70DC /* iOS Struckture.xmind */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -110,6 +111,7 @@
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		9123EC64220DDBA800E5334D /* RefreshMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshMonitor.h; sourceTree = "<group>"; };
 		9123EC65220DDBA800E5334D /* RefreshMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshMonitor.m; sourceTree = "<group>"; };
+		9131C64C22130A0100BD70DC /* iOS Struckture.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS Struckture.xmind"; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -298,6 +300,14 @@
 			path = "字符串引用技术";
 			sourceTree = "<group>";
 		};
+		9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */ = {
+			isa = PBXGroup;
+			children = (
+				9131C64C22130A0100BD70DC /* iOS Struckture.xmind */,
+			);
+			path = "iOS_Stucture_XMind图";
+			sourceTree = "<group>";
+		};
 		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +437,7 @@
 		917B78CC2189F5B000425A05 = {
 			isa = PBXGroup;
 			children = (
+				9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */,
 				917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */,
 				917B78F02189F5B200425A05 /* iOS_KnowledgeStructureTests */,
 				917B78FB2189F5B200425A05 /* iOS_KnowledgeStructureUITests */,
@@ -711,6 +722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
+				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
