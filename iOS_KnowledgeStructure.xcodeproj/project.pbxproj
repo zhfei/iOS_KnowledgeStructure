@@ -14,6 +14,8 @@
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
+		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
+		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
 		9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 9131C64C22130A0100BD70DC /* iOS Struckture.xmind */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
@@ -111,6 +113,9 @@
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		9123EC64220DDBA800E5334D /* RefreshMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshMonitor.h; sourceTree = "<group>"; };
 		9123EC65220DDBA800E5334D /* RefreshMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshMonitor.m; sourceTree = "<group>"; };
+		912ED33322154582004F6C05 /* CustomNavigationBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarVC.h; sourceTree = "<group>"; };
+		912ED33422154582004F6C05 /* CustomNavigationBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarVC.m; sourceTree = "<group>"; };
+		912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarVC.xib; sourceTree = "<group>"; };
 		9131C64C22130A0100BD70DC /* iOS Struckture.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS Struckture.xmind"; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
@@ -300,6 +305,16 @@
 			path = "字符串引用技术";
 			sourceTree = "<group>";
 		};
+		912ED33222154554004F6C05 /* 自定义NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				912ED33322154582004F6C05 /* CustomNavigationBarVC.h */,
+				912ED33422154582004F6C05 /* CustomNavigationBarVC.m */,
+				912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */,
+			);
+			path = "自定义NavigationBar";
+			sourceTree = "<group>";
+		};
 		9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +475,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				912ED33222154554004F6C05 /* 自定义NavigationBar */,
 				915106F2220425A200F9EF5D /* RunLoop点滴 */,
 				9193496E2201D5FE00338639 /* Runtime点滴 */,
 				9193496A2200AE1200338639 /* Xtrace函数调用追踪 */,
@@ -727,6 +743,7 @@
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
+				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
@@ -797,6 +814,7 @@
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
 				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
+				912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */,
 				9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,

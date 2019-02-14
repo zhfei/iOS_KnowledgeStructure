@@ -81,7 +81,9 @@ class MainTableViewController: UITableViewController {
         case 10:
             let vc = RunLoopViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-
+        case 11:
+            let vc = CustomNavigationBarVC()
+            self.navigationController?.pushViewController(vc, animated: true)
             
         default:
             print("未知...")
