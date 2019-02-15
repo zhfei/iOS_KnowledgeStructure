@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */; };
+		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
+		910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28752216F8F90028AB55 /* ArrayFilterPerson.m */; };
 		9113976921DF3F4600916D59 /* block_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9113976821DF3F4600916D59 /* block_VC.m */; };
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
@@ -14,6 +17,7 @@
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
+		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
 		9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 9131C64C22130A0100BD70DC /* iOS Struckture.xmind */; };
@@ -99,6 +103,11 @@
 
 /* Begin PBXFileReference section */
 		88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		910F286F2216F8980028AB55 /* ArrayFiltrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewController.h; sourceTree = "<group>"; };
+		910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFiltrateViewController.m; sourceTree = "<group>"; };
+		910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayFiltrateViewController.xib; sourceTree = "<group>"; };
+		910F28742216F8F90028AB55 /* ArrayFilterPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFilterPerson.h; sourceTree = "<group>"; };
+		910F28752216F8F90028AB55 /* ArrayFilterPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFilterPerson.m; sourceTree = "<group>"; };
 		9113976721DF3F4600916D59 /* block_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block_VC.h; sourceTree = "<group>"; };
 		9113976821DF3F4600916D59 /* block_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = block_VC.m; sourceTree = "<group>"; };
 		911976E521D3DA26000DD669 /* UnkonwMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnkonwMessageVC.h; sourceTree = "<group>"; };
@@ -113,6 +122,8 @@
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		9123EC64220DDBA800E5334D /* RefreshMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshMonitor.h; sourceTree = "<group>"; };
 		9123EC65220DDBA800E5334D /* RefreshMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshMonitor.m; sourceTree = "<group>"; };
+		912C58DD2216FA7400839F0B /* ArrayFiltrateViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewModel.h; sourceTree = "<group>"; };
+		912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFiltrateViewModel.m; sourceTree = "<group>"; };
 		912ED33322154582004F6C05 /* CustomNavigationBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarVC.h; sourceTree = "<group>"; };
 		912ED33422154582004F6C05 /* CustomNavigationBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarVC.m; sourceTree = "<group>"; };
 		912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarVC.xib; sourceTree = "<group>"; };
@@ -263,6 +274,20 @@
 				88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		910F286E2216F85E0028AB55 /* 数组筛选Predicate */ = {
+			isa = PBXGroup;
+			children = (
+				910F286F2216F8980028AB55 /* ArrayFiltrateViewController.h */,
+				910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */,
+				910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */,
+				910F28742216F8F90028AB55 /* ArrayFilterPerson.h */,
+				910F28752216F8F90028AB55 /* ArrayFilterPerson.m */,
+				912C58DD2216FA7400839F0B /* ArrayFiltrateViewModel.h */,
+				912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */,
+			);
+			path = "数组筛选Predicate";
 			sourceTree = "<group>";
 		};
 		9113976621DF3F2800916D59 /* block_VC */ = {
@@ -475,6 +500,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				910F286E2216F85E0028AB55 /* 数组筛选Predicate */,
 				912ED33222154554004F6C05 /* 自定义NavigationBar */,
 				915106F2220425A200F9EF5D /* RunLoop点滴 */,
 				9193496E2201D5FE00338639 /* Runtime点滴 */,
@@ -738,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
+				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
@@ -794,8 +821,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				916957B021DE214D0026EB3A /* main_int.cpp in Sources */,
+				912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */,
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */,
+				910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */,
 				916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
@@ -840,6 +869,7 @@
 				915C829921B22AC400A7567B /* HybirdViewController.m in Sources */,
 				919349762201EF0B00338639 /* RuntimeApply1.m in Sources */,
 				9153C03C21FC4F1100BBAAED /* LocationManager.m in Sources */,
+				910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */,
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,

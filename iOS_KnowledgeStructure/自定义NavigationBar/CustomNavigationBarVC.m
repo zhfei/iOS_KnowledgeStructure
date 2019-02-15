@@ -83,7 +83,7 @@
 }
 
 - (void)setupLayout {
-    
+     NSPredicate *predice =[NSPredicate predicateWithFormat:@""];
 }
 
 - (void)setupData {
