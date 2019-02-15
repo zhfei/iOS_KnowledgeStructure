@@ -16,4 +16,8 @@
     return p;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"name:%@---age:%d",self.name,self.age];
+}
+
 @end

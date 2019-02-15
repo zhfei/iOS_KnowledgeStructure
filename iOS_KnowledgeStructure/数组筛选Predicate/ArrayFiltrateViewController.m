@@ -20,6 +20,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self setupUI];
+}
+
 #pragma mark - Getter, Setter
 
 #pragma mark - Event
@@ -28,9 +32,10 @@
 
 #pragma mark - Private Method
 - (void)setupUI {
-    NSPredicate *predice =[NSPredicate predicateWithFormat:@""];
+    NSPredicate *predice =[NSPredicate predicateWithFormat:@"age<%d",30];
     
     NSArray *dataSource = [ArrayFiltrateViewModel dataSource];
+    NSLog(@"result:%@",[dataSource filteredArrayUsingPredicate:predice]);
 
 }
 
