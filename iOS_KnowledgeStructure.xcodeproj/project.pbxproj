@@ -21,6 +21,8 @@
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
 		9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 9131C64C22130A0100BD70DC /* iOS Struckture.xmind */; };
+		913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833932219A71F00AE68F0 /* LifeCycleViewController.m */; };
+		913833962219A71F00AE68F0 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913833942219A71F00AE68F0 /* LifeCycleViewController.xib */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -128,6 +130,9 @@
 		912ED33422154582004F6C05 /* CustomNavigationBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarVC.m; sourceTree = "<group>"; };
 		912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarVC.xib; sourceTree = "<group>"; };
 		9131C64C22130A0100BD70DC /* iOS Struckture.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS Struckture.xmind"; sourceTree = "<group>"; };
+		913833922219A71F00AE68F0 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
+		913833932219A71F00AE68F0 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
+		913833942219A71F00AE68F0 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -348,6 +353,16 @@
 			path = "iOS_Stucture_XMind图";
 			sourceTree = "<group>";
 		};
+		913833912219A6D700AE68F0 /* VC生命周期 */ = {
+			isa = PBXGroup;
+			children = (
+				913833922219A71F00AE68F0 /* LifeCycleViewController.h */,
+				913833932219A71F00AE68F0 /* LifeCycleViewController.m */,
+				913833942219A71F00AE68F0 /* LifeCycleViewController.xib */,
+			);
+			path = "VC生命周期";
+			sourceTree = "<group>";
+		};
 		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +515,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				913833912219A6D700AE68F0 /* VC生命周期 */,
 				910F286E2216F85E0028AB55 /* 数组筛选Predicate */,
 				912ED33222154554004F6C05 /* 自定义NavigationBar */,
 				915106F2220425A200F9EF5D /* RunLoop点滴 */,
@@ -773,6 +789,7 @@
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
+				913833962219A71F00AE68F0 /* LifeCycleViewController.xib in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
 			);
@@ -836,6 +853,7 @@
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */,
 				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,
+				913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */,
 				916957AD21DE214D0026EB3A /* main2.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
