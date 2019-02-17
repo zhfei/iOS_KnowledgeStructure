@@ -7,6 +7,8 @@
 //
 
 #import "LifeCycleViewController.h"
+#import "LiftCycleHeader.h"
+
 
 @interface LifeCycleViewController ()
 
@@ -51,6 +53,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    LiftCycleHeader *liftCycyle = [LiftCycleHeader liftCycleHeader];
 }
 
 - (void)dealloc {
