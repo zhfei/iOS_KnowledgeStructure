@@ -13,20 +13,48 @@
 @end
 
 @implementation LifeCycleViewController
+//nib文件(xib,storyBoard)加载过程
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        NSLog(@"%@",NSStringFromSelector(_cmd));
+    }
+    return self;
+}
+
+- (void)awakeFromNib {
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+
+//-------------------------------------------------------
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        NSLog(@"%@",NSStringFromSelector(_cmd));
+    }
+    return self;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        NSLog(@"%@",NSStringFromSelector(_cmd));
+    }
+    return self;
+}
+
+- (void)loadView {
+    [super loadView];
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dealloc {
+    NSLog(@"%@",NSStringFromSelector(_cmd));
 }
-*/
 
 @end

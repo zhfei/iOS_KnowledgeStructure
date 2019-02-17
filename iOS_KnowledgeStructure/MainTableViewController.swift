@@ -87,6 +87,10 @@ class MainTableViewController: UITableViewController {
         case 12:
             let vc = ArrayFiltrateViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 13:
+            let vc = LifeCycleViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
             
         default:
             print("未知...")
