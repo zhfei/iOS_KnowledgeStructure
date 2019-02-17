@@ -8,7 +8,8 @@
 
 #import "LifeCycleViewController.h"
 #import "LiftCycleHeader.h"
-
+#import <Masonry.h>
+#import "LiftCycleCell.h"
 
 @interface LifeCycleViewController ()
 
@@ -56,7 +57,20 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.view.backgroundColor = [UIColor whiteColor];
     LiftCycleHeader *liftCycyle = [LiftCycleHeader liftCycleHeader];
+    [liftCycyle setFrame:CGRectMake(20, 20, 100, 50)];
+    
+    [self.view addSubview:liftCycyle];
+//    [liftCycyle mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(100, 50));
+//        make.left.top.mas_equalTo(20);
+//    }];
+    
+
+    LiftCycleCell *cell = [[LiftCycleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    [self.view addSubview:cell];
+    NSLog(@"cell:%@",cell);
 }
 
 - (void)dealloc {

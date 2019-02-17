@@ -25,6 +25,8 @@
 		913833962219A71F00AE68F0 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913833942219A71F00AE68F0 /* LifeCycleViewController.xib */; };
 		913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833982219B13D00AE68F0 /* LiftCycleHeader.m */; };
 		9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */; };
+		9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138339D2219B6C300AE68F0 /* LiftCycleCell.m */; };
+		913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -138,6 +140,9 @@
 		913833972219B13D00AE68F0 /* LiftCycleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiftCycleHeader.h; sourceTree = "<group>"; };
 		913833982219B13D00AE68F0 /* LiftCycleHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiftCycleHeader.m; sourceTree = "<group>"; };
 		9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiftCycleHeader.xib; sourceTree = "<group>"; };
+		9138339C2219B6C300AE68F0 /* LiftCycleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiftCycleCell.h; sourceTree = "<group>"; };
+		9138339D2219B6C300AE68F0 /* LiftCycleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiftCycleCell.m; sourceTree = "<group>"; };
+		9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiftCycleCell.xib; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -367,6 +372,9 @@
 				913833972219B13D00AE68F0 /* LiftCycleHeader.h */,
 				913833982219B13D00AE68F0 /* LiftCycleHeader.m */,
 				9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */,
+				9138339C2219B6C300AE68F0 /* LiftCycleCell.h */,
+				9138339D2219B6C300AE68F0 /* LiftCycleCell.m */,
+				9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */,
 			);
 			path = "VC生命周期";
 			sourceTree = "<group>";
@@ -788,6 +796,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
+				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
@@ -897,6 +906,7 @@
 				919349762201EF0B00338639 /* RuntimeApply1.m in Sources */,
 				9153C03C21FC4F1100BBAAED /* LocationManager.m in Sources */,
 				910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */,
+				9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */,
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,

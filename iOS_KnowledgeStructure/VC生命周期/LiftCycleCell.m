@@ -1,14 +1,15 @@
 //
-//  LiftCycleHeader.m
+//  LiftCycleCell.m
 //  iOS_KnowledgeStructure
 //
 //  Created by 周飞 on 2019/2/17.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
-#import "LiftCycleHeader.h"
+#import "LiftCycleCell.h"
 
-@implementation LiftCycleHeader
+@implementation LiftCycleCell
+
 //nib文件(xib,storyBoard)加载过程
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
@@ -30,10 +31,11 @@
     return self;
 }
 
-+ (instancetype)liftCycleHeader {
-    LiftCycleHeader *header = [[NSBundle mainBundle] loadNibNamed:@"LiftCycleHeader" owner:nil options:nil][0];
-    return header;
-}
 
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
 
 @end

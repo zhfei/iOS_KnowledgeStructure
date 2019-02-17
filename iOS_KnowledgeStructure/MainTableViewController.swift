@@ -88,7 +88,7 @@ class MainTableViewController: UITableViewController {
             let vc = ArrayFiltrateViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 13:
-            let vc = LifeCycleViewController()
+            let vc = LifeCycleViewController(nibName: "LifeCycleViewController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
             
             
