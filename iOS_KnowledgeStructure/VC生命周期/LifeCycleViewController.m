@@ -10,6 +10,9 @@
 #import "LiftCycleHeader.h"
 #import <Masonry.h>
 #import "LiftCycleCell.h"
+#import "RedBallButton.h"
+#import <BottomComponentLib/UIImage+Custom.h>
+
 
 @interface LifeCycleViewController ()
 
@@ -72,6 +75,16 @@
     LiftCycleCell *cell = [[LiftCycleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     [self.view addSubview:cell];
     NSLog(@"cell:%@",cell);
+    
+    RedBallButton *btn = [[RedBallButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [btn setBackgroundColor:[UIColor blueColor]];
+    [btn setTitle:@"99" forState:UIControlStateNormal];
+    UIImage *gray = [UIImage pureImageWithColor:[UIColor lightGrayColor]];
+    [btn setImage:gray forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    
+
+
 }
 
 - (void)dealloc {

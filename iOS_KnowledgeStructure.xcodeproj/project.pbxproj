@@ -32,6 +32,7 @@
 		913833B5221A922100AE68F0 /* HitTestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B4221A922100AE68F0 /* HitTestSubView.m */; };
 		913833B9221A945F00AE68F0 /* HitTestScrollViewSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B8221A945F00AE68F0 /* HitTestScrollViewSuperView.m */; };
 		913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833BB221A947A00AE68F0 /* HitTestScrollView.m */; };
+		913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833BE221AB05500AE68F0 /* RedBallButton.m */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -158,6 +159,8 @@
 		913833B8221A945F00AE68F0 /* HitTestScrollViewSuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestScrollViewSuperView.m; sourceTree = "<group>"; };
 		913833BA221A947A00AE68F0 /* HitTestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestScrollView.h; sourceTree = "<group>"; };
 		913833BB221A947A00AE68F0 /* HitTestScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestScrollView.m; sourceTree = "<group>"; };
+		913833BD221AB05500AE68F0 /* RedBallButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedBallButton.h; sourceTree = "<group>"; };
+		913833BE221AB05500AE68F0 /* RedBallButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedBallButton.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -390,6 +393,8 @@
 				9138339C2219B6C300AE68F0 /* LiftCycleCell.h */,
 				9138339D2219B6C300AE68F0 /* LiftCycleCell.m */,
 				9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */,
+				913833BD221AB05500AE68F0 /* RedBallButton.h */,
+				913833BE221AB05500AE68F0 /* RedBallButton.m */,
 			);
 			path = "VC生命周期";
 			sourceTree = "<group>";
@@ -947,6 +952,7 @@
 				913833B9221A945F00AE68F0 /* HitTestScrollViewSuperView.m in Sources */,
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
+				913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
 				9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */,
