@@ -27,6 +27,7 @@
 		9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */; };
 		9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138339D2219B6C300AE68F0 /* LiftCycleCell.m */; };
 		913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */; };
+		913833AE221A8F9900AE68F0 /* HitTestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833AD221A8F9900AE68F0 /* HitTestButton.m */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -143,6 +144,8 @@
 		9138339C2219B6C300AE68F0 /* LiftCycleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiftCycleCell.h; sourceTree = "<group>"; };
 		9138339D2219B6C300AE68F0 /* LiftCycleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiftCycleCell.m; sourceTree = "<group>"; };
 		9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiftCycleCell.xib; sourceTree = "<group>"; };
+		913833AC221A8F9900AE68F0 /* HitTestButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestButton.h; sourceTree = "<group>"; };
+		913833AD221A8F9900AE68F0 /* HitTestButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestButton.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -379,6 +382,15 @@
 			path = "VC生命周期";
 			sourceTree = "<group>";
 		};
+		913833AB221A8F7200AE68F0 /* (小btn问题)扩展Btn的响应范围 */ = {
+			isa = PBXGroup;
+			children = (
+				913833AC221A8F9900AE68F0 /* HitTestButton.h */,
+				913833AD221A8F9900AE68F0 /* HitTestButton.m */,
+			);
+			path = "(小btn问题)扩展Btn的响应范围";
+			sourceTree = "<group>";
+		};
 		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +443,7 @@
 		9154487021E593C500A90A14 /* 事件传输链和响应 */ = {
 			isa = PBXGroup;
 			children = (
+				913833AB221A8F7200AE68F0 /* (小btn问题)扩展Btn的响应范围 */,
 				9154487621E597D900A90A14 /* PinkView.h */,
 				9154487721E597D900A90A14 /* PinkView.m */,
 				9154487921E597F400A90A14 /* BlueView.h */,
@@ -898,6 +911,7 @@
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
 				9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */,
 				916957B121DE214D0026EB3A /* main_Array.cpp in Sources */,
+				913833AE221A8F9900AE68F0 /* HitTestButton.m in Sources */,
 				917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */,
 				916957B221DE214D0026EB3A /* main4.m in Sources */,
 				916957AF21DE214D0026EB3A /* main1.m in Sources */,
