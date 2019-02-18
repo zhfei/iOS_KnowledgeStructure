@@ -30,6 +30,8 @@
 		913833AE221A8F9900AE68F0 /* HitTestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833AD221A8F9900AE68F0 /* HitTestButton.m */; };
 		913833B2221A920300AE68F0 /* HitTestSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B1221A920300AE68F0 /* HitTestSuperView.m */; };
 		913833B5221A922100AE68F0 /* HitTestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B4221A922100AE68F0 /* HitTestSubView.m */; };
+		913833B9221A945F00AE68F0 /* HitTestScrollViewSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B8221A945F00AE68F0 /* HitTestScrollViewSuperView.m */; };
+		913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833BB221A947A00AE68F0 /* HitTestScrollView.m */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -152,6 +154,10 @@
 		913833B1221A920300AE68F0 /* HitTestSuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestSuperView.m; sourceTree = "<group>"; };
 		913833B3221A922100AE68F0 /* HitTestSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestSubView.h; sourceTree = "<group>"; };
 		913833B4221A922100AE68F0 /* HitTestSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestSubView.m; sourceTree = "<group>"; };
+		913833B7221A945F00AE68F0 /* HitTestScrollViewSuperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestScrollViewSuperView.h; sourceTree = "<group>"; };
+		913833B8221A945F00AE68F0 /* HitTestScrollViewSuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestScrollViewSuperView.m; sourceTree = "<group>"; };
+		913833BA221A947A00AE68F0 /* HitTestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestScrollView.h; sourceTree = "<group>"; };
+		913833BB221A947A00AE68F0 /* HitTestScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestScrollView.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -408,6 +414,17 @@
 			path = "子View边界超出父View问题";
 			sourceTree = "<group>";
 		};
+		913833B6221A93FB00AE68F0 /* 手指在ScrollView范围外滑动问题 */ = {
+			isa = PBXGroup;
+			children = (
+				913833B7221A945F00AE68F0 /* HitTestScrollViewSuperView.h */,
+				913833B8221A945F00AE68F0 /* HitTestScrollViewSuperView.m */,
+				913833BA221A947A00AE68F0 /* HitTestScrollView.h */,
+				913833BB221A947A00AE68F0 /* HitTestScrollView.m */,
+			);
+			path = "手指在ScrollView范围外滑动问题";
+			sourceTree = "<group>";
+		};
 		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +477,7 @@
 		9154487021E593C500A90A14 /* 事件传输链和响应 */ = {
 			isa = PBXGroup;
 			children = (
+				913833B6221A93FB00AE68F0 /* 手指在ScrollView范围外滑动问题 */,
 				913833AF221A91BE00AE68F0 /* 子View边界超出父View问题 */,
 				913833AB221A8F7200AE68F0 /* (小btn问题)扩展Btn的响应范围 */,
 				9154487621E597D900A90A14 /* PinkView.h */,
@@ -919,12 +937,14 @@
 				9154487E21E5980600A90A14 /* RedView.m in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
 				91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */,
+				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
+				913833B9221A945F00AE68F0 /* HitTestScrollViewSuperView.m in Sources */,
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,
