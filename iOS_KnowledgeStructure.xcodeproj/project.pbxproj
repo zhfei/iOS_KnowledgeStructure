@@ -28,6 +28,8 @@
 		9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138339D2219B6C300AE68F0 /* LiftCycleCell.m */; };
 		913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */; };
 		913833AE221A8F9900AE68F0 /* HitTestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833AD221A8F9900AE68F0 /* HitTestButton.m */; };
+		913833B2221A920300AE68F0 /* HitTestSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B1221A920300AE68F0 /* HitTestSuperView.m */; };
+		913833B5221A922100AE68F0 /* HitTestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B4221A922100AE68F0 /* HitTestSubView.m */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -146,6 +148,10 @@
 		9138339E2219B6C300AE68F0 /* LiftCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiftCycleCell.xib; sourceTree = "<group>"; };
 		913833AC221A8F9900AE68F0 /* HitTestButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestButton.h; sourceTree = "<group>"; };
 		913833AD221A8F9900AE68F0 /* HitTestButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestButton.m; sourceTree = "<group>"; };
+		913833B0221A920300AE68F0 /* HitTestSuperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestSuperView.h; sourceTree = "<group>"; };
+		913833B1221A920300AE68F0 /* HitTestSuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestSuperView.m; sourceTree = "<group>"; };
+		913833B3221A922100AE68F0 /* HitTestSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestSubView.h; sourceTree = "<group>"; };
+		913833B4221A922100AE68F0 /* HitTestSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestSubView.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -391,6 +397,17 @@
 			path = "(小btn问题)扩展Btn的响应范围";
 			sourceTree = "<group>";
 		};
+		913833AF221A91BE00AE68F0 /* 子View边界超出父View问题 */ = {
+			isa = PBXGroup;
+			children = (
+				913833B0221A920300AE68F0 /* HitTestSuperView.h */,
+				913833B1221A920300AE68F0 /* HitTestSuperView.m */,
+				913833B3221A922100AE68F0 /* HitTestSubView.h */,
+				913833B4221A922100AE68F0 /* HitTestSubView.m */,
+			);
+			path = "子View边界超出父View问题";
+			sourceTree = "<group>";
+		};
 		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +460,7 @@
 		9154487021E593C500A90A14 /* 事件传输链和响应 */ = {
 			isa = PBXGroup;
 			children = (
+				913833AF221A91BE00AE68F0 /* 子View边界超出父View问题 */,
 				913833AB221A8F7200AE68F0 /* (小btn问题)扩展Btn的响应范围 */,
 				9154487621E597D900A90A14 /* PinkView.h */,
 				9154487721E597D900A90A14 /* PinkView.m */,
@@ -880,12 +898,14 @@
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
+				913833B2221A920300AE68F0 /* HitTestSuperView.m in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */,
 				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,
 				913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */,
 				916957AD21DE214D0026EB3A /* main2.m in Sources */,
+				913833B5221A922100AE68F0 /* HitTestSubView.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
