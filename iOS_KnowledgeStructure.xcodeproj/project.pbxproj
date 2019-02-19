@@ -36,6 +36,8 @@
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
+		91490062221BF3B400C001A1 /* PickerViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490061221BF3B400C001A1 /* PickerViewViewModel.m */; };
+		91490066221BF53000C001A1 /* PVAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490065221BF53000C001A1 /* PVAreaModel.m */; };
 		9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9149E990221BEF9B00C001A1 /* PickerViewController.m */; };
 		9149E993221BEF9B00C001A1 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9149E991221BEF9B00C001A1 /* PickerViewController.xib */; };
 		9149F4FB221BF30C00C001A1 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9149E995221BF2F200C001A1 /* list.plist */; };
@@ -169,6 +171,10 @@
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
 		913B2B9A21FDBC4F00840EDA /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
 		913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
+		91490060221BF3B400C001A1 /* PickerViewViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewViewModel.h; sourceTree = "<group>"; };
+		91490061221BF3B400C001A1 /* PickerViewViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewViewModel.m; sourceTree = "<group>"; };
+		91490064221BF53000C001A1 /* PVAreaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVAreaModel.h; sourceTree = "<group>"; };
+		91490065221BF53000C001A1 /* PVAreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVAreaModel.m; sourceTree = "<group>"; };
 		9149E98F221BEF9B00C001A1 /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		9149E990221BEF9B00C001A1 /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		9149E991221BEF9B00C001A1 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
@@ -449,13 +455,25 @@
 			path = "照片的保存和访问";
 			sourceTree = "<group>";
 		};
+		91490063221BF4E300C001A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91490064221BF53000C001A1 /* PVAreaModel.h */,
+				91490065221BF53000C001A1 /* PVAreaModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9149E98E221BEE4F00C001A1 /* 省市区街道选择 */ = {
 			isa = PBXGroup;
 			children = (
+				91490063221BF4E300C001A1 /* Models */,
 				9149E994221BF2C900C001A1 /* resource */,
 				9149E98F221BEF9B00C001A1 /* PickerViewController.h */,
 				9149E990221BEF9B00C001A1 /* PickerViewController.m */,
 				9149E991221BEF9B00C001A1 /* PickerViewController.xib */,
+				91490060221BF3B400C001A1 /* PickerViewViewModel.h */,
+				91490061221BF3B400C001A1 /* PickerViewViewModel.m */,
 			);
 			path = "省市区街道选择";
 			sourceTree = "<group>";
@@ -949,6 +967,7 @@
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
+				91490062221BF3B400C001A1 /* PickerViewViewModel.m in Sources */,
 				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
 				9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */,
 				913833B2221A920300AE68F0 /* HitTestSuperView.m in Sources */,
@@ -961,6 +980,7 @@
 				913833B5221A922100AE68F0 /* HitTestSubView.m in Sources */,
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
+				91490066221BF53000C001A1 /* PVAreaModel.m in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
