@@ -54,7 +54,7 @@
     [self.view addSubview:self.picker];
     [self.picker mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(0);
-        make.height.mas_equalTo(260);
+        make.height.mas_equalTo(220);
     }];
 }
 
