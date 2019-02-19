@@ -90,6 +90,9 @@ class MainTableViewController: UITableViewController {
         case 13:
             let vc = LifeCycleViewController(nibName: "LifeCycleViewController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
+        case 14:
+            let vc = PickerViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
             
             
         default:

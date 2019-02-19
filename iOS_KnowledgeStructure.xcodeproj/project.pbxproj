@@ -36,6 +36,9 @@
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
+		9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9149E990221BEF9B00C001A1 /* PickerViewController.m */; };
+		9149E993221BEF9B00C001A1 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9149E991221BEF9B00C001A1 /* PickerViewController.xib */; };
+		9149F4FB221BF30C00C001A1 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9149E995221BF2F200C001A1 /* list.plist */; };
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
 		914BA0C321B5049100150992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C221B5049100150992 /* Person.m */; };
@@ -166,6 +169,10 @@
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
 		913B2B9A21FDBC4F00840EDA /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
 		913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
+		9149E98F221BEF9B00C001A1 /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		9149E990221BEF9B00C001A1 /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		9149E991221BEF9B00C001A1 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		9149E995221BF2F200C001A1 /* list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = list.plist; sourceTree = "<group>"; };
 		914BA0BA21B4D54D00150992 /* ProgressWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindow.h; sourceTree = "<group>"; };
 		914BA0BB21B4D54D00150992 /* ProgressWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindow.m; sourceTree = "<group>"; };
 		914BA0BD21B4D56200150992 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
@@ -442,6 +449,25 @@
 			path = "照片的保存和访问";
 			sourceTree = "<group>";
 		};
+		9149E98E221BEE4F00C001A1 /* 省市区街道选择 */ = {
+			isa = PBXGroup;
+			children = (
+				9149E994221BF2C900C001A1 /* resource */,
+				9149E98F221BEF9B00C001A1 /* PickerViewController.h */,
+				9149E990221BEF9B00C001A1 /* PickerViewController.m */,
+				9149E991221BEF9B00C001A1 /* PickerViewController.xib */,
+			);
+			path = "省市区街道选择";
+			sourceTree = "<group>";
+		};
+		9149E994221BF2C900C001A1 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9149E995221BF2F200C001A1 /* list.plist */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		914BA0C021B5046900150992 /* Category源码分析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +611,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9149E98E221BEE4F00C001A1 /* 省市区街道选择 */,
 				913833912219A6D700AE68F0 /* VC生命周期 */,
 				910F286E2216F85E0028AB55 /* 数组筛选Predicate */,
 				912ED33222154554004F6C05 /* 自定义NavigationBar */,
@@ -855,12 +882,14 @@
 				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
+				9149E993221BEF9B00C001A1 /* PickerViewController.xib in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
+				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
 				913833962219A71F00AE68F0 /* LifeCycleViewController.xib in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
@@ -921,6 +950,7 @@
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
+				9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */,
 				913833B2221A920300AE68F0 /* HitTestSuperView.m in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
