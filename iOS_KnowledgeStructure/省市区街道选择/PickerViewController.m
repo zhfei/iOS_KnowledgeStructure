@@ -28,7 +28,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     
-    self.dataSource = [PickerViewViewModel dataSource];
+    
 }
 
 #pragma mark - Getter, Setter
@@ -40,8 +40,6 @@
         _picker.showsSelectionIndicator = YES;
         CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
         CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
-        
-        [_picker setFrame:CGRectMake(0, 200, widthS, 200)];
     }
     return _picker;
 }
@@ -65,7 +63,8 @@
 }
 
 - (void)setupData {
-    
+    self.dataSource = [PickerViewViewModel dataSource];
+    [self.picker reloadAllComponents];
 }
 
 - (void)resetUI {
@@ -86,11 +85,19 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     if (component == 0) {
         return [self.dataSource[row] name];
-    }else{
+    } else if (component == 1) {
         NSInteger selectedRow = [pickerView selectedRowInComponent:0];
         NSArray *arr = [[self.dataSource objectAtIndex:selectedRow] datas];
-        
         return [[arr objectAtIndex:row] name];
+    } else {
+        NSInteger selectedRow0 = [pickerView selectedRowInComponent:0];
+        NSInteger selectedRow1 = [pickerView selectedRowInComponent:1];
+        NSArray *arr = [[[[self.dataSource objectAtIndex:selectedRow0] datas] objectAtIndex:selectedRow1] datas];
+        if (row+1 > [arr count]) {
+            return @"";
+        } else {
+            return [[arr objectAtIndex:row] name];
+        }
     }
 }
 
@@ -119,7 +126,17 @@
 
 // returns the # of rows in each component..
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return 10;
+    if (component == 0) {
+        return [self.dataSource count];
+    } else if (component == 1) {
+        NSInteger selectedRow = [pickerView selectedRowInComponent:0];
+        NSArray *arr = [[self.dataSource objectAtIndex:selectedRow] datas];
+        return [arr count];
+    } else {
+        NSInteger selectedRow = [pickerView selectedRowInComponent:1];
+        NSArray *arr = [[[[self.dataSource objectAtIndex:selectedRow] datas] objectAtIndex:selectedRow] datas];
+        return [arr count];
+    }
 }
 
 /** 当选择某一个列中的某一行的时候会调用该方法 */
@@ -130,10 +147,11 @@
         //在执行完这句代码之后, 会重新计算第 1 列的行数, 重新加载第 1 列的标题内容
         [pickerView reloadComponent:1];//重新加载指定列的数据
         [pickerView selectRow:0 inComponent:1 animated:YES];
-        //
-        
-        //重新加载数据
-        //[pickerView reloadAllComponents];
+        [pickerView reloadComponent:2];//重新加载指定列的数据
+        [pickerView selectRow:0 inComponent:2 animated:YES];
+    } else if (component == 1) {
+        [pickerView reloadComponent:2];//重新加载指定列的数据
+        [pickerView selectRow:0 inComponent:2 animated:YES];
     }
 }
 #pragma mark - NSCopying

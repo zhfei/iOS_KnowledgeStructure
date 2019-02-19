@@ -10,11 +10,11 @@
 
 @implementation PVAreaModel
 - (NSString *)num {
-    return [self.location substringToIndex:5];
+    return [self.location substringToIndex:6];
 }
 
 - (NSString *)name {
-    return [self.location substringFromIndex:5];
+    return [self.location substringFromIndex:6];
 }
 @end
 
