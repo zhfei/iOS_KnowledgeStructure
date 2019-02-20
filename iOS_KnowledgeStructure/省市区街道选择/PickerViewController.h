@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PickerViewViewModel.h"
+#import "RegionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PickerViewController : UIViewController
-
+@property (nonatomic, strong) NSArray <PVAreaModel *>* dataSource;
+@property (nonatomic, strong) NSArray <RegionModel *>* dataSource2;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PickerViewViewModel : NSObject
 + (NSArray <PVAreaModel *> *)dataSource;
-+ (NSArray *)dataSource2;
++ (NSArray <RegionModel *> *)dataSource2;
 @end
 
 NS_ASSUME_NONNULL_END

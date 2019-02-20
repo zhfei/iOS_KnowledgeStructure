@@ -45,14 +45,13 @@
 
 
 
-+ (NSArray *)dataSource2 {
++ (NSArray <RegionModel *> *)dataSource2 {
     NSArray *cities = [self readLocalJsonFileWithName:@"cities"];
     NSMutableArray *arrayM = @[].mutableCopy;
     [cities enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         RegionModel *model = [RegionModel modelWithDictionary:obj];
         [arrayM addObject:model];
     }];
-    NSLog(@"arrayM:%@",arrayM);
     return arrayM;
 }
 @end

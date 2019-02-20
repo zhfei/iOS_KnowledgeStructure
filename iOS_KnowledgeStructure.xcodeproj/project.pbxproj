@@ -95,6 +95,7 @@
 		91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 91934981220202A200338639 /* RuntimePerson4jsonDict.m */; };
 		91A4A76B221CFFF50070DE6D /* RegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4A76A221CFFF50070DE6D /* RegionModel.m */; };
 		91A4A76D221D03F90070DE6D /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 91A4A76C221D03F80070DE6D /* cities.json */; };
+		91A4A770221D075A0070DE6D /* PickerViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4A76F221D075A0070DE6D /* PickerViewController+delegate.m */; };
 		91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */; };
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
@@ -273,6 +274,8 @@
 		91A4A769221CFFF50070DE6D /* RegionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegionModel.h; sourceTree = "<group>"; };
 		91A4A76A221CFFF50070DE6D /* RegionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegionModel.m; sourceTree = "<group>"; };
 		91A4A76C221D03F80070DE6D /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		91A4A76E221D075A0070DE6D /* PickerViewController+delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickerViewController+delegate.h"; sourceTree = "<group>"; };
+		91A4A76F221D075A0070DE6D /* PickerViewController+delegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PickerViewController+delegate.m"; sourceTree = "<group>"; };
 		91A800208392FC65C632F464 /* Pods-iOS_KnowledgeStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.release.xcconfig"; sourceTree = "<group>"; };
 		91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderEncoderVC.swift; sourceTree = "<group>"; };
 		91ACEA9821A446F300249FA8 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
@@ -478,6 +481,8 @@
 				9149E994221BF2C900C001A1 /* resource */,
 				9149E98F221BEF9B00C001A1 /* PickerViewController.h */,
 				9149E990221BEF9B00C001A1 /* PickerViewController.m */,
+				91A4A76E221D075A0070DE6D /* PickerViewController+delegate.h */,
+				91A4A76F221D075A0070DE6D /* PickerViewController+delegate.m */,
 				9149E991221BEF9B00C001A1 /* PickerViewController.xib */,
 				91490060221BF3B400C001A1 /* PickerViewViewModel.h */,
 				91490061221BF3B400C001A1 /* PickerViewViewModel.m */,
@@ -1022,6 +1027,7 @@
 				916957B221DE214D0026EB3A /* main4.m in Sources */,
 				916957AF21DE214D0026EB3A /* main1.m in Sources */,
 				9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */,
+				91A4A770221D075A0070DE6D /* PickerViewController+delegate.m in Sources */,
 				915C829921B22AC400A7567B /* HybirdViewController.m in Sources */,
 				919349762201EF0B00338639 /* RuntimeApply1.m in Sources */,
 				9153C03C21FC4F1100BBAAED /* LocationManager.m in Sources */,
