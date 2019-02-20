@@ -8,8 +8,6 @@
 
 #import "PickerViewController+delegate.h"
 
-
-
 @implementation PickerViewController (delegate)
 #pragma mark - Delegate
 /** 设置组件中每行的标题row:行 */
@@ -49,6 +47,16 @@
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    RegionModel *model = [self.dataSource2 firstObject];
+    if ([model.children count] == 0) {
+        return 1;
+    }
+    
+    RegionModel *model0 = [model.children firstObject];
+    if ([model0.children count] == 0) {
+        return 2;
+    }
+    
     return 3;
 }
 
@@ -104,17 +112,22 @@
     if (component == 0) {
         //如果滑动的是第 0 列, 刷新第 1 列
         //在执行完这句代码之后, 会重新计算第 1 列的行数, 重新加载第 1 列的标题内容
-        if (row+1 > [self.dataSource2 count]) {
-            [pickerView reloadComponent:0];//重新加载指定列的数据
-            [pickerView selectRow:[self.dataSource2 count]-1 inComponent:0 animated:YES];
+        
+        if ([pickerView numberOfComponents] > 1) {
+            [pickerView reloadComponent:1];//重新加载指定列的数据
+            [pickerView selectRow:0 inComponent:1 animated:YES];
         }
-        [pickerView reloadComponent:1];//重新加载指定列的数据
-        [pickerView selectRow:0 inComponent:1 animated:YES];
-        [pickerView reloadComponent:2];//重新加载指定列的数据
-        [pickerView selectRow:0 inComponent:2 animated:YES];
+        
+        if ([pickerView numberOfComponents] > 2) {
+            [pickerView reloadComponent:2];//重新加载指定列的数据
+            [pickerView selectRow:0 inComponent:2 animated:YES];
+        }
+
     } else if (component == 1) {
-        [pickerView reloadComponent:2];//重新加载指定列的数据
-        [pickerView selectRow:0 inComponent:2 animated:YES];
+        if ([pickerView numberOfComponents] > 2) {
+            [pickerView reloadComponent:2];//重新加载指定列的数据
+            [pickerView selectRow:0 inComponent:2 animated:YES];
+        }
     }
 }
 

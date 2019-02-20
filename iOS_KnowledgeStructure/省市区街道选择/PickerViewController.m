@@ -11,6 +11,9 @@
 
 @interface PickerViewController () <UIPickerViewDataSource,UIPickerViewDelegate>
 @property (nonatomic, strong) UIPickerView *picker;
+@property (nonatomic, strong) UIToolbar *toolbar;
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIView *line;
 
 @end
 
@@ -26,8 +29,6 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    [PickerViewViewModel dataSource2];
-    
 }
 
 #pragma mark - Getter, Setter
@@ -37,12 +38,86 @@
         _picker.delegate = self;
         _picker.dataSource = self;
         _picker.showsSelectionIndicator = YES;
-        CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
-        CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
     }
     return _picker;
 }
+
+- (UIToolbar *)toolbar {
+    if (!_toolbar) {
+        UIToolbar *bar = [[UIToolbar alloc] init];
+        bar.barStyle = UIBarStyleDefault;
+        
+        NSMutableArray *barItems = [NSMutableArray array];
+        UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc] initWithTitle:@"\t取消" style:UIBarButtonItemStylePlain target:self action:@selector(toolBarCanelClick)];
+        [barItems addObject:cancelBtn];
+        // 中间弹簧，将取消、确定分隔在左右两端
+        UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+        [barItems addObject:flexSpace];
+        
+        UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithTitle:@"确定\t" style:UIBarButtonItemStyleDone target:self action:@selector(finishBtnClick:)];
+        // 添加的顺序是从左至右，按顺序来的，并且相隔的距离都很近，不远，但添加弹簧后自适应最适合的位置
+        [barItems addObject:doneBtn];
+        bar.items = barItems;
+        
+        _toolbar = bar;
+    }
+    return _toolbar;
+}
+
+- (UIView *)contentView {
+    if (!_contentView) {
+        _contentView = [UIView new];
+    }
+    return _contentView;
+}
+
+- (UIView *)line {
+    if (!_line) {
+        _line = [UIView new];
+        _line.backgroundColor = [UIColor whiteColor];
+    }
+    return _line;
+}
+
 #pragma mark - Event
+- (void)toolBarCanelClick {
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(244);
+        }];
+        [self.view layoutIfNeeded];
+    }];
+}
+
+- (void)finishBtnClick:(UIBarButtonItem *)sender {
+    
+    NSUInteger count = [self.picker numberOfComponents];
+    NSInteger num = [self.picker selectedRowInComponent:0];
+    RegionModel *model = self.dataSource2[num];
+    for (int i = 1; i < count; i++) {
+        num = [self.picker selectedRowInComponent:i];
+        model = model.children[num];
+    }
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(244);
+        }];
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        if (model.children.count) {
+            self.dataSource2 = model.children;
+            [self.picker reloadAllComponents];
+            [self.picker selectRow:0 inComponent:0 animated:NO];
+            [UIView animateWithDuration:0.5 animations:^{
+                [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.bottom.mas_equalTo(0);
+                }];
+                [self.view layoutIfNeeded];
+            }];
+        }
+    }];
+}
 
 #pragma mark - Public Method
 
@@ -50,10 +125,29 @@
 
 
 - (void)setupUI {
-    [self.view addSubview:self.picker];
+    [self.view addSubview:self.contentView];
+    [self.contentView addSubview:self.picker];
+    [self.contentView addSubview:self.line];
+    [self.contentView addSubview:self.toolbar];
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.mas_equalTo(0);
+        make.height.mas_equalTo(244);
+    }];
+    
+    [self.toolbar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.mas_equalTo(0);
+        make.height.mas_equalTo(44);
+    }];
+    
+    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(0);
+        make.top.equalTo(self.toolbar.mas_bottom);
+        make.height.mas_equalTo(0.5);
+    }];
+    
     [self.picker mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(0);
-        make.height.mas_equalTo(220);
+        make.top.equalTo(self.line.mas_bottom);
     }];
 }
 
