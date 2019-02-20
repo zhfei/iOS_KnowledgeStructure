@@ -12,8 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//num:0表示第一次确定
+//num:1表示第二次确定
+typedef void(^CompleteBlock)(NSString *, NSInteger num);
+
 @interface PickerViewController : UIViewController
-+ (instancetype)showPickerVCIn:(UIViewController *)targetVC;
++ (instancetype)showPickerVC:(CompleteBlock)completeBlock ;
 //- (void)dismiss;
 @end
 

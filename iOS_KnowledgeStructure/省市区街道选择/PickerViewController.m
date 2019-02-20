@@ -6,13 +6,17 @@
 //  Copyright © 2019年 zhf. All rights reserved.
 //
 
+
 #import "PickerViewController.h"
 #import <Masonry.h>
+
+CGFloat const kContentHeigh = 244.0;
+
 
 @interface PickerViewController () <UIPickerViewDataSource,UIPickerViewDelegate>
 @property (nonatomic, strong) NSArray <PVAreaModel *>* dataSource;
 @property (nonatomic, strong) NSArray <RegionModel *>* dataSource2;
-
+@property (nonatomic, copy) CompleteBlock completeBlock;
 @property (nonatomic, strong) UIPickerView *picker;
 @property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) UIView *contentView;
@@ -83,7 +87,7 @@
 - (void)toolBarCanelClick {
     [UIView animateWithDuration:0.5 animations:^{
         [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(244);
+            make.bottom.mas_equalTo(kContentHeigh);
         }];
         [self.view layoutIfNeeded];
     }];
@@ -94,14 +98,21 @@
     NSUInteger count = [self.picker numberOfComponents];
     NSInteger num = [self.picker selectedRowInComponent:0];
     RegionModel *model = self.dataSource2[num];
+    NSMutableString *resStr = model.name.mutableCopy;
     for (int i = 1; i < count; i++) {
         num = [self.picker selectedRowInComponent:i];
         model = model.children[num];
+        [resStr appendString:@" "];
+        [resStr appendString:model.name];
     }
+    if (self.completeBlock) {
+        self.completeBlock(resStr,count>1?0:1);
+    }
+
     
     [UIView animateWithDuration:0.5 animations:^{
         [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(244);
+            make.bottom.mas_equalTo(kContentHeigh);
         }];
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
@@ -122,17 +133,21 @@
 }
 
 #pragma mark - Public Method
-+ (instancetype)showPickerVCIn:(UIViewController *)targetVC {
++ (instancetype)showPickerVC:(CompleteBlock)completeBlock {
     PickerViewController *pickerVC = [[PickerViewController alloc] init];
-    [targetVC addChildViewController:pickerVC];
-    [targetVC.view addSubview:pickerVC.view];
+    pickerVC.completeBlock = completeBlock;
+    
+    id<UIApplicationDelegate>appDelegate = [UIApplication sharedApplication].delegate;
+    UIViewController *rootVC = appDelegate.window.rootViewController;
+    [rootVC addChildViewController:pickerVC];
+    [rootVC.view addSubview:pickerVC.view];
     
     CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
     CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
-    [pickerVC.view setFrame:CGRectMake(0, heightS, widthS, 244)];
+    [pickerVC.view setFrame:CGRectMake(0, heightS, widthS, kContentHeigh)];
     
     [UIView animateWithDuration:0.5 animations:^{
-        [pickerVC.view setFrame:CGRectMake(0, heightS-244, widthS, 244)];
+        [pickerVC.view setFrame:CGRectMake(0, heightS-kContentHeigh, widthS, kContentHeigh)];
     }];
     
     return pickerVC;
@@ -158,7 +173,7 @@
 - (void)setupLayout {
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(0);
-        make.height.mas_equalTo(244);
+        make.height.mas_equalTo(kContentHeigh);
     }];
     
     [self.toolbar mas_makeConstraints:^(MASConstraintMaker *make) {

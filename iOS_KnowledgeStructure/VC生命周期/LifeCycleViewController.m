@@ -83,7 +83,9 @@
     [btn setImage:gray forState:UIControlStateNormal];
     [self.view addSubview:btn];
     
-    [PickerViewController showPickerVCIn:self];
+    [PickerViewController showPickerVC:^(NSString *  res, NSInteger num) {
+        NSLog(@"res:%@--num:%d",res,num);
+    }];
 
 }
 
