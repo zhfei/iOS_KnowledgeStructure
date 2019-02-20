@@ -27,7 +27,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    
+    [PickerViewViewModel dataSource2];
     
 }
 

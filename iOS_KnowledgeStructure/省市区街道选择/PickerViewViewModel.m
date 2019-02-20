@@ -7,6 +7,7 @@
 //
 
 #import "PickerViewViewModel.h"
+#import <YYKit/NSObject+YYModel.h>
 
 @implementation PickerViewViewModel
 + (NSArray <PVAreaModel *> *)dataSource {
@@ -38,5 +39,20 @@
     // 获取文件路径
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
     return [NSDictionary dictionaryWithContentsOfFile:path];;
+}
+
+
+
+
+
++ (NSArray *)dataSource2 {
+    NSArray *cities = [self readLocalJsonFileWithName:@"cities"];
+    NSMutableArray *arrayM = @[].mutableCopy;
+    [cities enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        RegionModel *model = [RegionModel modelWithDictionary:obj];
+        [arrayM addObject:model];
+    }];
+    NSLog(@"arrayM:%@",arrayM);
+    return arrayM;
 }
 @end
