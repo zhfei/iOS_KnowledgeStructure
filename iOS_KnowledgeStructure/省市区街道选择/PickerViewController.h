@@ -13,8 +13,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PickerViewController : UIViewController
-@property (nonatomic, strong) NSArray <PVAreaModel *>* dataSource;
-@property (nonatomic, strong) NSArray <RegionModel *>* dataSource2;
++ (instancetype)showPickerVCIn:(UIViewController *)targetVC;
+//- (void)dismiss;
 @end
 
 NS_ASSUME_NONNULL_END

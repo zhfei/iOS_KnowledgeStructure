@@ -39,7 +39,6 @@
 		91490062221BF3B400C001A1 /* PickerViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490061221BF3B400C001A1 /* PickerViewViewModel.m */; };
 		91490066221BF53000C001A1 /* PVAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490065221BF53000C001A1 /* PVAreaModel.m */; };
 		9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9149E990221BEF9B00C001A1 /* PickerViewController.m */; };
-		9149E993221BEF9B00C001A1 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9149E991221BEF9B00C001A1 /* PickerViewController.xib */; };
 		9149F4FB221BF30C00C001A1 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9149E995221BF2F200C001A1 /* list.plist */; };
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
@@ -180,7 +179,6 @@
 		91490065221BF53000C001A1 /* PVAreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVAreaModel.m; sourceTree = "<group>"; };
 		9149E98F221BEF9B00C001A1 /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		9149E990221BEF9B00C001A1 /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
-		9149E991221BEF9B00C001A1 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		9149E995221BF2F200C001A1 /* list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = list.plist; sourceTree = "<group>"; };
 		914BA0BA21B4D54D00150992 /* ProgressWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindow.h; sourceTree = "<group>"; };
 		914BA0BB21B4D54D00150992 /* ProgressWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindow.m; sourceTree = "<group>"; };
@@ -483,7 +481,6 @@
 				9149E990221BEF9B00C001A1 /* PickerViewController.m */,
 				91A4A76E221D075A0070DE6D /* PickerViewController+delegate.h */,
 				91A4A76F221D075A0070DE6D /* PickerViewController+delegate.m */,
-				9149E991221BEF9B00C001A1 /* PickerViewController.xib */,
 				91490060221BF3B400C001A1 /* PickerViewViewModel.h */,
 				91490061221BF3B400C001A1 /* PickerViewViewModel.m */,
 			);
@@ -914,7 +911,6 @@
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
 				91A4A76D221D03F90070DE6D /* cities.json in Resources */,
-				9149E993221BEF9B00C001A1 /* PickerViewController.xib in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,

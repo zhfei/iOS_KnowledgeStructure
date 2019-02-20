@@ -12,7 +12,7 @@
 #import "LiftCycleCell.h"
 #import "RedBallButton.h"
 #import <BottomComponentLib/UIImage+Custom.h>
-
+#import "PickerViewController.h"
 
 @interface LifeCycleViewController ()
 
@@ -83,7 +83,7 @@
     [btn setImage:gray forState:UIControlStateNormal];
     [self.view addSubview:btn];
     
-
+    [PickerViewController showPickerVCIn:self];
 
 }
 
