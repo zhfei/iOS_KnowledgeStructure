@@ -10,6 +10,7 @@
 #import "HybirdViewController+delegate.h"
 #import <GRMustacheTemplate.h>
 #import "WebViewJavascriptBridge.h"
+#import "HybirdViewController+JavaScriptCore.h"
 
 @interface HybirdViewController ()
 @property WebViewJavascriptBridge* bridge;

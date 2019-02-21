@@ -21,7 +21,7 @@ CGFloat const kContentHeigh = 244.0;
 @property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *line;
-
+@property (nonatomic, strong) UITextField *textView;
 @end
 
 @implementation PickerViewController
@@ -82,6 +82,16 @@ CGFloat const kContentHeigh = 244.0;
     }
     return _line;
 }
+
+- (UITextField *)textView {
+    if (!_textView) {
+        _textView = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 1, 0)];
+        _textView.inputView = self.picker;
+        _textView.inputAccessoryView = self.toolbar;
+    }
+    return _textView;
+}
+
 
 #pragma mark - Event
 - (void)toolBarCanelClick {
@@ -160,10 +170,11 @@ CGFloat const kContentHeigh = 244.0;
 }
 #pragma mark - Private Method
 - (void)addUI {
-    [self.view addSubview:self.contentView];
-    [self.contentView addSubview:self.picker];
-    [self.contentView addSubview:self.line];
-    [self.contentView addSubview:self.toolbar];
+    [self.view addSubview:self.textView];
+//    [self.view addSubview:self.contentView];
+//    [self.contentView addSubview:self.picker];
+//    [self.contentView addSubview:self.line];
+//    [self.contentView addSubview:self.toolbar];
 }
 
 - (void)setupUI {
@@ -171,26 +182,27 @@ CGFloat const kContentHeigh = 244.0;
 }
 
 - (void)setupLayout {
-    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(0);
-        make.height.mas_equalTo(kContentHeigh);
-    }];
+//    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.bottom.right.mas_equalTo(0);
+//        make.height.mas_equalTo(kContentHeigh);
+//    }];
     
-    [self.toolbar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.right.mas_equalTo(0);
-        make.height.mas_equalTo(44);
-    }];
-    
-    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.equalTo(self.toolbar.mas_bottom);
-        make.height.mas_equalTo(0.5);
-    }];
-    
-    [self.picker mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(0);
-        make.top.equalTo(self.line.mas_bottom);
-    }];
+//    [self.toolbar mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.top.right.mas_equalTo(0);
+//        make.height.mas_equalTo(44);
+//    }];
+//
+//    [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.mas_equalTo(0);
+//        make.top.equalTo(self.toolbar.mas_bottom);
+//        make.height.mas_equalTo(0.5);
+//    }];
+//
+//    [self.picker mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.bottom.right.mas_equalTo(0);
+//        make.top.equalTo(self.line.mas_bottom);
+//    }];
+    [self.textView becomeFirstResponder];
 }
 
 - (void)setupData {
