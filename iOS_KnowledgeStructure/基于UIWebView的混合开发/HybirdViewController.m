@@ -15,9 +15,6 @@
 @interface HybirdViewController ()
 @property WebViewJavascriptBridge* bridge;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-- (IBAction)btnAction:(UIButton *)sender;
-- (IBAction)loadAction:(UIButton *)sender;
-- (IBAction)localAction:(UIButton *)sender;
 
 @end
 
@@ -45,7 +42,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+    [self javaScriptCoreTest];
 }
 
 - (IBAction)btnAction:(UIButton *)sender {
