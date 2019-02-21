@@ -8,6 +8,7 @@
 
 #import "HybirdViewController+JavaScriptCore.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "MyPoint.h"
 
 @implementation HybirdViewController (JavaScriptCore)
 - (void)javaScriptCoreTest {
@@ -38,12 +39,41 @@
     NSLog(@"res2:%d",[res2 toInt32]);
 }
 
+//js与oc交互
+//block:将一个方法注入js上下文，注意block中不能有JSValue,JSContext。不然会循环引用
 - (void)javaScriptCoreTest1 {
+    JSContext *context = [[JSContext alloc] init];
+    context[@"makeNSColor"] = ^(NSDictionary *rgb) {
+        CGFloat r = [rgb[@"red"] floatValue];
+        CGFloat g = [rgb[@"green"] floatValue];
+        CGFloat b = [rgb[@"blue"] floatValue];
+        UIColor *color = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+        return color;
+    };
     
+    NSString *jsStr2 = @"var colorFromWord = function(word) {"
+                        "var colorMap = {red:{r:0.1,g:0.2,b:0.3}]}"
+                        "var v = colorMap[word]"
+                        "var color = makeNSColor(v)"
+                        "};";
+    [context evaluateScript:jsStr2];
+    JSValue *value2 = context[@"colorFromWord"];
+    [value2 callWithArguments:@[@"red"]];
 }
 
+//遵守了JSExport协议的对象，就可以直接将对象传递给JavaScriptCore,js就可以调用自己的对象一样调用OC的对象了
 - (void)javaScriptCoreTest2 {
+    JSContext *context = [[JSContext alloc] init];
     
+    context.exceptionHandler = ^(JSContext *context, JSValue *exception) {
+        NSLog(@"exception:%@",exception);
+    };
+    
+    MyPoint *point = [MyPoint makePointX:10 y:20];
+    context[@"point"] = point;
+    NSString *js = @"point.x";
+    JSValue *value1 = [context evaluateScript:js];
+    NSLog(@"point.x: %d",[value1 toInt32]);
 }
 
 

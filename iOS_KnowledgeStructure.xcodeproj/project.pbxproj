@@ -62,6 +62,7 @@
 		915C829B21B2368100A7567B /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 915C829A21B2368100A7567B /* template.html */; };
 		915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */; };
 		915FB6DB221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */; };
+		915FB6DE221EADA300E985EA /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DD221EADA300E985EA /* MyPoint.m */; };
 		916957AB21DE214D0026EB3A /* main3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A021DE214D0026EB3A /* main3.m */; };
 		916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A121DE214D0026EB3A /* main_blockArray.cpp */; };
 		916957AD21DE214D0026EB3A /* main2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A321DE214D0026EB3A /* main2.m */; };
@@ -219,6 +220,8 @@
 		915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HybirdViewController+delegate.m"; sourceTree = "<group>"; };
 		915FB6D9221E9E4300E985EA /* HybirdViewController+JavaScriptCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HybirdViewController+JavaScriptCore.h"; sourceTree = "<group>"; };
 		915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HybirdViewController+JavaScriptCore.m"; sourceTree = "<group>"; };
+		915FB6DC221EADA300E985EA /* MyPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPoint.h; sourceTree = "<group>"; };
+		915FB6DD221EADA300E985EA /* MyPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
 		916957A021DE214D0026EB3A /* main3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main3.m; sourceTree = "<group>"; };
 		916957A121DE214D0026EB3A /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
 		916957A321DE214D0026EB3A /* main2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main2.m; sourceTree = "<group>"; };
@@ -566,6 +569,8 @@
 				915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */,
 				915C829C21B23AFA00A7567B /* HybirdViewController+delegate.h */,
 				915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */,
+				915FB6DC221EADA300E985EA /* MyPoint.h */,
+				915FB6DD221EADA300E985EA /* MyPoint.m */,
 			);
 			path = "基于UIWebView的混合开发";
 			sourceTree = "<group>";
@@ -1039,6 +1044,7 @@
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
+				915FB6DE221EADA300E985EA /* MyPoint.m in Sources */,
 				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
 				913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */,
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
