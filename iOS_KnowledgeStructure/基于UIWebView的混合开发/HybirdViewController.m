@@ -14,7 +14,7 @@
 
 @interface HybirdViewController ()
 @property WebViewJavascriptBridge* bridge;
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
 
 @end
 
@@ -26,7 +26,12 @@
     self.webView.delegate = self;
     self.bridge = [WebViewJavascriptBridge bridgeForWebView:_webView];
     
+    //WebViewJavascriptBridge原理
+    //1.OC和JS各保留一份Bridg对象，里面保存着requestID, callbackID
+    //2.OC调用JS: OC通过调用JS中的Bridg对象，找到具体的方法然后调用。
+    //3.JS调用OC：JS是通过iframe的src触发代理，调用OC
     
+    //OC注册方法给JS调用
     [self.bridge registerHandler:@"ObjC Echo" handler:^(id data, WVJBResponseCallback responseCallback) {
         NSLog(@"ObjC Echo called with: %@", data);
         responseCallback(data);
@@ -34,7 +39,6 @@
     [self.bridge callHandler:@"JS Echo" data:nil responseCallback:^(id responseData) {
         NSLog(@"ObjC received response: %@", responseData);
     }];
-    
     [self.bridge registerHandler:@"getScreenHeight" handler:^(id data, WVJBResponseCallback responseCallback) {
         responseCallback([NSNumber numberWithInt:[UIScreen mainScreen].bounds.size.height]);
         NSLog(@"收到JS的调用！");

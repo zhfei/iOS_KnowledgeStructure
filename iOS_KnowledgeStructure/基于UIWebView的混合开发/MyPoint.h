@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)description;
 + (instancetype)makePointX:(float)x y:(float)y;
 
+//建立js方法与OC方法对应
 JSExportAs(makePoint,
            + (instancetype)makePointX:(float)x y:(float)y
            );

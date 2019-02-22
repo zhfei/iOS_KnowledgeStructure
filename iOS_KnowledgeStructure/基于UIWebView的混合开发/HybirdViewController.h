@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HybirdViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 NS_ASSUME_NONNULL_END

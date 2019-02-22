@@ -76,6 +76,10 @@
     NSLog(@"point.x: %d",[value1 toInt32]);
 }
 
-
+//因为js的加载时间不好把握，当有多级页面跳转时，可能出现拿到的JSContext无法调用js
+- (void)javaScriptCoreTest3 {
+    JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    
+}
 
 @end

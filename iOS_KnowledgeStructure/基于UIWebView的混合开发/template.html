@@ -40,15 +40,15 @@
     
         setupWebViewJavascriptBridge(function(bridge) {
                                  
-         /* Initialize your app here */
-         
-         bridge.registerHandler('JS Echo', function(data, responseCallback) {
-                                console.log("JS Echo called with:", data)
-                                responseCallback(data)
+             /* Initialize your app here */
+             //JS注册方法给OC调用
+             bridge.registerHandler('JS Echo', function(data, responseCallback) {
+                                    console.log("JS Echo called with:", data)
+                                    responseCallback(data)
+                                    })
+             bridge.callHandler('ObjC Echo', {'key':'value'}, function responseCallback(responseData) {
+                                console.log("JS received response:", responseData)
                                 })
-         bridge.callHandler('ObjC Echo', {'key':'value'}, function responseCallback(responseData) {
-                            console.log("JS received response:", responseData)
-                            })
          })
          
          function call() {
