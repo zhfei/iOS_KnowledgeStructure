@@ -40,6 +40,7 @@
 		91490066221BF53000C001A1 /* PVAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91490065221BF53000C001A1 /* PVAreaModel.m */; };
 		9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9149E990221BEF9B00C001A1 /* PickerViewController.m */; };
 		9149F4FB221BF30C00C001A1 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9149E995221BF2F200C001A1 /* list.plist */; };
+		914A2A1B221FD6A9007E2DF0 /* HybirdViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A2A1A221FD6A9007E2DF0 /* HybirdViewController2.m */; };
 		914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BB21B4D54D00150992 /* ProgressWindow.m */; };
 		914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0BE21B4D56200150992 /* ProgressViewController.m */; };
 		914BA0C321B5049100150992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 914BA0C221B5049100150992 /* Person.m */; };
@@ -182,6 +183,8 @@
 		9149E98F221BEF9B00C001A1 /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		9149E990221BEF9B00C001A1 /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		9149E995221BF2F200C001A1 /* list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = list.plist; sourceTree = "<group>"; };
+		914A2A19221FD6A9007E2DF0 /* HybirdViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController2.h; sourceTree = "<group>"; };
+		914A2A1A221FD6A9007E2DF0 /* HybirdViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdViewController2.m; sourceTree = "<group>"; };
 		914BA0BA21B4D54D00150992 /* ProgressWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressWindow.h; sourceTree = "<group>"; };
 		914BA0BB21B4D54D00150992 /* ProgressWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressWindow.m; sourceTree = "<group>"; };
 		914BA0BD21B4D56200150992 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
@@ -502,6 +505,15 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		914A2A18221FD67E007E2DF0 /* 基于WKWebView的混合开发 */ = {
+			isa = PBXGroup;
+			children = (
+				914A2A19221FD6A9007E2DF0 /* HybirdViewController2.h */,
+				914A2A1A221FD6A9007E2DF0 /* HybirdViewController2.m */,
+			);
+			path = "基于WKWebView的混合开发";
+			sourceTree = "<group>";
+		};
 		914BA0C021B5046900150992 /* Category源码分析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -649,6 +661,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				914A2A18221FD67E007E2DF0 /* 基于WKWebView的混合开发 */,
 				9149E98E221BEE4F00C001A1 /* 省市区街道选择 */,
 				913833912219A6D700AE68F0 /* VC生命周期 */,
 				910F286E2216F85E0028AB55 /* 数组筛选Predicate */,
@@ -977,6 +990,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				916957B021DE214D0026EB3A /* main_int.cpp in Sources */,
+				914A2A1B221FD6A9007E2DF0 /* HybirdViewController2.m in Sources */,
 				912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */,
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */,
