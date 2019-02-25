@@ -9,6 +9,7 @@
 
 #import "PickerViewController.h"
 #import <Masonry.h>
+#import "LabelContainer.h"
 
 CGFloat const kContentHeigh = 244.0;
 
@@ -22,6 +23,7 @@ CGFloat const kContentHeigh = 244.0;
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *line;
 @property (nonatomic, strong) UITextField *textView;
+@property (nonatomic, strong) LabelContainer *labelContainer;
 @end
 
 @implementation PickerViewController
@@ -92,6 +94,15 @@ CGFloat const kContentHeigh = 244.0;
     return _textView;
 }
 
+- (LabelContainer *)labelContainer {
+    if (!_labelContainer) {
+        CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+        CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
+        _labelContainer = [[LabelContainer alloc] initWithFrame:CGRectMake(0, 100, widthS, 100)];
+        _labelContainer.backgroundColor = [UIColor brownColor];
+    }
+    return _labelContainer;
+}
 
 #pragma mark - Event
 - (void)toolBarCanelClick {
@@ -171,6 +182,7 @@ CGFloat const kContentHeigh = 244.0;
 #pragma mark - Private Method
 - (void)addUI {
     [self.view addSubview:self.textView];
+    [self.view addSubview:self.labelContainer];
 //    [self.view addSubview:self.contentView];
 //    [self.contentView addSubview:self.picker];
 //    [self.contentView addSubview:self.line];
