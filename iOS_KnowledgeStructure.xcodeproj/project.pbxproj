@@ -14,6 +14,9 @@
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
+		911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */; };
+		911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */; };
+		911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B33222517FC00DD2C51 /* CoreTextDisplayView.m */; };
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
@@ -139,6 +142,11 @@
 		911976E921D3DA6B000DD669 /* UnknownModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel.m; sourceTree = "<group>"; };
 		911976EB21D3DFAE000DD669 /* UnknownModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel2.h; sourceTree = "<group>"; };
 		911976EC21D3DFAE000DD669 /* UnknownModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel2.m; sourceTree = "<group>"; };
+		911D1B2D222517DD00DD2C51 /* CoreText_CoreImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreText_CoreImageVC.h; sourceTree = "<group>"; };
+		911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreText_CoreImageVC.m; sourceTree = "<group>"; };
+		911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreText_CoreImageVC.xib; sourceTree = "<group>"; };
+		911D1B32222517FC00DD2C51 /* CoreTextDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextDisplayView.h; sourceTree = "<group>"; };
+		911D1B33222517FC00DD2C51 /* CoreTextDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextDisplayView.m; sourceTree = "<group>"; };
 		9120F20021FEFBA900E5B90C /* ScrolleViewApplyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrolleViewApplyVC.h; sourceTree = "<group>"; };
 		9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrolleViewApplyVC.m; sourceTree = "<group>"; };
 		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
@@ -374,6 +382,18 @@
 				911976EC21D3DFAE000DD669 /* UnknownModel2.m */,
 			);
 			path = "向对象发送未知消息";
+			sourceTree = "<group>";
+		};
+		911D1B2C2225175E00DD2C51 /* CoreText和CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				911D1B2D222517DD00DD2C51 /* CoreText_CoreImageVC.h */,
+				911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */,
+				911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */,
+				911D1B32222517FC00DD2C51 /* CoreTextDisplayView.h */,
+				911D1B33222517FC00DD2C51 /* CoreTextDisplayView.m */,
+			);
+			path = "CoreText和CoreImage";
 			sourceTree = "<group>";
 		};
 		9120F1FF21FEF9BA00E5B90C /* ScrollView使用 */ = {
@@ -665,6 +685,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				911D1B2C2225175E00DD2C51 /* CoreText和CoreImage */,
 				914A2A18221FD67E007E2DF0 /* 基于WKWebView的混合开发 */,
 				9149E98E221BEE4F00C001A1 /* 省市区街道选择 */,
 				913833912219A6D700AE68F0 /* VC生命周期 */,
@@ -941,6 +962,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
+				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
@@ -1045,6 +1067,7 @@
 				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
+				911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */,
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
@@ -1080,6 +1103,7 @@
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,
+				911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

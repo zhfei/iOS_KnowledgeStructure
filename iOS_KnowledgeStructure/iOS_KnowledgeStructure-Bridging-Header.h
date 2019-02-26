@@ -16,3 +16,4 @@
 #import "ArrayFiltrateViewController.h"
 #import "LifeCycleViewController.h"
 #import "PickerViewController.h"
+#import "CoreText_CoreImageVC.h"

@@ -93,6 +93,10 @@ class MainTableViewController: UITableViewController {
         case 14:
             let vc = PickerViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 15:
+            let vc = CoreText_CoreImageVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
             
             
         default:

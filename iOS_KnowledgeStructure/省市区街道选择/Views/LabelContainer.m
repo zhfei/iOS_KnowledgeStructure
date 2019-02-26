@@ -101,6 +101,7 @@
         make.top.mas_equalTo(self.left);
         make.right.mas_offset(0);
     }];
+    
     [self.left setContentHuggingPriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
 }
 
