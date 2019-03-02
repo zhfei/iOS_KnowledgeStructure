@@ -10,6 +10,7 @@
 #import "PickerViewController.h"
 #import <Masonry.h>
 #import "LabelContainer.h"
+#import <BottomComponentLib/UIView+coreAnimation.h>
 
 CGFloat const kContentHeigh = 244.0;
 
@@ -183,6 +184,9 @@ CGFloat const kContentHeigh = 244.0;
 - (void)addUI {
     [self.view addSubview:self.textView];
     [self.view addSubview:self.labelContainer];
+    
+    self.labelContainer.addTranslAnim(0.5,10.5);
+    
 //    [self.view addSubview:self.contentView];
 //    [self.contentView addSubview:self.picker];
 //    [self.contentView addSubview:self.line];
