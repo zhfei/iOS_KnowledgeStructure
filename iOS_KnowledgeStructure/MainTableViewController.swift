@@ -96,8 +96,10 @@ class MainTableViewController: UITableViewController {
         case 15:
             let vc = CoreText_CoreImageVC()
             self.navigationController?.pushViewController(vc, animated: true)
-            
-            
+        case 16:
+            let vc = EightLockViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+          
             
         default:
             print("未知...")

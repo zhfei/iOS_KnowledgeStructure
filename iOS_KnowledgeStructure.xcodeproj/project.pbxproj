@@ -105,6 +105,7 @@
 		91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */; };
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
+		91B90D61222A7FF900EF082F /* EightLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B90D60222A7FF900EF082F /* EightLockViewController.m */; };
 		91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D1771F21B43CA1007DB825 /* AlertWindowVC.m */; };
 		91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E442B921C3EB76004F9318 /* TimerViewController.m */; };
 		DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */; };
@@ -298,6 +299,8 @@
 		91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderEncoderVC.swift; sourceTree = "<group>"; };
 		91ACEA9821A446F300249FA8 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		91ACEA9A21A44BF300249FA8 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		91B90D5F222A7FF900EF082F /* EightLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightLockViewController.h; sourceTree = "<group>"; };
+		91B90D60222A7FF900EF082F /* EightLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightLockViewController.m; sourceTree = "<group>"; };
 		91D1771E21B43CA1007DB825 /* AlertWindowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertWindowVC.h; sourceTree = "<group>"; };
 		91D1771F21B43CA1007DB825 /* AlertWindowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertWindowVC.m; sourceTree = "<group>"; };
 		91E442B821C3EB76004F9318 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -685,6 +688,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91B90D5E222A7FC900EF082F /* 八种多线程锁 */,
 				911D1B2C2225175E00DD2C51 /* CoreText和CoreImage */,
 				914A2A18221FD67E007E2DF0 /* 基于WKWebView的混合开发 */,
 				9149E98E221BEE4F00C001A1 /* 省市区街道选择 */,
@@ -832,6 +836,15 @@
 				914F33F621D5CB47004DAF00 /* CoderModel.m */,
 			);
 			path = "Decoder&Encoder";
+			sourceTree = "<group>";
+		};
+		91B90D5E222A7FC900EF082F /* 八种多线程锁 */ = {
+			isa = PBXGroup;
+			children = (
+				91B90D5F222A7FF900EF082F /* EightLockViewController.h */,
+				91B90D60222A7FF900EF082F /* EightLockViewController.m */,
+			);
+			path = "八种多线程锁";
 			sourceTree = "<group>";
 		};
 		91D1771D21B43C4B007DB825 /* 自定义弹窗UIWindow */ = {
@@ -1077,6 +1090,7 @@
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,
+				91B90D61222A7FF900EF082F /* EightLockViewController.m in Sources */,
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
 				9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */,
 				916957B121DE214D0026EB3A /* main_Array.cpp in Sources */,
