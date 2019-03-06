@@ -7,7 +7,7 @@
 //
 
 #import "PickerViewViewModel.h"
-#import <YYKit/NSObject+YYModel.h>
+#import <NSObject+YYModel.h>
 
 @implementation PickerViewViewModel
 + (NSArray <PVAreaModel *> *)dataSource {
@@ -49,7 +49,7 @@
     NSArray *cities = [self readLocalJsonFileWithName:@"cities"];
     NSMutableArray *arrayM = @[].mutableCopy;
     [cities enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        RegionModel *model = [RegionModel modelWithDictionary:obj];
+        RegionModel *model = [RegionModel yy_modelWithDictionary:obj];
         [arrayM addObject:model];
     }];
     return arrayM;

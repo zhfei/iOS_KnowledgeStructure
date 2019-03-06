@@ -14,7 +14,7 @@
     if ([[children firstObject] isKindOfClass:[NSDictionary class]]) {
         NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:[children count]];
         [children enumerateObjectsUsingBlock:^(RegionModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            RegionModel *model = [RegionModel modelWithDictionary:obj];
+            RegionModel *model = [RegionModel yy_modelWithDictionary:obj];
             [arrayM addObject:model];
         }];
         _children = arrayM;

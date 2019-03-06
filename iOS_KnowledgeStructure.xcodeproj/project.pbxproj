@@ -14,6 +14,9 @@
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
+		91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B11222FB8360008DF6B /* TwitterConnection.m */; };
+		91198B18222FB8360008DF6B /* TweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B13222FB8360008DF6B /* TweetView.m */; };
+		91198B19222FB8360008DF6B /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B15222FB8360008DF6B /* Tweet.m */; };
 		911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */; };
 		911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */; };
 		911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B33222517FC00DD2C51 /* CoreTextDisplayView.m */; };
@@ -76,6 +79,9 @@
 		916957B021DE214D0026EB3A /* main_int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A721DE214D0026EB3A /* main_int.cpp */; };
 		916957B121DE214D0026EB3A /* main_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A921DE214D0026EB3A /* main_Array.cpp */; };
 		916957B221DE214D0026EB3A /* main4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957AA21DE214D0026EB3A /* main4.m */; };
+		916E3D9F222F9A3200DBF1F3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916E3D93222F9A3200DBF1F3 /* libOCMock.a */; };
+		916E3DA3222F9D4B00DBF1F3 /* MockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */; };
+		916E3DA5222F9DFE00DBF1F3 /* MockViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E3DA4222F9DFE00DBF1F3 /* MockViewControllerTest.m */; };
 		917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */; };
 		917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED92202997300590CF1 /* RuntimePerson6methodSign.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
@@ -144,6 +150,12 @@
 		911976E921D3DA6B000DD669 /* UnknownModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel.m; sourceTree = "<group>"; };
 		911976EB21D3DFAE000DD669 /* UnknownModel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel2.h; sourceTree = "<group>"; };
 		911976EC21D3DFAE000DD669 /* UnknownModel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnknownModel2.m; sourceTree = "<group>"; };
+		91198B11222FB8360008DF6B /* TwitterConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnection.m; sourceTree = "<group>"; };
+		91198B12222FB8360008DF6B /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		91198B13222FB8360008DF6B /* TweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetView.m; sourceTree = "<group>"; };
+		91198B14222FB8360008DF6B /* TweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetView.h; sourceTree = "<group>"; };
+		91198B15222FB8360008DF6B /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		91198B16222FB8360008DF6B /* TwitterConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnection.h; sourceTree = "<group>"; };
 		911D1B2D222517DD00DD2C51 /* CoreText_CoreImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreText_CoreImageVC.h; sourceTree = "<group>"; };
 		911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreText_CoreImageVC.m; sourceTree = "<group>"; };
 		911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreText_CoreImageVC.xib; sourceTree = "<group>"; };
@@ -246,6 +258,20 @@
 		916957A721DE214D0026EB3A /* main_int.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_int.cpp; sourceTree = "<group>"; };
 		916957A921DE214D0026EB3A /* main_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_Array.cpp; sourceTree = "<group>"; };
 		916957AA21DE214D0026EB3A /* main4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main4.m; sourceTree = "<group>"; };
+		916E3D93222F9A3200DBF1F3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		916E3D95222F9A3200DBF1F3 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		916E3D96222F9A3200DBF1F3 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		916E3D97222F9A3200DBF1F3 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		916E3D98222F9A3200DBF1F3 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		916E3D99222F9A3200DBF1F3 /* OCMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMFunctions.h; sourceTree = "<group>"; };
+		916E3D9A222F9A3200DBF1F3 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		916E3D9B222F9A3200DBF1F3 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		916E3D9C222F9A3200DBF1F3 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		916E3D9D222F9A3200DBF1F3 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		916E3D9E222F9A3200DBF1F3 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		916E3DA1222F9D4B00DBF1F3 /* MockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockViewController.h; sourceTree = "<group>"; };
+		916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockViewController.m; sourceTree = "<group>"; };
+		916E3DA4222F9DFE00DBF1F3 /* MockViewControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockViewControllerTest.m; sourceTree = "<group>"; };
 		917B4ED52202990E00590CF1 /* RuntimePerson5resolveInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson5resolveInstance.h; sourceTree = "<group>"; };
 		917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson5resolveInstance.m; sourceTree = "<group>"; };
 		917B4ED82202997300590CF1 /* RuntimePerson6methodSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson6methodSign.h; sourceTree = "<group>"; };
@@ -324,6 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916E3D9F222F9A3200DBF1F3 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,9 +701,51 @@
 			path = block_Array;
 			sourceTree = "<group>";
 		};
+		916E3D92222F99EB00DBF1F3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				916E3D93222F9A3200DBF1F3 /* libOCMock.a */,
+				916E3D94222F9A3200DBF1F3 /* OCMock */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		916E3D94222F9A3200DBF1F3 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				916E3D95222F9A3200DBF1F3 /* OCMockObject.h */,
+				916E3D96222F9A3200DBF1F3 /* OCMMacroState.h */,
+				916E3D97222F9A3200DBF1F3 /* OCMock.h */,
+				916E3D98222F9A3200DBF1F3 /* NSNotificationCenter+OCMAdditions.h */,
+				916E3D99222F9A3200DBF1F3 /* OCMFunctions.h */,
+				916E3D9A222F9A3200DBF1F3 /* OCMStubRecorder.h */,
+				916E3D9B222F9A3200DBF1F3 /* OCMRecorder.h */,
+				916E3D9C222F9A3200DBF1F3 /* OCMLocation.h */,
+				916E3D9D222F9A3200DBF1F3 /* OCMConstraint.h */,
+				916E3D9E222F9A3200DBF1F3 /* OCMArg.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		916E3DA0222F9D3600DBF1F3 /* Mock测试 */ = {
+			isa = PBXGroup;
+			children = (
+				91198B12222FB8360008DF6B /* Tweet.h */,
+				91198B15222FB8360008DF6B /* Tweet.m */,
+				91198B14222FB8360008DF6B /* TweetView.h */,
+				91198B13222FB8360008DF6B /* TweetView.m */,
+				91198B16222FB8360008DF6B /* TwitterConnection.h */,
+				91198B11222FB8360008DF6B /* TwitterConnection.m */,
+				916E3DA1222F9D4B00DBF1F3 /* MockViewController.h */,
+				916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */,
+			);
+			path = "Mock测试";
+			sourceTree = "<group>";
+		};
 		917B78CC2189F5B000425A05 = {
 			isa = PBXGroup;
 			children = (
+				916E3D92222F99EB00DBF1F3 /* Mock */,
 				9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */,
 				917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */,
 				917B78F02189F5B200425A05 /* iOS_KnowledgeStructureTests */,
@@ -700,6 +769,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				916E3DA0222F9D3600DBF1F3 /* Mock测试 */,
 				91655F73222BEE7700738F7B /* GCD系统函数使用 */,
 				91B90D5E222A7FC900EF082F /* 八种多线程锁 */,
 				911D1B2C2225175E00DD2C51 /* CoreText和CoreImage */,
@@ -747,6 +817,7 @@
 			children = (
 				917B78F12189F5B200425A05 /* iOS_KnowledgeStructureTests.m */,
 				917B78F32189F5B200425A05 /* Info.plist */,
+				916E3DA4222F9DFE00DBF1F3 /* MockViewControllerTest.m */,
 			);
 			path = iOS_KnowledgeStructureTests;
 			sourceTree = "<group>";
@@ -1055,6 +1126,7 @@
 				912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */,
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */,
+				91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */,
 				910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */,
 				916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
@@ -1062,6 +1134,7 @@
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
+				916E3DA3222F9D4B00DBF1F3 /* MockViewController.m in Sources */,
 				91490062221BF3B400C001A1 /* PickerViewViewModel.m in Sources */,
 				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
 				9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */,
@@ -1076,6 +1149,7 @@
 				917B790E2189F80300425A05 /* ThreadViewController.m in Sources */,
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91490066221BF53000C001A1 /* PVAreaModel.m in Sources */,
+				91198B18222FB8360008DF6B /* TweetView.m in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
@@ -1090,6 +1164,7 @@
 				91A4A76B221CFFF50070DE6D /* RegionModel.m in Sources */,
 				91A2492F2223C2DF00C78200 /* LabelContainer.m in Sources */,
 				91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */,
+				91198B19222FB8360008DF6B /* Tweet.m in Sources */,
 				91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */,
 				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
@@ -1139,6 +1214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916E3DA5222F9DFE00DBF1F3 /* MockViewControllerTest.m in Sources */,
 				917B78F22189F5B200425A05 /* iOS_KnowledgeStructureTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1350,12 +1426,23 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/iOS_KnowledgeStructure/**",
+					"\"$(SRCROOT)/Mock/OCMock\"",
+					"\"$(SRCROOT)/Mock\"/**",
+				);
 				INFOPLIST_FILE = iOS_KnowledgeStructureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mock/**",
+					"\"$(SRCROOT)/Mock/OCMock\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhf.iOS-KnowledgeStructureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1370,12 +1457,23 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/iOS_KnowledgeStructure/**",
+					"\"$(SRCROOT)/Mock/OCMock\"",
+					"\"$(SRCROOT)/Mock\"/**",
+				);
 				INFOPLIST_FILE = iOS_KnowledgeStructureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mock/**",
+					"\"$(SRCROOT)/Mock/OCMock\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhf.iOS-KnowledgeStructureTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
