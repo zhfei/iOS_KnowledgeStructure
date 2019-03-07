@@ -17,6 +17,7 @@
 
 #import "HybirdViewController2.h"
 #import <WebKit/WebKit.h>
+#import <Masonry.h>
 
 NSString *const My_NativeMethod1 = @"My_NativeMethod1";
 
@@ -56,7 +57,12 @@ NSString *const My_NativeMethod1 = @"My_NativeMethod1";
 
 #pragma mark - Private Method
 - (void)addUI {
+    [self.view addSubview:self.webView];
     
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //直接传值
+        [self.webView evaluateJavaScript:@"window.webkit.messageHandlers.My_NativeMethod1.postMessage('Hello WebKit!')" completionHandler:nil];
+    });
 }
 
 - (void)setupUI {
@@ -64,7 +70,9 @@ NSString *const My_NativeMethod1 = @"My_NativeMethod1";
 }
 
 - (void)setupLayout {
-    
+    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
+    }];
 }
 
 - (void)setupData {
@@ -159,6 +167,7 @@ NSString *const My_NativeMethod1 = @"My_NativeMethod1";
 //}
 //OC收到JS的调用，
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+    NSLog(@"message:%@---%@",message,message.name);
     if ([message.name isEqualToString:My_NativeMethod1]) {
         //收到js调用
     }

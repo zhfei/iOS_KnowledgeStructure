@@ -11,6 +11,7 @@
 #import <GRMustacheTemplate.h>
 #import "WebViewJavascriptBridge.h"
 #import "HybirdViewController+JavaScriptCore.h"
+#import "HybirdViewController2.h"
 
 @interface HybirdViewController ()
 @property WebViewJavascriptBridge* bridge;
@@ -67,6 +68,9 @@
 
 - (IBAction)localAction:(UIButton *)sender {
     [self.webView loadHTMLString:[self htmlString] baseURL:nil];
+    
+//    HybirdViewController2 *hc2 = [HybirdViewController2 new];
+//    [self.navigationController pushViewController:hc2 animated:YES];
 }
 
 - (NSString *)htmlString {

@@ -76,7 +76,6 @@
     [self.mockVC updateTweetView];
     
     //------------下面是验证[tweetView addTweet:t]方法是否被结果数组调用了------------------
-    
     OCMVerify([tweet addTweet:t1]);
     OCMVerify([tweet addTweet:t2]);
     //[OCMArg any]匹配任意参数值
@@ -85,10 +84,12 @@
 
 //精准mock的TEST， 出错的话会抛异常
 - (void)testStrictMock3{
+    //模拟一个对象，如果对应的方法传值为nil,就崩溃
     id tweetV = OCMClassMock([TweetView class]);
     OCMExpect([tweetV addTweet:[OCMArg isNotNil]]);
     OCMStub([tweetV addTweet:[OCMArg isNotNil]]);
     
+    //当下面没有执行，就会崩溃
     Tweet *t1 = [Tweet new];
     t1.userName = @"Tom";
     [tweetV addTweet:t1];
