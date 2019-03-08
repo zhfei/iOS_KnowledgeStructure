@@ -30,7 +30,7 @@ CGFloat const kContentHeigh = 244.0;
 @implementation PickerViewController
 #pragma mark - Life Cycle
 + (instancetype)cityPickerController {
-    QSCityPickerController *pickerVC = [[QSCityPickerController alloc] init];
+    PickerViewController *pickerVC = [[PickerViewController alloc] init];
     return pickerVC;
 }
 
@@ -134,7 +134,7 @@ CGFloat const kContentHeigh = 244.0;
         [resStr appendString:model.name];
     }
     if (self.completeBlock) {
-        self.completeBlock(resStr,count>1?0:1);
+        self.completeBlock(resStr,count>1?0:1,model);
     }
 
     
@@ -161,21 +161,21 @@ CGFloat const kContentHeigh = 244.0;
 }
 
 #pragma mark - Public Method
-- (void)showProvincePickerVC:(PickerCompleteBlock)completeBlock {
+- (void)showProvincePickerVC:(CompleteBlock)completeBlock {
     if (!self.view.superview && !self.parentViewController) {
         self.completeBlock = completeBlock;
         //弹出选择器
-        [QSCityPickerController loadAndShowVC:self];
+        [PickerViewController loadAndShowVC:self];
         [self.picker reloadAllComponents];
         [self.picker selectRow:0 inComponent:0 animated:NO];
     }
 }
 
-- (void)showStreetPickerVC:(PickerCompleteBlock)completeBlock streetArray:(NSArray *)streetArray {
+- (void)showStreetPickerVC:(CompleteBlock)completeBlock streetArray:(NSArray *)streetArray {
     if (!self.view.superview && !self.parentViewController) {
         self.completeBlock = completeBlock;
         //弹出选择器
-        [QSCityPickerController loadAndShowVC:self];
+        [PickerViewController loadAndShowVC:self];
         self.dataSource = streetArray;
         [self.picker reloadAllComponents];
         [self.picker selectRow:0 inComponent:0 animated:NO];

@@ -15,7 +15,9 @@
 #import "PickerViewController.h"
 
 @interface LifeCycleViewController ()
+@property (nonatomic, strong) PickerViewController *pickerView;
 
+@property (nonatomic, strong) RegionModel *selectedModel;
 @end
 
 @implementation LifeCycleViewController
@@ -60,6 +62,13 @@
     
 }
 
+- (PickerViewController *)pickerView {
+    if (!_pickerView) {
+        _pickerView = [PickerViewController new];
+    }
+    return _pickerView;
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.view.backgroundColor = [UIColor whiteColor];
     LiftCycleHeader *liftCycyle = [LiftCycleHeader liftCycleHeader];
@@ -83,9 +92,12 @@
     [btn setImage:gray forState:UIControlStateNormal];
     [self.view addSubview:btn];
     
-    [PickerViewController showPickerVC:^(NSString *  res, NSInteger num) {
+    
+    [self.pickerView showProvincePickerVC:^(NSString * res, NSInteger num, RegionModel * _Nonnull region) {
         NSLog(@"res:%@--num:%d",res,num);
     }];
+    
+    //selectedModel
 
 }
 

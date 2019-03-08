@@ -20,13 +20,13 @@ typedef NS_ENUM(NSInteger,QSPickerType) {
     QSPickerTypeStreet = 1
 };
 
-typedef void(^PickerCompleteBlock)(NSString *, NSInteger num, QSRegionModel *region);
+typedef void(^CompleteBlock)(NSString *, NSInteger num, RegionModel *region);
 
 
 @interface PickerViewController : UIViewController
 + (instancetype)cityPickerController;
-- (void)showProvincePickerVC:(PickerCompleteBlock)completeBlock;
-- (void)showStreetPickerVC:(PickerCompleteBlock)completeBlock streetArray:(NSArray *)streetArray;
+- (void)showProvincePickerVC:(CompleteBlock)completeBlock;
+- (void)showStreetPickerVC:(CompleteBlock)completeBlock streetArray:(NSArray *)streetArray;
 @end
 
 NS_ASSUME_NONNULL_END
