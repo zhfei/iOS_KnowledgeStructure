@@ -12,13 +12,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//num:0表示第一次确定
-//num:1表示第二次确定
-typedef void(^CompleteBlock)(NSString *, NSInteger num);
+//num:0表示（省市区）第一次确定
+//num:1表示（街道）第二次确定
+
+typedef NS_ENUM(NSInteger,QSPickerType) {
+    QSPickerTypeProvince = 0,
+    QSPickerTypeStreet = 1
+};
+
+typedef void(^PickerCompleteBlock)(NSString *, NSInteger num, QSRegionModel *region);
+
 
 @interface PickerViewController : UIViewController
-+ (instancetype)showPickerVC:(CompleteBlock)completeBlock ;
-//- (void)dismiss;
++ (instancetype)cityPickerController;
+- (void)showProvincePickerVC:(PickerCompleteBlock)completeBlock;
+- (void)showStreetPickerVC:(PickerCompleteBlock)completeBlock streetArray:(NSArray *)streetArray;
 @end
 
 NS_ASSUME_NONNULL_END

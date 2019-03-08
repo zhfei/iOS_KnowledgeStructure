@@ -29,6 +29,12 @@ CGFloat const kContentHeigh = 244.0;
 
 @implementation PickerViewController
 #pragma mark - Life Cycle
++ (instancetype)cityPickerController {
+    QSCityPickerController *pickerVC = [[QSCityPickerController alloc] init];
+    return pickerVC;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -155,25 +161,25 @@ CGFloat const kContentHeigh = 244.0;
 }
 
 #pragma mark - Public Method
-+ (instancetype)showPickerVC:(CompleteBlock)completeBlock {
-    PickerViewController *pickerVC = [[PickerViewController alloc] init];
-    pickerVC.completeBlock = completeBlock;
-    
-    id<UIApplicationDelegate>appDelegate = [UIApplication sharedApplication].delegate;
-    UIViewController *rootVC = appDelegate.window.rootViewController;
-    [rootVC addChildViewController:pickerVC];
-    [rootVC.view addSubview:pickerVC.view];
-    
-    CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
-    CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
-    [pickerVC.view setFrame:CGRectMake(0, heightS, widthS, kContentHeigh)];
-    
-    [UIView animateWithDuration:0.5 animations:^{
-        [pickerVC.view setFrame:CGRectMake(0, heightS-kContentHeigh, widthS, kContentHeigh)];
-    }];
-    
-    return pickerVC;
-    
+- (void)showProvincePickerVC:(PickerCompleteBlock)completeBlock {
+    if (!self.view.superview && !self.parentViewController) {
+        self.completeBlock = completeBlock;
+        //弹出选择器
+        [QSCityPickerController loadAndShowVC:self];
+        [self.picker reloadAllComponents];
+        [self.picker selectRow:0 inComponent:0 animated:NO];
+    }
+}
+
+- (void)showStreetPickerVC:(PickerCompleteBlock)completeBlock streetArray:(NSArray *)streetArray {
+    if (!self.view.superview && !self.parentViewController) {
+        self.completeBlock = completeBlock;
+        //弹出选择器
+        [QSCityPickerController loadAndShowVC:self];
+        self.dataSource = streetArray;
+        [self.picker reloadAllComponents];
+        [self.picker selectRow:0 inComponent:0 animated:NO];
+    }
 }
 
 - (void)dismiss {
@@ -226,6 +232,22 @@ CGFloat const kContentHeigh = 244.0;
     self.dataSource2 = [PickerViewViewModel dataSource2];
     [self.picker reloadAllComponents];
 }
+
++ (void)loadAndShowVC:(UIViewController *)vc {
+    id<UIApplicationDelegate>appDelegate = [UIApplication sharedApplication].delegate;
+    UIViewController *rootVC = appDelegate.window.rootViewController;
+    [rootVC addChildViewController:vc];
+    [rootVC.view addSubview:vc.view];
+    
+    CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+    CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
+    [vc.view setFrame:CGRectMake(0, heightS, widthS, kContentHeigh)];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        [vc.view setFrame:CGRectMake(0, heightS-kContentHeigh, widthS, kContentHeigh)];
+    }];
+}
+
 
 
 #pragma mark - Delegate
