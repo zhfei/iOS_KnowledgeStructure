@@ -114,6 +114,9 @@
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
 		91B90D61222A7FF900EF082F /* EightLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B90D60222A7FF900EF082F /* EightLockViewController.m */; };
 		91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D1771F21B43CA1007DB825 /* AlertWindowVC.m */; };
+		91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377A2233A40200652F55 /* AI_ViewController.m */; };
+		91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D3377B2233A40200652F55 /* AI_ViewController.xib */; };
+		91D337802233A4B500652F55 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377F2233A4B500652F55 /* Resnet50.mlmodel */; };
 		91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E442B921C3EB76004F9318 /* TimerViewController.m */; };
 		DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */; };
 /* End PBXBuildFile section */
@@ -332,6 +335,10 @@
 		91B90D60222A7FF900EF082F /* EightLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightLockViewController.m; sourceTree = "<group>"; };
 		91D1771E21B43CA1007DB825 /* AlertWindowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertWindowVC.h; sourceTree = "<group>"; };
 		91D1771F21B43CA1007DB825 /* AlertWindowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertWindowVC.m; sourceTree = "<group>"; };
+		91D337792233A40200652F55 /* AI_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AI_ViewController.h; sourceTree = "<group>"; };
+		91D3377A2233A40200652F55 /* AI_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AI_ViewController.m; sourceTree = "<group>"; };
+		91D3377B2233A40200652F55 /* AI_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AI_ViewController.xib; sourceTree = "<group>"; };
+		91D3377F2233A4B500652F55 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		91E442B821C3EB76004F9318 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		91E442B921C3EB76004F9318 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		E37298DACB1F43E7C9FB34D1 /* Pods-iOS_KnowledgeStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.debug.xcconfig"; sourceTree = "<group>"; };
@@ -769,6 +776,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91D337782233A3D200652F55 /* 人工智能 */,
 				916E3DA0222F9D3600DBF1F3 /* Mock测试 */,
 				91655F73222BEE7700738F7B /* GCD系统函数使用 */,
 				91B90D5E222A7FC900EF082F /* 八种多线程锁 */,
@@ -944,6 +952,25 @@
 			path = "自定义弹窗UIWindow";
 			sourceTree = "<group>";
 		};
+		91D337782233A3D200652F55 /* 人工智能 */ = {
+			isa = PBXGroup;
+			children = (
+				91D3377E2233A44900652F55 /* Resource */,
+				91D337792233A40200652F55 /* AI_ViewController.h */,
+				91D3377A2233A40200652F55 /* AI_ViewController.m */,
+				91D3377B2233A40200652F55 /* AI_ViewController.xib */,
+			);
+			path = "人工智能";
+			sourceTree = "<group>";
+		};
+		91D3377E2233A44900652F55 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				91D3377F2233A4B500652F55 /* Resnet50.mlmodel */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		91E442B721C3EB54004F9318 /* 定时器的使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,6 +1085,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */,
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
 				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
@@ -1171,6 +1199,7 @@
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
 				911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */,
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
+				91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
@@ -1198,6 +1227,7 @@
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
+				91D337802233A4B500652F55 /* Resnet50.mlmodel in Sources */,
 				915FB6DE221EADA300E985EA /* MyPoint.m in Sources */,
 				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
 				913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */,
