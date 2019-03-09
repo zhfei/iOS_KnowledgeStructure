@@ -9,8 +9,9 @@
 #import "AI_ViewController.h"
 #import <Vision/Vision.h>
 #import "Resnet50.h"
-#import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreServices/CoreServices.h>
 #import <CoreFoundation/CoreFoundation.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface AI_ViewController () <UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
