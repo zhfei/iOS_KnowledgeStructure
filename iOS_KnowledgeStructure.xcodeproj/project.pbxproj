@@ -117,6 +117,7 @@
 		91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377A2233A40200652F55 /* AI_ViewController.m */; };
 		91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D3377B2233A40200652F55 /* AI_ViewController.xib */; };
 		91D337802233A4B500652F55 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377F2233A4B500652F55 /* Resnet50.mlmodel */; };
+		91D337822233AC6500652F55 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337812233AC6500652F55 /* MobileCoreServices.framework */; };
 		91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E442B921C3EB76004F9318 /* TimerViewController.m */; };
 		DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */; };
 /* End PBXBuildFile section */
@@ -339,6 +340,7 @@
 		91D3377A2233A40200652F55 /* AI_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AI_ViewController.m; sourceTree = "<group>"; };
 		91D3377B2233A40200652F55 /* AI_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AI_ViewController.xib; sourceTree = "<group>"; };
 		91D3377F2233A4B500652F55 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		91D337812233AC6500652F55 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		91E442B821C3EB76004F9318 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		91E442B921C3EB76004F9318 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		E37298DACB1F43E7C9FB34D1 /* Pods-iOS_KnowledgeStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.debug.xcconfig"; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D337822233AC6500652F55 /* MobileCoreServices.framework in Frameworks */,
 				DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +386,7 @@
 		8C04402642D8B9933B9C1249 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91D337812233AC6500652F55 /* MobileCoreServices.framework */,
 				88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */,
 			);
 			name = Frameworks;
@@ -1413,7 +1417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				INFOPLIST_FILE = iOS_KnowledgeStructure/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1436,7 +1440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				INFOPLIST_FILE = iOS_KnowledgeStructure/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
