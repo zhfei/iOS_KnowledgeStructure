@@ -41,10 +41,6 @@
     return [NSDictionary dictionaryWithContentsOfFile:path];;
 }
 
-
-
-
-
 + (NSArray <RegionModel *> *)dataSource2 {
     NSArray *cities = [self readLocalJsonFileWithName:@"cities"];
     NSMutableArray *arrayM = @[].mutableCopy;
