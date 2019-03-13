@@ -33,21 +33,34 @@
 */
 
 - (IBAction)addLocNotifiAction:(UIButton *)sender {
-    UNUserNotificationCenter *uCenter = [UNUserNotificationCenter currentNotificationCenter];
-    UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
-    content.title = @"本地通知标题";
-    content.subtitle = @"本地子标题";
-    content.body = @"内容";
-    content.sound = [UNNotificationSound defaultSound];
-    content.badge = @1;
+    if (@available(iOS 10.0, *)) {
+        UNUserNotificationCenter *uCenter = [UNUserNotificationCenter currentNotificationCenter];
+        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+        content.title = @"本地通知标题";
+        content.subtitle = @"本地子标题";
+        content.body = @"内容";
+        content.sound = [UNNotificationSound defaultSound];
+        content.badge = @1;
+        
+        NSTimeInterval time = [[NSDate dateWithTimeIntervalSinceNow:5] timeIntervalSinceNow];
+        UNTimeIntervalNotificationTrigger *trigg = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
+        
+        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"id" content:content trigger:trigg];
+        [uCenter addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            NSLog(@"添加通知了....");
+        }];
+    } else {
+        UILocalNotification *local = [[UILocalNotification alloc] init];
+        local.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+        local.alertTitle = @"标题";
+        local.alertBody = @"弹框内容";
+        local.userInfo = @{@"notifID":@"001"};
+        local.applicationIconBadgeNumber = 1;
+        local.soundName = UILocalNotificationDefaultSoundName;
+
+        [[UIApplication sharedApplication] scheduleLocalNotification:local];
+    }
     
-    NSTimeInterval time = [[NSDate dateWithTimeIntervalSinceNow:5] timeIntervalSinceNow];
-    UNTimeIntervalNotificationTrigger *trigg = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
-    
-    UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"id" content:content trigger:trigg];
-    [uCenter addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
-        NSLog(@"添加通知了....");
-    }];
 }
 
 - (IBAction)removeLocNotifiAction:(UIButton *)sender {
@@ -63,6 +76,14 @@
             }];
         }];
         [center removePendingNotificationRequestsWithIdentifiers:@[removeID]];
+    } else {
+        NSArray<UILocalNotification *> *array = [[UIApplication sharedApplication] scheduledLocalNotifications];
+        [array enumerateObjectsUsingBlock:^(UILocalNotification * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *notifID = [obj userInfo][removeID];
+            if ([notifID isEqualToString:removeID]) {
+                [[UIApplication sharedApplication] cancelLocalNotification:obj];
+            }
+        }];
     }
 }
 
@@ -123,7 +144,9 @@
     if (@available(iOS 10.0, *)) {
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         [center removeAllPendingNotificationRequests];
-    }
+    } else {
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    };
 }
 
 @end
