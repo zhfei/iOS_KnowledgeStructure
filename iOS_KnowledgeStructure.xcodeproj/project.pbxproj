@@ -75,6 +75,8 @@
 		915FB6DB221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */; };
 		915FB6DE221EADA300E985EA /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DD221EADA300E985EA /* MyPoint.m */; };
 		91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91655F75222BEEB200738F7B /* GCDFunctionViewController.m */; };
+		916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916748652238B6C900236986 /* LocationNotificationViewController.m */; };
+		916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916748662238B6C900236986 /* LocationNotificationViewController.xib */; };
 		916957AB21DE214D0026EB3A /* main3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A021DE214D0026EB3A /* main3.m */; };
 		916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A121DE214D0026EB3A /* main_blockArray.cpp */; };
 		916957AD21DE214D0026EB3A /* main2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A321DE214D0026EB3A /* main2.m */; };
@@ -258,6 +260,9 @@
 		915FB6DD221EADA300E985EA /* MyPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
 		91655F74222BEEB200738F7B /* GCDFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDFunctionViewController.h; sourceTree = "<group>"; };
 		91655F75222BEEB200738F7B /* GCDFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFunctionViewController.m; sourceTree = "<group>"; };
+		916748642238B6C900236986 /* LocationNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationNotificationViewController.h; sourceTree = "<group>"; };
+		916748652238B6C900236986 /* LocationNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationNotificationViewController.m; sourceTree = "<group>"; };
+		916748662238B6C900236986 /* LocationNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationNotificationViewController.xib; sourceTree = "<group>"; };
 		916957A021DE214D0026EB3A /* main3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main3.m; sourceTree = "<group>"; };
 		916957A121DE214D0026EB3A /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
 		916957A321DE214D0026EB3A /* main2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main2.m; sourceTree = "<group>"; };
@@ -672,6 +677,16 @@
 			path = "GCD系统函数使用";
 			sourceTree = "<group>";
 		};
+		916748632238B68400236986 /* 本地通知 */ = {
+			isa = PBXGroup;
+			children = (
+				916748642238B6C900236986 /* LocationNotificationViewController.h */,
+				916748652238B6C900236986 /* LocationNotificationViewController.m */,
+				916748662238B6C900236986 /* LocationNotificationViewController.xib */,
+			);
+			path = "本地通知";
+			sourceTree = "<group>";
+		};
 		9169579E21DE212A0026EB3A /* Block源码分析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -788,6 +803,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				916748632238B68400236986 /* 本地通知 */,
 				91D337782233A3D200652F55 /* 人工智能 */,
 				916E3DA0222F9D3600DBF1F3 /* Mock测试 */,
 				91655F73222BEE7700738F7B /* GCD系统函数使用 */,
@@ -1104,6 +1120,7 @@
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
+				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
 				91A4A76D221D03F90070DE6D /* cities.json in Resources */,
@@ -1223,6 +1240,7 @@
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
 				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
+				916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */,
 				912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */,
 				9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
@@ -1384,7 +1402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1437,7 +1455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1451,6 +1469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				INFOPLIST_FILE = iOS_KnowledgeStructure/Info.plist;
@@ -1459,8 +1478,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zhf.iOS-KnowledgeStructure";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xkc.iOS-KnowledgeStructure";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS_KnowledgeStructure/iOS_KnowledgeStructure-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1474,6 +1494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				INFOPLIST_FILE = iOS_KnowledgeStructure/Info.plist;
@@ -1482,8 +1503,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zhf.iOS-KnowledgeStructure";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xkc.iOS-KnowledgeStructure";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS_KnowledgeStructure/iOS_KnowledgeStructure-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

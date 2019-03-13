@@ -19,3 +19,4 @@
 #import "CoreText_CoreImageVC.h"
 #import "EightLockViewController.h"
 #import "AI_ViewController.h"
+#import "LocationNotificationViewController.h"

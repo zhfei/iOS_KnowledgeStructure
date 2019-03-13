@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationNotificationViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3Y-Wz-J3g">
+                    <rect key="frame" x="112" y="126" width="151" height="39"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.69184501929999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="2VM-yg-CHT"/>
+                        <constraint firstAttribute="width" constant="151" id="RHA-Zi-Plb"/>
+                    </constraints>
+                    <state key="normal" title="添加本地通知">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addLocNotifiAction:" destination="-1" eventType="touchUpInside" id="QhK-Wf-V2W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFL-Af-WVG">
+                    <rect key="frame" x="112" y="203" width="151" height="39"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.69184501929999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="5Oy-6b-Bj0"/>
+                        <constraint firstAttribute="width" constant="151" id="pW2-RX-kT1"/>
+                    </constraints>
+                    <state key="normal" title="移除本地通知">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="removeLocNotifiAction:" destination="-1" eventType="touchUpInside" id="0ta-jM-3jm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHB-Je-1g0">
+                    <rect key="frame" x="112" y="278" width="151" height="39"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.69184501929999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="5zS-va-N7g"/>
+                        <constraint firstAttribute="width" constant="151" id="e6z-9T-mQr"/>
+                    </constraints>
+                    <state key="normal" title="检查本地通知授权">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkLocNotifiAction:" destination="-1" eventType="touchUpInside" id="k7l-Pv-sRs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U3Y-Wz-J3g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8QH-xf-SwZ"/>
+                <constraint firstItem="QHB-Je-1g0" firstAttribute="leading" secondItem="U3Y-Wz-J3g" secondAttribute="leading" id="AqX-cq-xfL"/>
+                <constraint firstItem="XFL-Af-WVG" firstAttribute="top" secondItem="U3Y-Wz-J3g" secondAttribute="bottom" constant="38" id="R3p-3I-fQS"/>
+                <constraint firstItem="U3Y-Wz-J3g" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="106" id="TdH-x9-VEB"/>
+                <constraint firstItem="XFL-Af-WVG" firstAttribute="leading" secondItem="U3Y-Wz-J3g" secondAttribute="leading" id="c5c-h4-p4S"/>
+                <constraint firstItem="QHB-Je-1g0" firstAttribute="top" secondItem="XFL-Af-WVG" secondAttribute="bottom" constant="36" id="yHs-Yf-DtN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="130.40000000000001" y="138.98050974512745"/>
+        </view>
+    </objects>
+</document>

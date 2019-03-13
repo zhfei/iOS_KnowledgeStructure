@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import <BottomComponentLib/UIImage+Custom.h>
+// iOS10.0 需要导入
+#import <UserNotifications/UserNotifications.h>
+
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +21,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (@available(iOS 10.0, *)) {
+        UNUserNotificationCenter *uCenter = [UNUserNotificationCenter currentNotificationCenter];
+        [uCenter requestAuthorizationWithOptions:UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            
+        }];
+    } else {
+        UIUserNotificationSettings *uSet = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:uSet];
+    }
     
     return YES;
 }
@@ -48,5 +61,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+// 注册通知
+- (void)registerAPN {
+    
+    if (@available(iOS 10.0, *)) { // iOS10 以上
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            
+        }];
+    } else {// iOS8.0 以上
+        UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
+    }
+}
 
 @end

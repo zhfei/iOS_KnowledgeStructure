@@ -102,6 +102,10 @@ class MainTableViewController: UITableViewController {
         case 17:
             let vc = AI_ViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 18:
+            let vc = LocationNotificationViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
             
         default:
             print("未知...")
