@@ -147,8 +147,29 @@
 }
 
 
+#pragma mark - FPS刷新器
+- (void)setupDisplayLink {
+    CADisplayLink *_displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(linkTicks:)];
+    [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+    
+}
 
-
+- (void)linkTicks:(CADisplayLink *)link {
+    static NSInteger _scheduleTimes = 0;
+    NSTimeInterval _timestamp;
+    //执行次数
+    _scheduleTimes ++;
+    //当前时间戳
+    if(_timestamp == 0){
+        _timestamp = link.timestamp;
+    }
+    CFTimeInterval timePassed = link.timestamp - _timestamp;
+    if(timePassed >= 1.f) {
+        CGFloat fps = _scheduleTimes/timePassed;
+        printf("fps:%.1f, timePassed:%f\n", fps, timePassed);
+    }
+}
+    
 
 
 
