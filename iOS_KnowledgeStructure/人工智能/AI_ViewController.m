@@ -5,10 +5,11 @@
 //  Created by 周飞 on 2019/3/9.
 //  Copyright © 2019年 zhf. All rights reserved.
 //
+//  Resnet50包太大，需要自己下载
 
 #import "AI_ViewController.h"
 #import <Vision/Vision.h>
-#import "Resnet50.h"
+//#import "Resnet50.h"
 #import <CoreServices/CoreServices.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
@@ -47,16 +48,16 @@ didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
         UIImage *theimage = [self image:info[UIImagePickerControllerEditedImage] scaleToSize:thesize];
         self.imageView.image = theimage;
         
-        CVPixelBufferRef imageRef = [self pixelBufferFromCGImage:theimage.CGImage];
-        Resnet50 *resnet50Model = [[Resnet50 alloc] init];
-        NSError *error = nil;
-        Resnet50Output *output = [resnet50Model predictionFromImage:imageRef
-                                                              error:&error];
-        if (error == nil) {
-            self.photoNameLabel.text = output.classLabel;
-        } else {
-            NSLog(@"Error is %@", error.localizedDescription);
-        }
+//        CVPixelBufferRef imageRef = [self pixelBufferFromCGImage:theimage.CGImage];
+//        Resnet50 *resnet50Model = [[Resnet50 alloc] init];
+//        NSError *error = nil;
+//        Resnet50Output *output = [resnet50Model predictionFromImage:imageRef
+//                                                              error:&error];
+//        if (error == nil) {
+//            self.photoNameLabel.text = output.classLabel;
+//        } else {
+//            NSLog(@"Error is %@", error.localizedDescription);
+//        }
     }
     
     UIImagePickerController *imagePickerVC = picker;
