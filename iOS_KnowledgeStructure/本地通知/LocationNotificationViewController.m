@@ -16,21 +16,24 @@
 @end
 
 @implementation LocationNotificationViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+
+    UIView *red = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    UIView *blue = [[UIView alloc] initWithFrame:CGRectMake(20, 60, 100, 100)];
+    UIView *redSub = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 20, 20)];
+    
+    [self.view addSubview:red];
+    [self.view addSubview:blue];
+    [red addSubview:redSub];
+
+
+    CGPoint point = [self.view convertPoint:redSub.frame.origin toView:blue];
+    NSLog(@"point: %@",NSStringFromCGPoint(point));
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)addLocNotifiAction:(UIButton *)sender {
     if (@available(iOS 10.0, *)) {
@@ -42,7 +45,7 @@
         content.sound = [UNNotificationSound defaultSound];
         content.badge = @1;
         
-        NSTimeInterval time = [[NSDate dateWithTimeIntervalSinceNow:5] timeIntervalSinceNow];
+        NSTimeInterval time = [[NSDate dateWithTimeIntervalSinceNow:10] timeIntervalSinceNow];
         UNTimeIntervalNotificationTrigger *trigg = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:time repeats:NO];
         
         UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"id" content:content trigger:trigg];

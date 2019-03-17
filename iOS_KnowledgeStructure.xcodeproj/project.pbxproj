@@ -31,7 +31,6 @@
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
 		9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 9131C64C22130A0100BD70DC /* iOS Struckture.xmind */; };
 		913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833932219A71F00AE68F0 /* LifeCycleViewController.m */; };
-		913833962219A71F00AE68F0 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913833942219A71F00AE68F0 /* LifeCycleViewController.xib */; };
 		913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833982219B13D00AE68F0 /* LiftCycleHeader.m */; };
 		9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */; };
 		9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9138339D2219B6C300AE68F0 /* LiftCycleCell.m */; };
@@ -73,6 +72,7 @@
 		915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */; };
 		915FB6DB221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */; };
 		915FB6DE221EADA300E985EA /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DD221EADA300E985EA /* MyPoint.m */; };
+		9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */; };
 		91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91655F75222BEEB200738F7B /* GCDFunctionViewController.m */; };
 		916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916748652238B6C900236986 /* LocationNotificationViewController.m */; };
 		916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916748662238B6C900236986 /* LocationNotificationViewController.xib */; };
@@ -183,7 +183,6 @@
 		9131C64C22130A0100BD70DC /* iOS Struckture.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS Struckture.xmind"; sourceTree = "<group>"; };
 		913833922219A71F00AE68F0 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		913833932219A71F00AE68F0 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
-		913833942219A71F00AE68F0 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
 		913833972219B13D00AE68F0 /* LiftCycleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiftCycleHeader.h; sourceTree = "<group>"; };
 		913833982219B13D00AE68F0 /* LiftCycleHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiftCycleHeader.m; sourceTree = "<group>"; };
 		9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiftCycleHeader.xib; sourceTree = "<group>"; };
@@ -256,6 +255,7 @@
 		915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HybirdViewController+JavaScriptCore.m"; sourceTree = "<group>"; };
 		915FB6DC221EADA300E985EA /* MyPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPoint.h; sourceTree = "<group>"; };
 		915FB6DD221EADA300E985EA /* MyPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
+		9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
 		91655F74222BEEB200738F7B /* GCDFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDFunctionViewController.h; sourceTree = "<group>"; };
 		91655F75222BEEB200738F7B /* GCDFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFunctionViewController.m; sourceTree = "<group>"; };
 		916748642238B6C900236986 /* LocationNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationNotificationViewController.h; sourceTree = "<group>"; };
@@ -492,7 +492,7 @@
 			children = (
 				913833922219A71F00AE68F0 /* LifeCycleViewController.h */,
 				913833932219A71F00AE68F0 /* LifeCycleViewController.m */,
-				913833942219A71F00AE68F0 /* LifeCycleViewController.xib */,
+				9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */,
 				913833972219B13D00AE68F0 /* LiftCycleHeader.h */,
 				913833982219B13D00AE68F0 /* LiftCycleHeader.m */,
 				9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */,
@@ -801,6 +801,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				915106F2220425A200F9EF5D /* RunLoop点滴 */,
 				916748632238B68400236986 /* 本地通知 */,
 				91D337782233A3D200652F55 /* 人工智能 */,
 				916E3DA0222F9D3600DBF1F3 /* Mock测试 */,
@@ -812,7 +813,6 @@
 				913833912219A6D700AE68F0 /* VC生命周期 */,
 				910F286E2216F85E0028AB55 /* 数组筛选Predicate */,
 				912ED33222154554004F6C05 /* 自定义NavigationBar */,
-				915106F2220425A200F9EF5D /* RunLoop点滴 */,
 				9193496E2201D5FE00338639 /* Runtime点滴 */,
 				9193496A2200AE1200338639 /* Xtrace函数调用追踪 */,
 				9120F1FF21FEF9BA00E5B90C /* ScrollView使用 */,
@@ -1126,9 +1126,9 @@
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
+				9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
-				913833962219A71F00AE68F0 /* LifeCycleViewController.xib in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
 			);
