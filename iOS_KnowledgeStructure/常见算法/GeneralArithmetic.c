@@ -352,12 +352,48 @@ void reversalTree(pNode root) {
     
     reversalTree(root->leftChild);
     reversalTree(root->rightChild);
+    
+    
 }
 
+#pragma mark - 动态规划
+//int arr[] = {1,2,4,1,7,8,3};
+//在数组中，求不相邻元素和中，最大和的方案。
+//1.所取元素不能相邻
 
+//出口条件：当i=0时，arr[0]; 当i=1时，max(arr[0],arr[1])
+//最优解方案(OPT): 当前选i时，OPT(i-2)+arr[i]；当不选i时，OPT(i)
 
+//递归opt
+int rec_opt(int array[], int targetIndex) {
+    
+    if (targetIndex == 0) {
+        return array[0];
+    } else if (targetIndex == 1) {
+        return max_my(array[0], array[1]);
+    } else {
+        //选
+        int A = array[targetIndex]+rec_opt(array, targetIndex-2);
+        //不选
+        int B = rec_opt(array, targetIndex-1);
+        return max_my(A, B);
+    }
+}
 
-
+//动态规划opt
+void dp_opt(int array[]) {
+    int count = sizeof(array);
+    int *dpArray = (int *)malloc(count);
+    
+    dpArray[0] = array[0];
+    dpArray[1] = max_my(array[0], array[1]);
+    
+    for (int i = 2; i < count; i++) {
+        int A = array[i] + dpArray[i-2];
+        int B = dpArray[i-1];
+        dpArray[i] = max_my(A, B);
+    }
+}
 
 
 

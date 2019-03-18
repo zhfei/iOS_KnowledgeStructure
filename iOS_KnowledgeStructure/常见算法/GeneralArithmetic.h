@@ -27,6 +27,10 @@ typedef struct Node {
     struct Node *rightChild;
 }Node, *pNode;
 
+int max_my(int a, int b) {
+    return a > b ? a : b;
+}
+
 
 #pragma mark - 七种排序算法
 //冒泡
@@ -66,4 +70,9 @@ void treeSort_after(pNode root);
 //二叉树反转
 void reversalTree(pNode root) ;
 
+#pragma mark - 动态规划
+//递归opt
+int rec_opt(int array[], int targetIndex);
+//动态规划opt
+void dp_opt(int array[]);
 #endif /* GeneralArithmetic_h */
