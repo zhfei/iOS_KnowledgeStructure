@@ -8,8 +8,26 @@
 
 #ifndef GeneralArithmetic_h
 #define GeneralArithmetic_h
-
 #include <stdio.h>
+
+
+#pragma mark - tools;
+void swap_my(int *a, int *b) {
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+typedef struct Node {
+    int var;
+    //链表
+    struct Node *next;
+    //二叉树
+    struct Node *leftChild;
+    struct Node *rightChild;
+}Node, *pNode;
+
+
 #pragma mark - 七种排序算法
 //冒泡
 void bubbling_sort(int array[], int count) ;
@@ -25,4 +43,27 @@ void quick_sort(int array[], int start, int end);
 int * merger_sort(int leftArray[], int leftCount, int rightArray[], int rightCount);
 //堆排序
 void heap_sort(int array[], int count);
+
+#pragma mark - 查找算法
+//二分查找
+int binary_search(int array[], int target);
+
+#pragma mark - 链表算法
+//链表反转(递归)
+pNode reversalList_recursion(pNode root);
+//链表反转
+pNode reversalList(pNode root);
+//链表是否有环
+int haveLoopInList(pNode root);
+
+#pragma mark - 二叉树算法
+//先序遍历
+void treeSort_before(pNode root);
+//中序遍历
+void treeSort_middle(pNode root);
+//后序遍历
+void treeSort_after(pNode root);
+//二叉树反转
+void reversalTree(pNode root) ;
+
 #endif /* GeneralArithmetic_h */

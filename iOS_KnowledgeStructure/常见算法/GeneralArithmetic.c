@@ -9,16 +9,8 @@
 #include "GeneralArithmetic.h"
 #include <stdlib.h>
 
-#pragma mark - tools;
 
-void swap_my(int *a, int *b) {
-    int tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
-
-#pragma mark - 排序算法;
+#pragma mark - 七种排序算法
 //冒泡
 void bubbling_sort(int array[], int count) {
     
@@ -211,3 +203,166 @@ void heap_sort(int array[], int count) {
     }
     printf("堆排序完成...");
 }
+
+#pragma mark - 查找算法
+//二分查找
+int binary_search(int array[], int target) {
+    int count = sizeof(array);
+    
+    int start = 0;
+    int end = count-1;
+    int targetIndex = 0;
+    
+    while (start < end) {
+        targetIndex = (start+end)/2;
+        
+        if (array[targetIndex] == target) {
+            return targetIndex;
+        }
+        
+        if (target > array[targetIndex]) {
+            start = targetIndex + 1;
+        }
+        
+        if (target < array[targetIndex]) {
+            end = targetIndex-1;
+        }
+    }
+    return start;
+}
+
+
+#pragma mark - 链表算法
+//链表创建
+pNode createList(int num) {
+    pNode header = (pNode)malloc(sizeof(Node));
+    pNode curr = header;
+    for (int i = 0; i < num; i++) {
+        pNode node = (pNode)malloc(sizeof(Node));
+        node->var = i;
+        node->next = NULL;
+        
+        curr->next = node;
+        curr = node;
+    }
+    return header;
+}
+
+//链表反转(递归)
+pNode reversalList_recursion(pNode root) {
+    if (root == NULL || root->next == NULL) {
+        return root;
+    } else {
+        pNode newHeader = reversalList_recursion(root->next);
+        
+        root->next->next = root;
+        root->next = NULL;
+        return newHeader;
+    }
+}
+
+//链表反转
+pNode reversalList(pNode root) {
+    if (root == NULL || root->next == NULL) {
+        return root;
+    }
+    pNode result = NULL;
+    pNode curr = root;
+    pNode prev = NULL;
+    pNode next;
+    
+    while (curr != NULL) {
+        next = curr->next;
+        if (next == NULL) {
+            result = root;
+        } else {
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+    }
+    return result;
+}
+
+//链表是否有环
+int haveLoopInList(pNode root) {
+    if (root == NULL || root->next == NULL) {
+        return 0;
+    }
+    
+    pNode fast = root;
+    pNode slow = root;
+    
+    while (slow != NULL && fast->next != NULL) {
+        slow = slow->next;
+        fast = fast->next->next;
+        
+        if (slow == fast) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+#pragma mark - 二叉树算法
+//先序遍历
+void treeSort_before(pNode root) {
+    if (root == NULL) {
+        return;
+    }
+    
+    printf("data:%d",root->var);
+    treeSort_before(root->leftChild);
+    treeSort_before(root->rightChild);
+}
+//中序遍历
+void treeSort_middle(pNode root) {
+    if (root == NULL) {
+        return;
+    }
+    
+    treeSort_middle(root->leftChild);
+    printf("data:%d",root->var);
+    treeSort_middle(root->rightChild);
+}
+//后序遍历
+void treeSort_after(pNode root) {
+    if (root == NULL) {
+        return;
+    }
+    
+    treeSort_after(root->leftChild);
+    treeSort_after(root->rightChild);
+    printf("data:%d",root->var);
+}
+
+//二叉树反转
+void reversalTree(pNode root) {
+    if (root == NULL) {
+        return;
+    }
+    
+    if (root->leftChild == NULL || root->rightChild == NULL) {
+        return;
+    }
+    
+    pNode leftN = root->leftChild;
+    root->leftChild = root->rightChild;
+    root->rightChild = leftN;
+    
+    reversalTree(root->leftChild);
+    reversalTree(root->rightChild);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
