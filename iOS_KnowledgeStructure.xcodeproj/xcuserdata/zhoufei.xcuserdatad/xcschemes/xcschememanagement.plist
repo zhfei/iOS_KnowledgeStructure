@@ -4,15 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>OCLint.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>iOS_KnowledgeStructure.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>19</integer>
 		</dict>
 		<key>iOS_KnowledgeStructure.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>11</integer>
+		</dict>
+		<key>iOS_KnowledgeStructure2222.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>917B78D42189F5B000425A05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>917B78EC2189F5B200425A05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>917B78F72189F5B200425A05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

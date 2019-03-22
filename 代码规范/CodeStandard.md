@@ -153,12 +153,12 @@ ZOCMonthSalesListViewController
 ```
 + (instancetype)sharedInstance 
 { 
-static id sharedInstance = nil; 
-static dispatch_once_t onceToken = 0;
-dispatch_once(&onceToken, ^{ 
-sharedInstance = [[self alloc] init];
-}); 
-return sharedInstance; 
+ static id sharedInstance = nil; 
+ static dispatch_once_t onceToken = 0;
+       dispatch_once(&onceToken, ^{ 
+  sharedInstance = [[self alloc] init];
+  }); 
+ return sharedInstance; 
 } 
 
 ```
@@ -178,25 +178,25 @@ _syncQueue = dispatch_queue_create("com.effectiveobjectivec.syncQueue", NULL);
 
 //设置字符串
 - (void)setSomeString:(NSString*)someString  {
-dispatch_sync(_syncQueue, ^{
-_someString = someString;
-});
+     dispatch_sync(_syncQueue, ^{
+        _someString = someString;
+    });
 }
 ```
 使用异步栅栏函数
 ```
 //设置字符串
 - (void)setSomeString:(NSString*)someString {
-dispatch_barrier_async(_syncQueue, ^{
-_someString = someString;
-});
+     dispatch_barrier_async(_syncQueue, ^{
+        _someString = someString;
+    });
 }
 ```
 
 **重写description描述方法**
 ```
 - (NSString*)description  {
-return [NSString stringWithFormat:@"<%@: %p, %@ %@>", [self class], self, firstName, lastName];
+     return [NSString stringWithFormat:@"<%@: %p, %@ %@>", [self class], self, firstName, lastName];
 }
 ```
 
@@ -216,19 +216,19 @@ NSArray, NSDictory存取时，添加判断nil, 判断下标越界问题。
 ```
 - (NSInteger)giveMeFive 
 { 
-NSString *foo; 
-#pragma unused (foo) 
-return 5; 
+ NSString *foo; 
+ #pragma unused (foo) 
+ return 5; 
 } 
 
 - (float)divide:(float)dividend by:(float)divisor 
 { 
-#warning Dude, don't compare floating point numbers like this! 
-if (divisor != 0.0) { 
-return (dividend / divisor); 
-} else {  
-return NAN; 
-} 
+ #warning Dude, don't compare floating point numbers like this! 
+     if (divisor != 0.0) { 
+        return (dividend / divisor); 
+     } else {  
+        return NAN; 
+ } 
 } 
 ```
 
@@ -236,10 +236,9 @@ return NAN;
 ```
 - (NSInteger)divide:(NSInteger)dividend by:(NSInteger)divisor 
 { 
-#error Whoa, buddy, you need to check for zero here! 
-return (dividend / divisor); 
+ #error Whoa, buddy, you need to check for zero here! 
+ return (dividend / divisor); 
 } 
 
 ```
-
 

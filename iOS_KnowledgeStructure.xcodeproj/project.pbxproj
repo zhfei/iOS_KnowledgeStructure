@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		91392B892244F3F300AF9A51 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 91392B8C2244F3F300AF9A51 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				919BA5622244F45F00AA28E6 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */; };
 		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
@@ -248,6 +262,7 @@
 		9154487A21E597F400A90A14 /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
 		9154487C21E5980600A90A14 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
 		9154487D21E5980600A90A14 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		915BE176224223DC00A2B0B1 /* CodeStandard.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CodeStandard.md; sourceTree = "<group>"; };
 		915C829521B229F700A7567B /* Hybird.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Hybird.README.md; sourceTree = "<group>"; };
 		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
 		915C829821B22AC400A7567B /* HybirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybirdViewController.m; sourceTree = "<group>"; };
@@ -661,6 +676,14 @@
 			path = "事件传输链和响应";
 			sourceTree = "<group>";
 		};
+		915BE1742242234E00A2B0B1 /* 代码规范 */ = {
+			isa = PBXGroup;
+			children = (
+				915BE176224223DC00A2B0B1 /* CodeStandard.md */,
+			);
+			path = "代码规范";
+			sourceTree = "<group>";
+		};
 		915C829421B2296200A7567B /* 基于UIWebView的混合开发 */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,6 +812,7 @@
 		917B78CC2189F5B000425A05 = {
 			isa = PBXGroup;
 			children = (
+				915BE1742242234E00A2B0B1 /* 代码规范 */,
 				916E3D92222F99EB00DBF1F3 /* Mock */,
 				9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */,
 				917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */,
@@ -1085,6 +1109,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = zhf;
 				TargetAttributes = {
+					91392B892244F3F300AF9A51 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					917B78D42189F5B000425A05 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -1115,6 +1142,7 @@
 				917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */,
 				917B78EC2189F5B200425A05 /* iOS_KnowledgeStructureTests */,
 				917B78F72189F5B200425A05 /* iOS_KnowledgeStructureUITests */,
+				91392B892244F3F300AF9A51 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -1191,6 +1219,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		919BA5622244F45F00AA28E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\nsource ~/.bash_profile\n\ncd ${PROJECT_DIR}\n\nxcodebuild clean\n\nxcodebuild -workspace iOS_KnowledgeStructure.xcworkspace -configuration Debug -scheme iOS_KnowledgeStructure build | xcpretty -r json-compilation-database -o compile_commands.json\n\noclint-json-compilation-database -- -report-type xcode\n\n";
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1361,6 +1406,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		91392B8A2244F3F300AF9A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91392B8B2244F3F300AF9A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		917B78FF2189F5B200425A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1625,6 +1688,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		91392B8C2244F3F300AF9A51 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91392B8A2244F3F300AF9A51 /* Debug */,
+				91392B8B2244F3F300AF9A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		917B78D02189F5B000425A05 /* Build configuration list for PBXProject "iOS_KnowledgeStructure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
