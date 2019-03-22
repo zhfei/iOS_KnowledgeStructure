@@ -1235,7 +1235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\nsource ~/.bash_profile\n\ncd ${PROJECT_DIR}\n\nxcodebuild clean\n\nxcodebuild -workspace iOS_KnowledgeStructure.xcworkspace -configuration Debug -scheme iOS_KnowledgeStructure build | xcpretty -r json-compilation-database -o compile_commands.json\n\noclint-json-compilation-database -- -report-type xcode\n\n";
+			shellScript = "source ~/.bash_profile\n\ncd ${PROJECT_DIR}\n\nxcodebuild clean\n\nxcodebuild -workspace iOS_KnowledgeStructure.xcworkspace -configuration Debug -scheme iOS_KnowledgeStructure build | xcpretty -r json-compilation-database -o compile_commands.json\n\noclint-json-compilation-database -- -report-type xcode\n\n";
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
