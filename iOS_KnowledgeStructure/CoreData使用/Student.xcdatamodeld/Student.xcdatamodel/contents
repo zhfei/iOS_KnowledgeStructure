@@ -11,6 +11,6 @@
     </entity>
     <elements>
         <element name="Person" positionX="-45" positionY="0" width="128" height="90"/>
-        <element name="Card" positionX="-18" positionY="45" width="128" height="75"/>
+        <element name="Card" positionX="264.35546875" positionY="11.58203125" width="128" height="75"/>
     </elements>
 </model>
