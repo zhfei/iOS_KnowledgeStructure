@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		91046FBB2253B15000D1F65E /* Student.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91046FB92253B15000D1F65E /* Student.xcdatamodeld */; };
+		91046FBE2253BA4D00D1F65E /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */; };
 		910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */; };
 		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
 		910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28752216F8F90028AB55 /* ArrayFilterPerson.m */; };
@@ -160,7 +160,7 @@
 
 /* Begin PBXFileReference section */
 		88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91046FBA2253B15000D1F65E /* Student.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Student.xcdatamodel; sourceTree = "<group>"; };
+		91046FBD2253BA4D00D1F65E /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
 		910F286F2216F8980028AB55 /* ArrayFiltrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewController.h; sourceTree = "<group>"; };
 		910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFiltrateViewController.m; sourceTree = "<group>"; };
 		910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayFiltrateViewController.xib; sourceTree = "<group>"; };
@@ -426,7 +426,7 @@
 		91046FB82253B10600D1F65E /* CoreData使用 */ = {
 			isa = PBXGroup;
 			children = (
-				91046FB92253B15000D1F65E /* Student.xcdatamodeld */,
+				91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */,
 			);
 			path = "CoreData使用";
 			sourceTree = "<group>";
@@ -1306,6 +1306,7 @@
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
 				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
+				91046FBE2253BA4D00D1F65E /* Models.xcdatamodeld in Sources */,
 				916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */,
 				912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */,
 				9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */,
@@ -1350,7 +1351,6 @@
 				910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */,
 				9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */,
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
-				91046FBB2253B15000D1F65E /* Student.xcdatamodeld in Sources */,
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
@@ -1748,13 +1748,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		91046FB92253B15000D1F65E /* Student.xcdatamodeld */ = {
+		91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				91046FBA2253B15000D1F65E /* Student.xcdatamodel */,
+				91046FBD2253BA4D00D1F65E /* Models.xcdatamodel */,
 			);
-			currentVersion = 91046FBA2253B15000D1F65E /* Student.xcdatamodel */;
-			path = Student.xcdatamodeld;
+			currentVersion = 91046FBD2253BA4D00D1F65E /* Models.xcdatamodel */;
+			path = Models.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

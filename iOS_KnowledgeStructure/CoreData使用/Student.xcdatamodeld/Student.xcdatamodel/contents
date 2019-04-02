@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G2112" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Association" representedClassName="Association" syncable="YES" codeGenerationType="class">
-        <attribute name="orderID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="orderName" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
+        <attribute name="num" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="card" inverseEntity="Person" syncable="YES"/>
     </entity>
-    <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Association" syncable="YES"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="person" inverseEntity="Card" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Association" positionX="-45" positionY="27" width="128" height="75"/>
+        <element name="Person" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="Card" positionX="-18" positionY="45" width="128" height="75"/>
     </elements>
 </model>
