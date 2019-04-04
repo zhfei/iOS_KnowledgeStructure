@@ -93,7 +93,6 @@
 		916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916748652238B6C900236986 /* LocationNotificationViewController.m */; };
 		916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916748662238B6C900236986 /* LocationNotificationViewController.xib */; };
 		916957AB21DE214D0026EB3A /* main3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A021DE214D0026EB3A /* main3.m */; };
-		916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A121DE214D0026EB3A /* main_blockArray.cpp */; };
 		916957AD21DE214D0026EB3A /* main2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A321DE214D0026EB3A /* main2.m */; };
 		916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A421DE214D0026EB3A /* main_blockInt.cpp */; };
 		916957AF21DE214D0026EB3A /* main1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A621DE214D0026EB3A /* main1.m */; };
@@ -119,6 +118,7 @@
 		917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791A2189FAE500425A05 /* MainTableViewController.swift */; };
 		917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791C2189FB4C00425A05 /* MainTableViewModel.swift */; };
 		917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791E2189FC9300425A05 /* MainTableCoordinater.swift */; };
+		917BD24A2256468C0085181B /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 917BD2492256468C0085181B /* main_blockArray.cpp */; };
 		9193496D2200AE3B00338639 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9193496B2200AE3B00338639 /* Xtrace.mm */; };
 		919349732201D68700338639 /* RuntimeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349722201D68700338639 /* RuntimeBase.m */; };
 		919349762201EF0B00338639 /* RuntimeApply1.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349752201EF0B00338639 /* RuntimeApply1.m */; };
@@ -126,11 +126,8 @@
 		9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193497B2201FE7C00338639 /* RuntimePerson2+Associated.m */; };
 		9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9193497E220200A100338639 /* RuntimePerson3Coding.m */; };
 		91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 91934981220202A200338639 /* RuntimePerson4jsonDict.m */; };
-		9197BFCF22550EDD00FAFF7C /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197BFCD22550EDD00FAFF7C /* Person+CoreDataClass.swift */; };
-		9197BFD022550EDD00FAFF7C /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9197BFCE22550EDD00FAFF7C /* Person+CoreDataProperties.swift */; };
 		91A2492F2223C2DF00C78200 /* LabelContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A2492E2223C2DF00C78200 /* LabelContainer.m */; };
 		91A4A76B221CFFF50070DE6D /* RegionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4A76A221CFFF50070DE6D /* RegionModel.m */; };
-		91A4A76D221D03F90070DE6D /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 91A4A76C221D03F80070DE6D /* cities.json */; };
 		91A4A770221D075A0070DE6D /* PickerViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4A76F221D075A0070DE6D /* PickerViewController+delegate.m */; };
 		91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9621A446CF00249FA8 /* DecoderEncoderVC.swift */; };
 		91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9821A446F300249FA8 /* BaseModel.swift */; };
@@ -285,7 +282,6 @@
 		916748652238B6C900236986 /* LocationNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationNotificationViewController.m; sourceTree = "<group>"; };
 		916748662238B6C900236986 /* LocationNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationNotificationViewController.xib; sourceTree = "<group>"; };
 		916957A021DE214D0026EB3A /* main3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main3.m; sourceTree = "<group>"; };
-		916957A121DE214D0026EB3A /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
 		916957A321DE214D0026EB3A /* main2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main2.m; sourceTree = "<group>"; };
 		916957A421DE214D0026EB3A /* main_blockInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockInt.cpp; sourceTree = "<group>"; };
 		916957A621DE214D0026EB3A /* main1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main1.m; sourceTree = "<group>"; };
@@ -337,6 +333,7 @@
 		917B791C2189FB4C00425A05 /* MainTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewModel.swift; sourceTree = "<group>"; };
 		917B791E2189FC9300425A05 /* MainTableCoordinater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCoordinater.swift; sourceTree = "<group>"; };
 		917B7920218A09DA00425A05 /* GCDUtility.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GCDUtility.md; sourceTree = "<group>"; };
+		917BD2492256468C0085181B /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
 		9193496B2200AE3B00338639 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 		9193496C2200AE3B00338639 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
 		919349712201D68700338639 /* RuntimeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeBase.h; sourceTree = "<group>"; };
@@ -351,13 +348,10 @@
 		9193497E220200A100338639 /* RuntimePerson3Coding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson3Coding.m; sourceTree = "<group>"; };
 		91934980220202A200338639 /* RuntimePerson4jsonDict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson4jsonDict.h; sourceTree = "<group>"; };
 		91934981220202A200338639 /* RuntimePerson4jsonDict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson4jsonDict.m; sourceTree = "<group>"; };
-		9197BFCD22550EDD00FAFF7C /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9197BFCE22550EDD00FAFF7C /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		91A2492D2223C2DF00C78200 /* LabelContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelContainer.h; sourceTree = "<group>"; };
 		91A2492E2223C2DF00C78200 /* LabelContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelContainer.m; sourceTree = "<group>"; };
 		91A4A769221CFFF50070DE6D /* RegionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegionModel.h; sourceTree = "<group>"; };
 		91A4A76A221CFFF50070DE6D /* RegionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegionModel.m; sourceTree = "<group>"; };
-		91A4A76C221D03F80070DE6D /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		91A4A76E221D075A0070DE6D /* PickerViewController+delegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickerViewController+delegate.h"; sourceTree = "<group>"; };
 		91A4A76F221D075A0070DE6D /* PickerViewController+delegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PickerViewController+delegate.m"; sourceTree = "<group>"; };
 		91A800208392FC65C632F464 /* Pods-iOS_KnowledgeStructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.release.xcconfig"; sourceTree = "<group>"; };
@@ -431,8 +425,6 @@
 		91046FB82253B10600D1F65E /* CoreData使用 */ = {
 			isa = PBXGroup;
 			children = (
-				9197BFCD22550EDD00FAFF7C /* Person+CoreDataClass.swift */,
-				9197BFCE22550EDD00FAFF7C /* Person+CoreDataProperties.swift */,
 				91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */,
 				91046FBF2253BC5600D1F65E /* CoreDataHelper.h */,
 				91046FC02253BC5600D1F65E /* CoreDataHelper.m */,
@@ -623,7 +615,6 @@
 		9149E994221BF2C900C001A1 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				91A4A76C221D03F80070DE6D /* cities.json */,
 				9149E995221BF2F200C001A1 /* list.plist */,
 			);
 			path = resource;
@@ -753,8 +744,8 @@
 		9169579F21DE214D0026EB3A /* block_blockArray */ = {
 			isa = PBXGroup;
 			children = (
+				917BD2492256468C0085181B /* main_blockArray.cpp */,
 				916957A021DE214D0026EB3A /* main3.m */,
-				916957A121DE214D0026EB3A /* main_blockArray.cpp */,
 			);
 			path = block_blockArray;
 			sourceTree = "<group>";
@@ -1179,7 +1170,6 @@
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
-				91A4A76D221D03F90070DE6D /* cities.json in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
@@ -1287,7 +1277,6 @@
 				9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */,
 				91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */,
 				910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */,
-				916957AC21DE214D0026EB3A /* main_blockArray.cpp in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
@@ -1321,7 +1310,6 @@
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
 				915FB6DB221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m in Sources */,
 				9154487E21E5980600A90A14 /* RedView.m in Sources */,
-				9197BFD022550EDD00FAFF7C /* Person+CoreDataProperties.swift in Sources */,
 				915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */,
 				91A4A76B221CFFF50070DE6D /* RegionModel.m in Sources */,
 				91A2492F2223C2DF00C78200 /* LabelContainer.m in Sources */,
@@ -1335,6 +1323,7 @@
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
 				91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */,
 				9132B5D1223F3BC0009C3062 /* GeneralArithmetic.c in Sources */,
+				917BD24A2256468C0085181B /* main_blockArray.cpp in Sources */,
 				914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */,
 				917B78DD2189F5B000425A05 /* ViewController.m in Sources */,
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
@@ -1369,7 +1358,6 @@
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
 				915106F5220425D500F9EF5D /* RunLoopViewController.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
-				9197BFCF22550EDD00FAFF7C /* Person+CoreDataClass.swift in Sources */,
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,
 				911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */,
