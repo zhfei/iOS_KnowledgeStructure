@@ -45,7 +45,6 @@
 		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
-		9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 9131C64C22130A0100BD70DC /* iOS Struckture.xmind */; };
 		9132B5D1223F3BC0009C3062 /* GeneralArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = 9132B5D0223F3BC0009C3062 /* GeneralArithmetic.c */; };
 		913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833932219A71F00AE68F0 /* LifeCycleViewController.m */; };
 		913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833982219B13D00AE68F0 /* LiftCycleHeader.m */; };
@@ -202,7 +201,6 @@
 		912ED33322154582004F6C05 /* CustomNavigationBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarVC.h; sourceTree = "<group>"; };
 		912ED33422154582004F6C05 /* CustomNavigationBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarVC.m; sourceTree = "<group>"; };
 		912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarVC.xib; sourceTree = "<group>"; };
-		9131C64C22130A0100BD70DC /* iOS Struckture.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS Struckture.xmind"; sourceTree = "<group>"; };
 		9132B5CF223F3BC0009C3062 /* GeneralArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralArithmetic.h; sourceTree = "<group>"; };
 		9132B5D0223F3BC0009C3062 /* GeneralArithmetic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneralArithmetic.c; sourceTree = "<group>"; };
 		913833922219A71F00AE68F0 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
@@ -521,7 +519,6 @@
 		9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */ = {
 			isa = PBXGroup;
 			children = (
-				9131C64C22130A0100BD70DC /* iOS Struckture.xmind */,
 			);
 			path = "iOS_Stucture_XMind图";
 			sourceTree = "<group>";
@@ -1179,7 +1176,6 @@
 				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
-				9131C64D22130A0100BD70DC /* iOS Struckture.xmind in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
