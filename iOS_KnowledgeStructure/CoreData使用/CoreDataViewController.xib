@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoreDataViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Grm-3G-YMo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xyz-qH-Mh4">
+                    <rect key="frame" x="21" y="152" width="332" height="110"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66v-Ic-ZA0">
+                            <rect key="frame" x="0.0" y="40" width="75.5" height="30"/>
+                            <color key="backgroundColor" red="0.87843137250000003" green="0.80784313730000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="增加"/>
+                            <connections>
+                                <action selector="addAction:" destination="-1" eventType="touchUpInside" id="ga2-gt-hCD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXu-Rn-mzi">
+                            <rect key="frame" x="85.5" y="40" width="75.5" height="30"/>
+                            <color key="backgroundColor" red="0.2274509804" green="0.69184501929999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="deleteAction:" destination="-1" eventType="touchUpInside" id="fpC-Ju-fX6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mN2-0T-lli">
+                            <rect key="frame" x="171" y="40" width="75.5" height="30"/>
+                            <color key="backgroundColor" red="0.61960784310000006" green="0.64313725489999995" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="修改"/>
+                            <connections>
+                                <action selector="updateAction:" destination="-1" eventType="touchUpInside" id="5py-Zw-MUL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-vC-vZ6">
+                            <rect key="frame" x="256.5" y="40" width="75.5" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="查找"/>
+                            <connections>
+                                <action selector="fetchAction:" destination="-1" eventType="touchUpInside" id="rn7-nA-LOS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="lds-M5-EN2"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Xyz-qH-Mh4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="132" id="JZw-ll-TVu"/>
+                <constraint firstItem="Xyz-qH-Mh4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="21" id="TN9-wh-yeN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xyz-qH-Mh4" secondAttribute="trailing" constant="22" id="mXI-6x-lCQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="143.47826086956522"/>
+        </view>
+    </objects>
+</document>

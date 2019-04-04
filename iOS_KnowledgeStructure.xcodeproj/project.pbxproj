@@ -21,8 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		91046FBE2253BA4D00D1F65E /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */; };
-		91046FC12253BC5600D1F65E /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 91046FC02253BC5600D1F65E /* CoreDataHelper.m */; };
 		910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */; };
 		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
 		910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28752216F8F90028AB55 /* ArrayFilterPerson.m */; };
@@ -90,6 +88,12 @@
 		915FB6DE221EADA300E985EA /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DD221EADA300E985EA /* MyPoint.m */; };
 		9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */; };
 		91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91655F75222BEEB200738F7B /* GCDFunctionViewController.m */; };
+		9166AB4522564B3C004C6F29 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB3822564B39004C6F29 /* CoreDataHelper.m */; };
+		9166AB4822564B3C004C6F29 /* GooseEgg.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB3F22564B3A004C6F29 /* GooseEgg.xcdatamodeld */; };
+		9166AB4F22564DCD004C6F29 /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB4D22564DCD004C6F29 /* Student+CoreDataClass.m */; };
+		9166AB5022564DCD004C6F29 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB4E22564DCD004C6F29 /* Student+CoreDataProperties.m */; };
+		9166AB5922565277004C6F29 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB5822565277004C6F29 /* CoreDataViewController.m */; };
+		9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9166AB5A225653A6004C6F29 /* CoreDataViewController.xib */; };
 		916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916748652238B6C900236986 /* LocationNotificationViewController.m */; };
 		916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916748662238B6C900236986 /* LocationNotificationViewController.xib */; };
 		916957AB21DE214D0026EB3A /* main3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957A021DE214D0026EB3A /* main3.m */; };
@@ -159,9 +163,6 @@
 
 /* Begin PBXFileReference section */
 		88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91046FBD2253BA4D00D1F65E /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
-		91046FBF2253BC5600D1F65E /* CoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
-		91046FC02253BC5600D1F65E /* CoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		910F286F2216F8980028AB55 /* ArrayFiltrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewController.h; sourceTree = "<group>"; };
 		910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFiltrateViewController.m; sourceTree = "<group>"; };
 		910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayFiltrateViewController.xib; sourceTree = "<group>"; };
@@ -278,6 +279,17 @@
 		9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
 		91655F74222BEEB200738F7B /* GCDFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDFunctionViewController.h; sourceTree = "<group>"; };
 		91655F75222BEEB200738F7B /* GCDFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFunctionViewController.m; sourceTree = "<group>"; };
+		9166AB3822564B39004C6F29 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		9166AB3922564B39004C6F29 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		9166AB4022564B3A004C6F29 /* GooseEgg.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GooseEgg.xcdatamodel; sourceTree = "<group>"; };
+		9166AB4422564B3B004C6F29 /* GooseEggCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooseEggCoreData.h; sourceTree = "<group>"; };
+		9166AB4B22564DCD004C6F29 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		9166AB4C22564DCD004C6F29 /* Student+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		9166AB4D22564DCD004C6F29 /* Student+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		9166AB4E22564DCD004C6F29 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		9166AB5722565277004C6F29 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		9166AB5822565277004C6F29 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		9166AB5A225653A6004C6F29 /* CoreDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreDataViewController.xib; sourceTree = "<group>"; };
 		916748642238B6C900236986 /* LocationNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationNotificationViewController.h; sourceTree = "<group>"; };
 		916748652238B6C900236986 /* LocationNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationNotificationViewController.m; sourceTree = "<group>"; };
 		916748662238B6C900236986 /* LocationNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationNotificationViewController.xib; sourceTree = "<group>"; };
@@ -425,9 +437,16 @@
 		91046FB82253B10600D1F65E /* CoreData使用 */ = {
 			isa = PBXGroup;
 			children = (
-				91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */,
-				91046FBF2253BC5600D1F65E /* CoreDataHelper.h */,
-				91046FC02253BC5600D1F65E /* CoreDataHelper.m */,
+				9166AB3722564B39004C6F29 /* CoreDataHelper */,
+				9166AB4B22564DCD004C6F29 /* Student+CoreDataProperties.h */,
+				9166AB4E22564DCD004C6F29 /* Student+CoreDataProperties.m */,
+				9166AB4C22564DCD004C6F29 /* Student+CoreDataClass.h */,
+				9166AB4D22564DCD004C6F29 /* Student+CoreDataClass.m */,
+				9166AB3F22564B3A004C6F29 /* GooseEgg.xcdatamodeld */,
+				9166AB4422564B3B004C6F29 /* GooseEggCoreData.h */,
+				9166AB5722565277004C6F29 /* CoreDataViewController.h */,
+				9166AB5822565277004C6F29 /* CoreDataViewController.m */,
+				9166AB5A225653A6004C6F29 /* CoreDataViewController.xib */,
 			);
 			path = "CoreData使用";
 			sourceTree = "<group>";
@@ -717,6 +736,15 @@
 				91655F75222BEEB200738F7B /* GCDFunctionViewController.m */,
 			);
 			path = "GCD系统函数使用";
+			sourceTree = "<group>";
+		};
+		9166AB3722564B39004C6F29 /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9166AB3822564B39004C6F29 /* CoreDataHelper.m */,
+				9166AB3922564B39004C6F29 /* CoreDataHelper.h */,
+			);
+			path = CoreDataHelper;
 			sourceTree = "<group>";
 		};
 		916748632238B68400236986 /* 本地通知 */ = {
@@ -1176,6 +1204,7 @@
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */,
+				9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
@@ -1287,6 +1316,7 @@
 				9193496D2200AE3B00338639 /* Xtrace.mm in Sources */,
 				9149E992221BEF9B00C001A1 /* PickerViewController.m in Sources */,
 				913833B2221A920300AE68F0 /* HitTestSuperView.m in Sources */,
+				9166AB4822564B3C004C6F29 /* GooseEgg.xcdatamodeld in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
 				917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */,
@@ -1298,13 +1328,14 @@
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91490066221BF53000C001A1 /* PVAreaModel.m in Sources */,
 				91198B18222FB8360008DF6B /* TweetView.m in Sources */,
+				9166AB4F22564DCD004C6F29 /* Student+CoreDataClass.m in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
 				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
-				91046FBE2253BA4D00D1F65E /* Models.xcdatamodeld in Sources */,
 				916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */,
 				912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */,
+				9166AB5022564DCD004C6F29 /* Student+CoreDataProperties.m in Sources */,
 				9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
@@ -1319,6 +1350,7 @@
 				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
 				916957AB21DE214D0026EB3A /* main3.m in Sources */,
+				9166AB4522564B3C004C6F29 /* CoreDataHelper.m in Sources */,
 				911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */,
 				9154487B21E597F400A90A14 /* BlueView.m in Sources */,
 				91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */,
@@ -1332,7 +1364,6 @@
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,
-				91046FC12253BC5600D1F65E /* CoreDataHelper.m in Sources */,
 				91B90D61222A7FF900EF082F /* EightLockViewController.m in Sources */,
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
 				9193497F220200A100338639 /* RuntimePerson3Coding.m in Sources */,
@@ -1353,6 +1384,7 @@
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
 				915FB6DE221EADA300E985EA /* MyPoint.m in Sources */,
+				9166AB5922565277004C6F29 /* CoreDataViewController.m in Sources */,
 				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
 				913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */,
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
@@ -1746,13 +1778,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		91046FBC2253BA4D00D1F65E /* Models.xcdatamodeld */ = {
+		9166AB3F22564B3A004C6F29 /* GooseEgg.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				91046FBD2253BA4D00D1F65E /* Models.xcdatamodel */,
+				9166AB4022564B3A004C6F29 /* GooseEgg.xcdatamodel */,
 			);
-			currentVersion = 91046FBD2253BA4D00D1F65E /* Models.xcdatamodel */;
-			path = Models.xcdatamodeld;
+			currentVersion = 9166AB4022564B3A004C6F29 /* GooseEgg.xcdatamodel */;
+			path = GooseEgg.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
