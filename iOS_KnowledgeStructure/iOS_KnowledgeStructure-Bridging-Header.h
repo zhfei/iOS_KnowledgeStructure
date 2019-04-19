@@ -21,3 +21,4 @@
 #import "AI_ViewController.h"
 #import "LocationNotificationViewController.h"
 #import "CoreDataViewController.h"
+#import "RichTextViewController.h"

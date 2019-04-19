@@ -108,6 +108,10 @@ class MainTableViewController: UITableViewController {
         case 19:
             let vc = CoreDataViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 20:
+            let vc = RichTextViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+
             
         default:
             print("未知...")

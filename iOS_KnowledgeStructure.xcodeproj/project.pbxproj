@@ -124,6 +124,8 @@
 		917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791C2189FB4C00425A05 /* MainTableViewModel.swift */; };
 		917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791E2189FC9300425A05 /* MainTableCoordinater.swift */; };
 		917BD24A2256468C0085181B /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 917BD2492256468C0085181B /* main_blockArray.cpp */; };
+		918661402269C8F000BE6600 /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9186613E2269C8F000BE6600 /* RichTextViewController.m */; };
+		918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9186613F2269C8F000BE6600 /* RichTextViewController.xib */; };
 		9193496D2200AE3B00338639 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9193496B2200AE3B00338639 /* Xtrace.mm */; };
 		919349732201D68700338639 /* RuntimeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349722201D68700338639 /* RuntimeBase.m */; };
 		919349762201EF0B00338639 /* RuntimeApply1.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349752201EF0B00338639 /* RuntimeApply1.m */; };
@@ -349,6 +351,9 @@
 		917B791E2189FC9300425A05 /* MainTableCoordinater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCoordinater.swift; sourceTree = "<group>"; };
 		917B7920218A09DA00425A05 /* GCDUtility.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GCDUtility.md; sourceTree = "<group>"; };
 		917BD2492256468C0085181B /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
+		9186613D2269C8F000BE6600 /* RichTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
+		9186613E2269C8F000BE6600 /* RichTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
+		9186613F2269C8F000BE6600 /* RichTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RichTextViewController.xib; sourceTree = "<group>"; };
 		9193496B2200AE3B00338639 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 		9193496C2200AE3B00338639 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
 		919349712201D68700338639 /* RuntimeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeBase.h; sourceTree = "<group>"; };
@@ -528,13 +533,6 @@
 				912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */,
 			);
 			path = "自定义NavigationBar";
-			sourceTree = "<group>";
-		};
-		9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "iOS_Stucture_XMind图";
 			sourceTree = "<group>";
 		};
 		9132B5CE223F3B71009C3062 /* 常见算法 */ = {
@@ -863,7 +861,6 @@
 			children = (
 				915BE1742242234E00A2B0B1 /* 代码规范 */,
 				916E3D92222F99EB00DBF1F3 /* Mock */,
-				9131C64B221309BE00BD70DC /* iOS_Stucture_XMind图 */,
 				917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */,
 				917B78F02189F5B200425A05 /* iOS_KnowledgeStructureTests */,
 				917B78FB2189F5B200425A05 /* iOS_KnowledgeStructureUITests */,
@@ -886,6 +883,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9186613C2269C8A400BE6600 /* 富文本 */,
 				916DC5D622645372003C533B /* Date相关操作 */,
 				91046FB82253B10600D1F65E /* CoreData使用 */,
 				9132B5CE223F3B71009C3062 /* 常见算法 */,
@@ -972,6 +970,16 @@
 				917B7920218A09DA00425A05 /* GCDUtility.md */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		9186613C2269C8A400BE6600 /* 富文本 */ = {
+			isa = PBXGroup;
+			children = (
+				9186613D2269C8F000BE6600 /* RichTextViewController.h */,
+				9186613E2269C8F000BE6600 /* RichTextViewController.m */,
+				9186613F2269C8F000BE6600 /* RichTextViewController.xib */,
+			);
+			path = "富文本";
 			sourceTree = "<group>";
 		};
 		9193496A2200AE1200338639 /* Xtrace函数调用追踪 */ = {
@@ -1208,6 +1216,7 @@
 				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
+				918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
@@ -1250,7 +1259,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
 				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertView.xib",
 				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertViewController.xib",
 				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/Document.strings",
@@ -1267,7 +1276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		919BA5622244F45F00AA28E6 /* ShellScript */ = {
@@ -1341,6 +1350,7 @@
 				91ACEA9921A446F300249FA8 /* BaseModel.swift in Sources */,
 				91490066221BF53000C001A1 /* PVAreaModel.m in Sources */,
 				91198B18222FB8360008DF6B /* TweetView.m in Sources */,
+				918661402269C8F000BE6600 /* RichTextViewController.m in Sources */,
 				9166AB4F22564DCD004C6F29 /* Student+CoreDataClass.m in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
