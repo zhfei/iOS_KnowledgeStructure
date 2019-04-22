@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <BottomComponentLib/UIColor+Transform.h>
 
 static NSString *cellID =@"myCell";
 
@@ -77,6 +78,7 @@ static NSString *cellID =@"myCell";
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weakSelf.tableView.mj_header endRefreshing];
             [weakSelf.tableView reloadData];
+            [weakSelf.tableView reloadEmptyDataSet];
         });
     }];
     
@@ -96,7 +98,7 @@ static NSString *cellID =@"myCell";
 }
 
 - (void)setupData {
-    
+    [self setupEmptyDataSet];
 }
 
 - (void)resetData {
@@ -106,6 +108,7 @@ static NSString *cellID =@"myCell";
 - (void)setupEmptyDataSet {
     self.tableView.emptyDataSetSource = self;
     self.tableView.emptyDataSetDelegate = self;
+    self.tableView.tableFooterView = [UIView new];
 }
 
 #pragma mark - Delegate
@@ -148,61 +151,105 @@ static NSString *cellID =@"myCell";
 }
 
 // !!!: DZNEmptyDataSet
+/**
+ *  返回标题文字
+ */
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
-    return [[NSAttributedString alloc] initWithString:@"数据为空！！"];
+    NSString *text = @"No Application Found";
+    return [[NSAttributedString alloc] initWithString:text attributes:nil];
 }
+/**
+ *  返回详情文字
+ */
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
-    return [[NSAttributedString alloc] initWithString:@"这里再描述一下"];
+
+    NSString *tmp = @"hello world";
+    
+    NSString *text = [NSString stringWithFormat:@"There are no empty dataset examples for \"%@\".", tmp];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:nil];
+    
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:17.0] range:[attributedString.string rangeOfString:tmp]];
+    
+    return attributedString;
 }
-- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
-    return [UIImage imageNamed:@"dogAndDuck"];
+/**
+ *  返回文字按钮
+ */
+- (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
+    NSString *text = @"Search on the App Store";
+    UIFont *font = [UIFont systemFontOfSize:16.0];
+    UIColor *textColor = [UIColor colorWithHexString:(state == UIControlStateNormal) ? @"007aff" : @"c6def9" alpha:1];
+    
+    NSMutableDictionary *attributes = [NSMutableDictionary new];
+    [attributes setObject:font forKey:NSFontAttributeName];
+    [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
+    
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
-- (UIColor *)imageTintColorForEmptyDataSet:(UIScrollView *)scrollView {
-    return [UIColor purpleColor];
+/**
+ *  返回图片按钮
+ */
+- (UIImage *)buttonImageForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
+    return [UIImage imageNamed:@""];
+}
+/**
+ *  自定义背景颜色
+ */
+- (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView {
+    return [UIColor whiteColor];
+}
+/**
+ *  设置垂直或者水平方向的偏移量，推荐使用verticalOffsetForEmptyDataSet这个方法
+ *
+ *  @return 返回对应的偏移量（默认都为0）
+ */
+- (CGPoint)offsetForEmptyDataSet:(UIScrollView *)scrollView {
+    return CGPointMake(0, -64.0);
+}
+/**
+ *  设置垂直方向的偏移量
+ */
+- (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView {
+    return -64.0;
 }
 
-- (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
-    return [[NSAttributedString alloc] initWithString:@"这里是按钮的标题"];
-}
 
 
 // MARK:emptyDataSet代理
-- (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
-{
+/**
+ *  数据源为空时是否渲染和显示 (默认为 YES)
+ */
+- (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView {
     return YES;
 }
-
-- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView
-{
+/**
+ *  是否允许点击 (默认为 YES)
+ */
+- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView {
     return YES;
 }
-
-- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView
-{
+/**
+ *  是否允许滚动 (默认为 NO)
+ */
+- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView {
     return YES;
 }
-
-- (BOOL)emptyDataSetShouldAnimateImageView:(UIScrollView *)scrollView
-{
-    return self.isLoading;
+/**
+ *  处理空白区域的点击事件
+ */
+- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view {
+    NSLog(@"%s",__FUNCTION__);
 }
-
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view
-{
-    self.loading = YES;
+/**
+ *  处理按钮的点击事件
+ */
+- (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button {
+    UISearchBar *searchBar = self.searchDisplayController.searchBar;
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.com/apps/%@", searchBar.text]];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.loading = NO;
-    });
-}
-
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button
-{
-    self.loading = YES;
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.loading = NO;
-    });
+    if ([[UIApplication sharedApplication] canOpenURL:URL]) {
+        [[UIApplication sharedApplication] openURL:URL];
+    }
 }
 
 
