@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2F330D6F2885E3B17861754A /* libPods-iOS_KnowledgeStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7DEDBFF1D17A19FEEF288 /* libPods-iOS_KnowledgeStructure.a */; };
 		910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */; };
 		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
 		910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28752216F8F90028AB55 /* ArrayFilterPerson.m */; };
@@ -40,7 +41,6 @@
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9123446A226E11150033A2E2 /* EmptyViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91234468226E11150033A2E2 /* EmptyViewTableViewController.m */; };
-		9123446B226E11150033A2E2 /* EmptyViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91234469226E11150033A2E2 /* EmptyViewTableViewController.xib */; };
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
 		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
@@ -146,7 +146,6 @@
 		91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377A2233A40200652F55 /* AI_ViewController.m */; };
 		91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D3377B2233A40200652F55 /* AI_ViewController.xib */; };
 		91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E442B921C3EB76004F9318 /* TimerViewController.m */; };
-		DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,7 +166,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910F286F2216F8980028AB55 /* ArrayFiltrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewController.h; sourceTree = "<group>"; };
 		910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFiltrateViewController.m; sourceTree = "<group>"; };
 		910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayFiltrateViewController.xib; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
 		91234467226E11150033A2E2 /* EmptyViewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyViewTableViewController.h; sourceTree = "<group>"; };
 		91234468226E11150033A2E2 /* EmptyViewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyViewTableViewController.m; sourceTree = "<group>"; };
-		91234469226E11150033A2E2 /* EmptyViewTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewTableViewController.xib; sourceTree = "<group>"; };
 		9123EC64220DDBA800E5334D /* RefreshMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshMonitor.h; sourceTree = "<group>"; };
 		9123EC65220DDBA800E5334D /* RefreshMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshMonitor.m; sourceTree = "<group>"; };
 		912C58DD2216FA7400839F0B /* ArrayFiltrateViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewModel.h; sourceTree = "<group>"; };
@@ -394,6 +391,7 @@
 		91D337832233AFE300652F55 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		91E442B821C3EB76004F9318 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		91E442B921C3EB76004F9318 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		D6B7DEDBFF1D17A19FEEF288 /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37298DACB1F43E7C9FB34D1 /* Pods-iOS_KnowledgeStructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KnowledgeStructure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -405,7 +403,7 @@
 				9116A2062233C455009BF1BB /* MobileCoreServices.framework in Frameworks */,
 				9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */,
 				9116A2022233C29A009BF1BB /* CoreServices.framework in Frameworks */,
-				DAEA5A07170200094B5A912E /* libPods-iOS_KnowledgeStructure.a in Frameworks */,
+				2F330D6F2885E3B17861754A /* libPods-iOS_KnowledgeStructure.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +440,7 @@
 				9116A2012233C29A009BF1BB /* CoreServices.framework */,
 				91D337832233AFE300652F55 /* CoreFoundation.framework */,
 				91D337812233AC6500652F55 /* MobileCoreServices.framework */,
-				88A6BD3035E7E34919FB4E4B /* libPods-iOS_KnowledgeStructure.a */,
+				D6B7DEDBFF1D17A19FEEF288 /* libPods-iOS_KnowledgeStructure.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -535,7 +533,6 @@
 			children = (
 				91234467226E11150033A2E2 /* EmptyViewTableViewController.h */,
 				91234468226E11150033A2E2 /* EmptyViewTableViewController.m */,
-				91234469226E11150033A2E2 /* EmptyViewTableViewController.xib */,
 			);
 			path = "EmptyView列表占位视图";
 			sourceTree = "<group>";
@@ -1128,7 +1125,7 @@
 				917B78D12189F5B000425A05 /* Sources */,
 				917B78D22189F5B000425A05 /* Frameworks */,
 				917B78D32189F5B000425A05 /* Resources */,
-				77BDA2A7651FA3C30C23D463 /* [CP] Copy Pods Resources */,
+				A954BF5ABD5F1BEDE04020A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1231,7 +1228,6 @@
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
 				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
-				9123446B226E11150033A2E2 /* EmptyViewTableViewController.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
@@ -1268,34 +1264,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		77BDA2A7651FA3C30C23D463 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertView.xib",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertViewController.xib",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/Document.strings",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/phoneNumPrefix.plist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Document.strings",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/phoneNumPrefix.plist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		919BA5622244F45F00AA28E6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1312,6 +1280,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "source ~/.bash_profile\n\nxcodebuild clean\n\nxcodebuild -workspace iOS_KnowledgeStructure.xcworkspace -configuration Debug -UseModernBuildSystem=NO -scheme iOS_KnowledgeStructure build | xcpretty -r json-compilation-database -o compile_commands.json\n\noclint-json-compilation-database -- -report-type xcode\n\n";
+		};
+		A954BF5ABD5F1BEDE04020A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
+				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertView.xib",
+				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertViewController.xib",
+				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/Document.strings",
+				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/phoneNumPrefix.plist",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Document.strings",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/phoneNumPrefix.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

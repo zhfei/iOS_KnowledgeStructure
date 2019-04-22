@@ -111,7 +111,10 @@ class MainTableViewController: UITableViewController {
         case 20:
             let vc = RichTextViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-
+        case 21:
+            let vc = EmptyViewTableViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
             
         default:
             print("未知...")
