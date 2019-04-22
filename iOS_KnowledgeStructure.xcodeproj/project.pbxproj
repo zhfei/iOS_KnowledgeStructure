@@ -39,6 +39,8 @@
 		911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B33222517FC00DD2C51 /* CoreTextDisplayView.m */; };
 		9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */; };
 		9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9123446A226E11150033A2E2 /* EmptyViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91234468226E11150033A2E2 /* EmptyViewTableViewController.m */; };
+		9123446B226E11150033A2E2 /* EmptyViewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91234469226E11150033A2E2 /* EmptyViewTableViewController.xib */; };
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
 		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
@@ -193,6 +195,9 @@
 		9120F20121FEFBA900E5B90C /* ScrolleViewApplyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrolleViewApplyVC.m; sourceTree = "<group>"; };
 		9122AD1921BD620F00A9E3BD /* StringRetainCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringRetainCountVC.h; sourceTree = "<group>"; };
 		9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringRetainCountVC.m; sourceTree = "<group>"; };
+		91234467226E11150033A2E2 /* EmptyViewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyViewTableViewController.h; sourceTree = "<group>"; };
+		91234468226E11150033A2E2 /* EmptyViewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyViewTableViewController.m; sourceTree = "<group>"; };
+		91234469226E11150033A2E2 /* EmptyViewTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewTableViewController.xib; sourceTree = "<group>"; };
 		9123EC64220DDBA800E5334D /* RefreshMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshMonitor.h; sourceTree = "<group>"; };
 		9123EC65220DDBA800E5334D /* RefreshMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshMonitor.m; sourceTree = "<group>"; };
 		912C58DD2216FA7400839F0B /* ArrayFiltrateViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewModel.h; sourceTree = "<group>"; };
@@ -518,6 +523,16 @@
 				9122AD1A21BD620F00A9E3BD /* StringRetainCountVC.m */,
 			);
 			path = "字符串引用技术";
+			sourceTree = "<group>";
+		};
+		91234466226E10C20033A2E2 /* EmptyView列表占位视图 */ = {
+			isa = PBXGroup;
+			children = (
+				91234467226E11150033A2E2 /* EmptyViewTableViewController.h */,
+				91234468226E11150033A2E2 /* EmptyViewTableViewController.m */,
+				91234469226E11150033A2E2 /* EmptyViewTableViewController.xib */,
+			);
+			path = "EmptyView列表占位视图";
 			sourceTree = "<group>";
 		};
 		912ED33222154554004F6C05 /* 自定义NavigationBar */ = {
@@ -886,6 +901,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91234466226E10C20033A2E2 /* EmptyView列表占位视图 */,
 				916DC5D622645372003C533B /* Date相关操作 */,
 				91046FB82253B10600D1F65E /* CoreData使用 */,
 				9132B5CE223F3B71009C3062 /* 常见算法 */,
@@ -1207,6 +1223,7 @@
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
 				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
+				9123446B226E11150033A2E2 /* EmptyViewTableViewController.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
@@ -1386,6 +1403,7 @@
 				916957B221DE214D0026EB3A /* main4.m in Sources */,
 				916DC5D9226453E0003C533B /* DateViewController.m in Sources */,
 				916957AF21DE214D0026EB3A /* main1.m in Sources */,
+				9123446A226E11150033A2E2 /* EmptyViewTableViewController.m in Sources */,
 				9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */,
 				91A4A770221D075A0070DE6D /* PickerViewController+delegate.m in Sources */,
 				915C829921B22AC400A7567B /* HybirdViewController.m in Sources */,

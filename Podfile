@@ -6,6 +6,7 @@ target "iOS_KnowledgeStructure" do
 
    pod 'GRMustache', '~> 7.3.2' #//模版渲染
    pod 'WebViewJavascriptBridge', '~> 6.0' #//本地与js调用
+   pod 'DZNEmptyDataSet' #空列表占位视图
  
    pod 'BottomComponentLib',:path=>"../BottomComponentLib"
 
