@@ -28,9 +28,12 @@
  */
 
 #import "RichTextViewController.h"
+#import <YYLabel.h>
+#import <YYText.h>
 
 @interface RichTextViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *contextLabel;
+@property (strong, nonatomic) YYLabel *yyLabel;
 
 @end
 
@@ -59,11 +62,12 @@
 
 
 - (void)addUI {
-    
+    [self.view addSubview:self.yyLabel];
 }
 
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
+
 }
 
 - (void)setupLayout {
@@ -75,7 +79,7 @@
 }
 
 - (void)setupData {
-    
+    self.yyLabel.attributedText = [self stopConsulteHintText];
 }
 
 - (void)showText {
@@ -204,13 +208,67 @@
 
 }
 
+- (void)addClickAction {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+    
+    self.contextLabel.userInteractionEnabled = YES;
+    [self.contextLabel addGestureRecognizer:tap];
+}
+
+- (NSMutableAttributedString *)stopConsulteHintText {
+    
+    NSString *string = @"下班时间到了，当前时间为\n 2019年3月30日——2019年3月31日\n 如想继续上班请联系客服：16898990";
+    NSMutableAttributedString *attri_str = [[NSMutableAttributedString alloc] initWithString:string];
+    attri_str.yy_alignment = NSTextAlignmentCenter;
+    attri_str.yy_font = [UIFont systemFontOfSize:16];
+    attri_str.yy_color = [UIColor colorWithRed:0.1 green:0.2 blue:0.3 alpha:1];
+    [attri_str yy_setColor:[UIColor redColor] range:[string rangeOfString:@"16898990"]];
+    
+    [attri_str yy_setTextHighlightRange:[string rangeOfString:@"16898990"] color:[UIColor redColor] backgroundColor:[UIColor orangeColor] tapAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
+        NSLog(@"被点击");
+    }];
+    return attri_str;
+}
+
+
 #pragma mark - Public Method
 
 #pragma mark - Event
+- (void)tapAction:(UITapGestureRecognizer *)tap {
+    UILabel *label = (UILabel *)tap.view;
+    NSRange range = [label.text rangeOfString:@"嘎嘎嘎嘎"];
+    
+}
+
 
 #pragma mark - Delegate
 
 #pragma mark - Getter, Setter
+- (YYLabel *)yyLabel {
+    if (!_yyLabel) {
+        CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+        CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
+        
+        _yyLabel = [YYLabel new];
+        _yyLabel.attributedText = [self stopConsulteHintText];
+        _yyLabel.textAlignment = NSTextAlignmentCenter;
+        _yyLabel.textVerticalAlignment = YYTextVerticalAlignmentCenter;
+        _yyLabel.numberOfLines = 0;
+        _yyLabel.backgroundColor = [UIColor colorWithWhite:0.933 alpha:1.000];
+        _yyLabel.displaysAsynchronously = YES;   //比较耗时的渲染操作在后台运行
+        _yyLabel.clearContentsBeforeAsynchronouslyDisplay = NO;  //在进行后台渲染前是否清除掉之前的内容，如果YES就会先清除之前的内容，可能会出现空白
+        //    YYTextContainer  *titleContarer = [YYTextContainer new];
+        //    //限制宽度
+        //    titleContarer.size = CGSizeMake(SCREEN_WIDTH,CGFLOAT_MAX);
+        //    label.textLayout = [YYTextLayout layoutWithContainer:titleContarer text:text];
+        //    CGFloat titleLabelHeight = label.textLayout.textBoundingSize.height;
+        // YYLabel要想自动换行，必须设置最大换行的宽度
+        _yyLabel.preferredMaxLayoutWidth = widthS-40;
+        
+        _yyLabel.frame = CGRectMake(10, CGRectGetMaxY(self.contextLabel.frame), widthS-20, 100);
+    }
+    return _yyLabel;
+}
 
 #pragma mark - NSCopying
 
