@@ -56,6 +56,9 @@
     
     CGSize size = [self contextLabelSize];
     NSLog(@"size:%@",NSStringFromCGSize(size));
+    
+    self.yyLabel.attributedText = [self stopConsulteHintText];
+
 }
 
 #pragma mark - Private Method
@@ -79,7 +82,7 @@
 }
 
 - (void)setupData {
-    self.yyLabel.attributedText = [self stopConsulteHintText];
+//    self.yyLabel.attributedText = [self stopConsulteHintText];
 }
 
 - (void)showText {
@@ -222,6 +225,7 @@
     attri_str.yy_alignment = NSTextAlignmentCenter;
     attri_str.yy_font = [UIFont systemFontOfSize:16];
     attri_str.yy_color = [UIColor colorWithRed:0.1 green:0.2 blue:0.3 alpha:1];
+    
     [attri_str yy_setColor:[UIColor redColor] range:[string rangeOfString:@"16898990"]];
     
     [attri_str yy_setTextHighlightRange:[string rangeOfString:@"16898990"] color:[UIColor redColor] backgroundColor:[UIColor orangeColor] tapAction:^(UIView * _Nonnull containerView, NSAttributedString * _Nonnull text, NSRange range, CGRect rect) {
@@ -250,7 +254,6 @@
         CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
         
         _yyLabel = [YYLabel new];
-        _yyLabel.attributedText = [self stopConsulteHintText];
         _yyLabel.textAlignment = NSTextAlignmentCenter;
         _yyLabel.textVerticalAlignment = YYTextVerticalAlignmentCenter;
         _yyLabel.numberOfLines = 0;
