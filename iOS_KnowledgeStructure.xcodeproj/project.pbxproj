@@ -44,8 +44,6 @@
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
 		912651DC227897880029F26B /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912651DA227897880029F26B /* LayoutConstraintViewController.m */; };
 		912651DD227897880029F26B /* LayoutConstraintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912651DB227897880029F26B /* LayoutConstraintViewController.xib */; };
-		912651E12278991F0029F26B /* LayoutConstraintSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912651DF2278991F0029F26B /* LayoutConstraintSubVC.m */; };
-		912651E22278991F0029F26B /* LayoutConstraintSubVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912651E02278991F0029F26B /* LayoutConstraintSubVC.xib */; };
 		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
@@ -206,9 +204,6 @@
 		912651D9227897880029F26B /* LayoutConstraintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintViewController.h; sourceTree = "<group>"; };
 		912651DA227897880029F26B /* LayoutConstraintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintViewController.m; sourceTree = "<group>"; };
 		912651DB227897880029F26B /* LayoutConstraintViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutConstraintViewController.xib; sourceTree = "<group>"; };
-		912651DE2278991F0029F26B /* LayoutConstraintSubVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintSubVC.h; sourceTree = "<group>"; };
-		912651DF2278991F0029F26B /* LayoutConstraintSubVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintSubVC.m; sourceTree = "<group>"; };
-		912651E02278991F0029F26B /* LayoutConstraintSubVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayoutConstraintSubVC.xib; sourceTree = "<group>"; };
 		912C58DD2216FA7400839F0B /* ArrayFiltrateViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFiltrateViewModel.h; sourceTree = "<group>"; };
 		912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFiltrateViewModel.m; sourceTree = "<group>"; };
 		912ED33322154582004F6C05 /* CustomNavigationBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarVC.h; sourceTree = "<group>"; };
@@ -553,9 +548,6 @@
 				912651D9227897880029F26B /* LayoutConstraintViewController.h */,
 				912651DA227897880029F26B /* LayoutConstraintViewController.m */,
 				912651DB227897880029F26B /* LayoutConstraintViewController.xib */,
-				912651DE2278991F0029F26B /* LayoutConstraintSubVC.h */,
-				912651DF2278991F0029F26B /* LayoutConstraintSubVC.m */,
-				912651E02278991F0029F26B /* LayoutConstraintSubVC.xib */,
 			);
 			path = "LayoutConstraint代码使用";
 			sourceTree = "<group>";
@@ -1256,7 +1248,6 @@
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
-				912651E22278991F0029F26B /* LayoutConstraintSubVC.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
@@ -1397,7 +1388,6 @@
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
 				9154487421E594D800A90A14 /* ChainOfTransformVC.m in Sources */,
-				912651E12278991F0029F26B /* LayoutConstraintSubVC.m in Sources */,
 				916748672238B6C900236986 /* LocationNotificationViewController.m in Sources */,
 				912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */,
 				9166AB5022564DCD004C6F29 /* Student+CoreDataProperties.m in Sources */,
