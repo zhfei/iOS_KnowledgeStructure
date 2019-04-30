@@ -114,7 +114,9 @@ class MainTableViewController: UITableViewController {
         case 21:
             let vc = EmptyViewTableViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-            
+        case 22:
+            let vc = LayoutConstraintViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
             
         default:
             print("未知...")
