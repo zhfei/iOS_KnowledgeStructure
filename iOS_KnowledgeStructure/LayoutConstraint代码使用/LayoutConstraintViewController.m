@@ -53,7 +53,7 @@ static CGFloat const kMarginValue = 60.f;
 - (void)setupLayout {
     [self layout1];
     [self layout2];
-    [self vflLayout];
+    [self vflLayout2];
 }
 
 - (void)setupData {
@@ -96,6 +96,23 @@ static CGFloat const kMarginValue = 60.f;
     
     [self.view addConstraints:HConstraints];
     [self.view addConstraints:VConstraints];
+}
+
+- (void)vflLayout2 {
+    NSString *fmt = @"H:|-Margin-[_redView(ViewWidth)]-[_blueView(ViewWidth)]-Margin-|";
+    NSDictionary *metrics = @{@"Margin":@(80),@"ViewWidth":@(100),@"ViewHeight":@(50)};
+    NSDictionary *views = NSDictionaryOfVariableBindings(_redView,_blueView);
+    
+    NSArray *constraints1 = [NSLayoutConstraint constraintsWithVisualFormat:fmt options:0 metrics:metrics views:views];
+    NSString *fmt2 = @"V:|-Margin-[_redView(ViewHeight)]-|";
+    NSString *fmt3 = @"V:|-Margin-[_blueView(ViewHeight)]-|";
+    NSArray *constraints2 = [NSLayoutConstraint constraintsWithVisualFormat:fmt2 options:0 metrics:metrics views:views];
+    NSArray *constraints3 = [NSLayoutConstraint constraintsWithVisualFormat:fmt3 options:0 metrics:metrics views:views];
+
+    [self.view addConstraints:constraints1];
+    [self.view addConstraints:constraints2];
+    [self.view addConstraints:constraints3];
+
 }
 
 #pragma mark - Delegate
