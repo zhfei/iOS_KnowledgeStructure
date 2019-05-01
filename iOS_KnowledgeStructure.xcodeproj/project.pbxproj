@@ -44,6 +44,7 @@
 		9123EC66220DDBA800E5334D /* RefreshMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123EC65220DDBA800E5334D /* RefreshMonitor.m */; };
 		912651DC227897880029F26B /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912651DA227897880029F26B /* LayoutConstraintViewController.m */; };
 		912651DD227897880029F26B /* LayoutConstraintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912651DB227897880029F26B /* LayoutConstraintViewController.xib */; };
+		9129E456227993EF00B1CF06 /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912651DA227897880029F26B /* LayoutConstraintViewController.m */; };
 		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
@@ -1467,6 +1468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9129E456227993EF00B1CF06 /* LayoutConstraintViewController.m in Sources */,
 				917B78FD2189F5B200425A05 /* iOS_KnowledgeStructureUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

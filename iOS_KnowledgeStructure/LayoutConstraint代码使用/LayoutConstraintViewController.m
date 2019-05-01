@@ -17,6 +17,7 @@ static CGFloat const kMarginValue = 60.f;
 @property (nonatomic, strong) UIView *redView;
 @property (nonatomic, strong) UIView *blueView;
 
+@property (nonatomic, strong) UIButton *button;
 @end
 
 @implementation LayoutConstraintViewController
@@ -134,7 +135,7 @@ static CGFloat const kMarginValue = 60.f;
         _contextLabel.textAlignment = NSTextAlignmentCenter;
         _contextLabel.lineBreakMode = NSLineBreakByWordWrapping;
         _contextLabel.numberOfLines = 0;
-        _contextLabel.accessibilityIdentifier = @"empty set title";
+        _contextLabel.accessibilityIdentifier = @"contextLabel";
         _contextLabel.text = @"容器内容";
     }
     return _contextLabel;
@@ -152,7 +153,7 @@ static CGFloat const kMarginValue = 60.f;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         _titleLabel.numberOfLines = 0;
-        _titleLabel.accessibilityIdentifier = @"empty set title";
+        _titleLabel.accessibilityIdentifier = @"titleLabele";
         _titleLabel.text = @"子内容";
         
     }
@@ -181,6 +182,21 @@ static CGFloat const kMarginValue = 60.f;
         _blueView.alpha = 1;
     }
     return _blueView;
+}
+
+- (UIButton *)button {
+    if (!_button) {
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+        _button.translatesAutoresizingMaskIntoConstraints = NO;
+        _button.backgroundColor = [UIColor lightGrayColor];
+        _button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+        _button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+        _button.accessibilityIdentifier = @"EmptyButton";
+        
+        [_button addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    return _button;
 }
 
 @end
