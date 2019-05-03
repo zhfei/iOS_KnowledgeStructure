@@ -25,6 +25,8 @@
 		910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28702216F8980028AB55 /* ArrayFiltrateViewController.m */; };
 		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
 		910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28752216F8F90028AB55 /* ArrayFilterPerson.m */; };
+		9112DC4D227C96A000DF70FE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112DC4B227C96A000DF70FE /* SearchViewController.m */; };
+		9112DC4E227C96A000DF70FE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9112DC4C227C96A000DF70FE /* SearchViewController.xib */; };
 		9113976921DF3F4600916D59 /* block_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9113976821DF3F4600916D59 /* block_VC.m */; };
 		9116A2022233C29A009BF1BB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9116A2012233C29A009BF1BB /* CoreServices.framework */; };
 		9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337832233AFE300652F55 /* CoreFoundation.framework */; };
@@ -174,6 +176,9 @@
 		910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayFiltrateViewController.xib; sourceTree = "<group>"; };
 		910F28742216F8F90028AB55 /* ArrayFilterPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayFilterPerson.h; sourceTree = "<group>"; };
 		910F28752216F8F90028AB55 /* ArrayFilterPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFilterPerson.m; sourceTree = "<group>"; };
+		9112DC4A227C96A000DF70FE /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9112DC4B227C96A000DF70FE /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9112DC4C227C96A000DF70FE /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		9113976721DF3F4600916D59 /* block_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block_VC.h; sourceTree = "<group>"; };
 		9113976821DF3F4600916D59 /* block_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = block_VC.m; sourceTree = "<group>"; };
 		9116A2012233C29A009BF1BB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -480,6 +485,16 @@
 				912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */,
 			);
 			path = "数组筛选Predicate";
+			sourceTree = "<group>";
+		};
+		9112DC49227C968900DF70FE /* Search搜索控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				9112DC4A227C96A000DF70FE /* SearchViewController.h */,
+				9112DC4B227C96A000DF70FE /* SearchViewController.m */,
+				9112DC4C227C96A000DF70FE /* SearchViewController.xib */,
+			);
+			path = "Search搜索控制器";
 			sourceTree = "<group>";
 		};
 		9113976621DF3F2800916D59 /* block_VC */ = {
@@ -911,6 +926,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9112DC49227C968900DF70FE /* Search搜索控制器 */,
 				912651D8227897600029F26B /* LayoutConstraint代码使用 */,
 				91234466226E10C20033A2E2 /* EmptyView列表占位视图 */,
 				9186613C2269C8A400BE6600 /* 富文本 */,
@@ -1259,6 +1275,7 @@
 				9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */,
 				9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
+				9112DC4E227C96A000DF70FE /* SearchViewController.xib in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
@@ -1308,20 +1325,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertView.xib",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Object-C/Foundation/CustomAlertVC/ZFAlertViewController.xib",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/Document.strings",
-				"${PODS_ROOT}/../../BottomComponentLib/SRC/Resouce/phoneNumPrefix.plist",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFAlertViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Document.strings",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/phoneNumPrefix.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomComponentLib.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1439,6 +1450,7 @@
 				910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */,
 				9138339F2219B6C300AE68F0 /* LiftCycleCell.m in Sources */,
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
+				9112DC4D227C96A000DF70FE /* SearchViewController.m in Sources */,
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
