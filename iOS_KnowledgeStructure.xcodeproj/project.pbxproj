@@ -26,7 +26,6 @@
 		910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910F28712216F8980028AB55 /* ArrayFiltrateViewController.xib */; };
 		910F28762216F8F90028AB55 /* ArrayFilterPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 910F28752216F8F90028AB55 /* ArrayFilterPerson.m */; };
 		9112DC4D227C96A000DF70FE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112DC4B227C96A000DF70FE /* SearchViewController.m */; };
-		9112DC4E227C96A000DF70FE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9112DC4C227C96A000DF70FE /* SearchViewController.xib */; };
 		9113976921DF3F4600916D59 /* block_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9113976821DF3F4600916D59 /* block_VC.m */; };
 		9116A2022233C29A009BF1BB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9116A2012233C29A009BF1BB /* CoreServices.framework */; };
 		9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337832233AFE300652F55 /* CoreFoundation.framework */; };
@@ -178,7 +177,6 @@
 		910F28752216F8F90028AB55 /* ArrayFilterPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayFilterPerson.m; sourceTree = "<group>"; };
 		9112DC4A227C96A000DF70FE /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		9112DC4B227C96A000DF70FE /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		9112DC4C227C96A000DF70FE /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		9113976721DF3F4600916D59 /* block_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block_VC.h; sourceTree = "<group>"; };
 		9113976821DF3F4600916D59 /* block_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = block_VC.m; sourceTree = "<group>"; };
 		9116A2012233C29A009BF1BB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -492,7 +490,6 @@
 			children = (
 				9112DC4A227C96A000DF70FE /* SearchViewController.h */,
 				9112DC4B227C96A000DF70FE /* SearchViewController.m */,
-				9112DC4C227C96A000DF70FE /* SearchViewController.xib */,
 			);
 			path = "Search搜索控制器";
 			sourceTree = "<group>";
@@ -1275,7 +1272,6 @@
 				9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */,
 				9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
-				9112DC4E227C96A000DF70FE /* SearchViewController.xib in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,

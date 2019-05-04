@@ -24,3 +24,4 @@
 #import "RichTextViewController.h"
 #import "EmptyViewTableViewController.h"
 #import "LayoutConstraintViewController.h"
+#import "SearchViewController.h"
