@@ -120,6 +120,9 @@ class MainTableViewController: UITableViewController {
         case 23:
             let vc = SearchViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 24:
+            let vc = NetWorkViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 
         default:
             print("未知...")

@@ -36,6 +36,8 @@
 		91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B11222FB8360008DF6B /* TwitterConnection.m */; };
 		91198B18222FB8360008DF6B /* TweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B13222FB8360008DF6B /* TweetView.m */; };
 		91198B19222FB8360008DF6B /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B15222FB8360008DF6B /* Tweet.m */; };
+		911ADFC7227F2D0E00722387 /* NetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ADFC5227F2D0E00722387 /* NetWorkViewController.m */; };
+		911ADFC8227F2D0E00722387 /* NetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911ADFC6227F2D0E00722387 /* NetWorkViewController.xib */; };
 		911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */; };
 		911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */; };
 		911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B33222517FC00DD2C51 /* CoreTextDisplayView.m */; };
@@ -192,6 +194,9 @@
 		91198B14222FB8360008DF6B /* TweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetView.h; sourceTree = "<group>"; };
 		91198B15222FB8360008DF6B /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		91198B16222FB8360008DF6B /* TwitterConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnection.h; sourceTree = "<group>"; };
+		911ADFC4227F2D0E00722387 /* NetWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkViewController.h; sourceTree = "<group>"; };
+		911ADFC5227F2D0E00722387 /* NetWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkViewController.m; sourceTree = "<group>"; };
+		911ADFC6227F2D0E00722387 /* NetWorkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetWorkViewController.xib; sourceTree = "<group>"; };
 		911D1B2D222517DD00DD2C51 /* CoreText_CoreImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreText_CoreImageVC.h; sourceTree = "<group>"; };
 		911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreText_CoreImageVC.m; sourceTree = "<group>"; };
 		911D1B2F222517DD00DD2C51 /* CoreText_CoreImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreText_CoreImageVC.xib; sourceTree = "<group>"; };
@@ -514,6 +519,16 @@
 				911976EC21D3DFAE000DD669 /* UnknownModel2.m */,
 			);
 			path = "向对象发送未知消息";
+			sourceTree = "<group>";
+		};
+		911ADFC3227F2CF600722387 /* NetWork使用 */ = {
+			isa = PBXGroup;
+			children = (
+				911ADFC4227F2D0E00722387 /* NetWorkViewController.h */,
+				911ADFC5227F2D0E00722387 /* NetWorkViewController.m */,
+				911ADFC6227F2D0E00722387 /* NetWorkViewController.xib */,
+			);
+			path = "NetWork使用";
 			sourceTree = "<group>";
 		};
 		911D1B2C2225175E00DD2C51 /* CoreText和CoreImage */ = {
@@ -923,6 +938,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				911ADFC3227F2CF600722387 /* NetWork使用 */,
 				9112DC49227C968900DF70FE /* Search搜索控制器 */,
 				912651D8227897600029F26B /* LayoutConstraint代码使用 */,
 				91234466226E10C20033A2E2 /* EmptyView列表占位视图 */,
@@ -1263,6 +1279,7 @@
 				918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
+				911ADFC8227F2D0E00722387 /* NetWorkViewController.xib in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
@@ -1364,6 +1381,7 @@
 				916957B021DE214D0026EB3A /* main_int.cpp in Sources */,
 				914A2A1B221FD6A9007E2DF0 /* HybirdViewController2.m in Sources */,
 				912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */,
+				911ADFC7227F2D0E00722387 /* NetWorkViewController.m in Sources */,
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */,
 				91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */,
