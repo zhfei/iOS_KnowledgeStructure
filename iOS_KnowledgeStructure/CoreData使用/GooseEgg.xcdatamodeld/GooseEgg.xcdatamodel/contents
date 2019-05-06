@@ -4,17 +4,22 @@
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="incomeType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="money" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="money" optional="YES" attributeType="String" defaultValueString="10" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="account" inverseEntity="Student" syncable="YES"/>
     </entity>
     <entity name="Student" representedClassName="Student" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="account" optional="YES" toMany="YES" maxCount="2" deletionRule="Nullify" destinationEntity="Account" inverseName="student" inverseEntity="Account" syncable="YES"/>
+        <fetchedProperty name="topAge20" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Student" predicateString="age &gt; 20"/>
+        </fetchedProperty>
     </entity>
     <elements>
-        <element name="Account" positionX="-63" positionY="-18" width="128" height="120"/>
-        <element name="Student" positionX="-63" positionY="18" width="128" height="105"/>
+        <element name="Account" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Student" positionX="485.00390625" positionY="-58.35546875" width="128" height="149"/>
     </elements>
 </model>
