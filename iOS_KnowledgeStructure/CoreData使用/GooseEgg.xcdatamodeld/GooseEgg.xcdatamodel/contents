@@ -18,6 +18,7 @@
             <fetchRequest name="fetchedPropertyFetchRequest" entity="Student" predicateString="age &gt; 20"/>
         </fetchedProperty>
     </entity>
+    <fetchRequest name="FetchRequest" entity="Student" predicateString="age &gt; 20"/>
     <elements>
         <element name="Account" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="Student" positionX="485.00390625" positionY="-58.35546875" width="128" height="149"/>
