@@ -30,6 +30,7 @@
 		9116A2022233C29A009BF1BB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9116A2012233C29A009BF1BB /* CoreServices.framework */; };
 		9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337832233AFE300652F55 /* CoreFoundation.framework */; };
 		9116A2062233C455009BF1BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337812233AC6500652F55 /* MobileCoreServices.framework */; };
+		91187C0A22818ED300C24802 /* CoreDataHelper2.m in Sources */ = {isa = PBXBuildFile; fileRef = 91187C0922818ED300C24802 /* CoreDataHelper2.m */; };
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
@@ -182,6 +183,8 @@
 		9113976721DF3F4600916D59 /* block_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block_VC.h; sourceTree = "<group>"; };
 		9113976821DF3F4600916D59 /* block_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = block_VC.m; sourceTree = "<group>"; };
 		9116A2012233C29A009BF1BB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		91187C0822818ED300C24802 /* CoreDataHelper2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper2.h; sourceTree = "<group>"; };
+		91187C0922818ED300C24802 /* CoreDataHelper2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper2.m; sourceTree = "<group>"; };
 		911976E521D3DA26000DD669 /* UnkonwMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnkonwMessageVC.h; sourceTree = "<group>"; };
 		911976E621D3DA26000DD669 /* UnkonwMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnkonwMessageVC.m; sourceTree = "<group>"; };
 		911976E821D3DA6B000DD669 /* UnknownModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel.h; sourceTree = "<group>"; };
@@ -799,6 +802,8 @@
 			children = (
 				9166AB3822564B39004C6F29 /* CoreDataHelper.m */,
 				9166AB3922564B39004C6F29 /* CoreDataHelper.h */,
+				91187C0822818ED300C24802 /* CoreDataHelper2.h */,
+				91187C0922818ED300C24802 /* CoreDataHelper2.m */,
 			);
 			path = CoreDataHelper;
 			sourceTree = "<group>";
@@ -1478,6 +1483,7 @@
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,
 				911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */,
+				91187C0A22818ED300C24802 /* CoreDataHelper2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

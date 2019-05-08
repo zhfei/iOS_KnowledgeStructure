@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G2112" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
@@ -7,6 +7,21 @@
         <attribute name="money" optional="YES" attributeType="String" defaultValueString="10" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="account" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Department" representedClassName="Department" syncable="YES" codeGenerationType="class">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="departName" transient="YES" attributeType="String" defaultValueString="Tom" syncable="YES"/>
+        <relationship name="employee" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="department" inverseEntity="Employee" syncable="YES"/>
+        <fetchedProperty name="fetchedLast10" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Department" predicateString="createDate &gt; 10000"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Employee" representedClassName="Employee" syncable="YES" codeGenerationType="class">
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="employee" inverseEntity="Department" syncable="YES"/>
     </entity>
     <entity name="Student" representedClassName="Student" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -19,8 +34,11 @@
         </fetchedProperty>
     </entity>
     <fetchRequest name="FetchRequest" entity="Student" predicateString="age &gt; 20"/>
+    <fetchRequest name="FetchRequest_Partment" entity="Department" predicateString="createDate == CAST(547379675.725278, &quot;NSDate&quot;)"/>
     <elements>
         <element name="Account" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Department" positionX="330.6953125" positionY="-295.49609375" width="128" height="119"/>
         <element name="Student" positionX="485.00390625" positionY="-58.35546875" width="128" height="149"/>
+        <element name="Employee" positionX="75.91015625" positionY="-313.9453125" width="128" height="120"/>
     </elements>
 </model>
