@@ -31,6 +31,7 @@
 		9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337832233AFE300652F55 /* CoreFoundation.framework */; };
 		9116A2062233C455009BF1BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337812233AC6500652F55 /* MobileCoreServices.framework */; };
 		91187C0A22818ED300C24802 /* CoreDataHelper2.m in Sources */ = {isa = PBXBuildFile; fileRef = 91187C0922818ED300C24802 /* CoreDataHelper2.m */; };
+		91187C162282E80700C24802 /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 91187C142282E80700C24802 /* Department+CoreDataProperties.m */; };
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
@@ -185,6 +186,10 @@
 		9116A2012233C29A009BF1BB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		91187C0822818ED300C24802 /* CoreDataHelper2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper2.h; sourceTree = "<group>"; };
 		91187C0922818ED300C24802 /* CoreDataHelper2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper2.m; sourceTree = "<group>"; };
+		91187C112282E80700C24802 /* Department+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Department+CoreDataProperties.h"; sourceTree = "<group>"; };
+		91187C122282E80700C24802 /* Department+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Department+CoreDataClass.h"; sourceTree = "<group>"; };
+		91187C132282E80700C24802 /* Department+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Department+CoreDataClass.m"; sourceTree = "<group>"; };
+		91187C142282E80700C24802 /* Department+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Department+CoreDataProperties.m"; sourceTree = "<group>"; };
 		911976E521D3DA26000DD669 /* UnkonwMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnkonwMessageVC.h; sourceTree = "<group>"; };
 		911976E621D3DA26000DD669 /* UnkonwMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnkonwMessageVC.m; sourceTree = "<group>"; };
 		911976E821D3DA6B000DD669 /* UnknownModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnknownModel.h; sourceTree = "<group>"; };
@@ -465,6 +470,10 @@
 		91046FB82253B10600D1F65E /* CoreData使用 */ = {
 			isa = PBXGroup;
 			children = (
+				91187C112282E80700C24802 /* Department+CoreDataProperties.h */,
+				91187C122282E80700C24802 /* Department+CoreDataClass.h */,
+				91187C132282E80700C24802 /* Department+CoreDataClass.m */,
+				91187C142282E80700C24802 /* Department+CoreDataProperties.m */,
 				9166AB3722564B39004C6F29 /* CoreDataHelper */,
 				9166AB4B22564DCD004C6F29 /* Student+CoreDataProperties.h */,
 				9166AB4E22564DCD004C6F29 /* Student+CoreDataProperties.m */,
@@ -1433,6 +1442,7 @@
 				912651DC227897880029F26B /* LayoutConstraintViewController.m in Sources */,
 				91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */,
 				91198B19222FB8360008DF6B /* Tweet.m in Sources */,
+				91187C162282E80700C24802 /* Department+CoreDataProperties.m in Sources */,
 				91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */,
 				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,

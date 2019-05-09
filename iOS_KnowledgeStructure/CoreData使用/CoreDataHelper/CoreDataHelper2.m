@@ -8,6 +8,7 @@
 
 #import "CoreDataHelper2.h"
 #import <CoreData/CoreData.h>
+#import "Department+CoreDataClass.h"
 
 static CoreDataHelper2 *sharedCoreDataHelper;
 
@@ -60,6 +61,10 @@ static CoreDataHelper2 *sharedCoreDataHelper;
     NSString *dataPath = [documentDir stringByAppendingFormat:@"/%@.sqlite",@"Company"];
     [coor addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[NSURL URLWithString:dataPath] options:nil error:nil];
     context.persistentStoreCoordinator = coor;
+}
+
+- (void)insertEntity:(NSString *)name {
+    Department *department = [NSEntityDescription insertNewObjectForEntityForName:@"Department" inManagedObjectContext:self.context];
 }
 
 
