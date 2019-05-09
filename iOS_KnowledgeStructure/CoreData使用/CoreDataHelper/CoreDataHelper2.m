@@ -10,6 +10,8 @@
 #import <CoreData/CoreData.h>
 #import "Department+CoreDataClass.h"
 
+static NSString * const kMapDepartment = @"Department";
+
 static CoreDataHelper2 *sharedCoreDataHelper;
 
 @interface CoreDataHelper2 ()
@@ -63,9 +65,61 @@ static CoreDataHelper2 *sharedCoreDataHelper;
     context.persistentStoreCoordinator = coor;
 }
 
-- (void)insertEntity:(NSString *)name {
-    Department *department = [NSEntityDescription insertNewObjectForEntityForName:@"Department" inManagedObjectContext:self.context];
+- (void)update2Location {
+    NSError *error = NULL;
+    if (self.context.hasChanges) {
+        [self.context save:&error];
+    }
+    
+    if (error) {
+        NSLog(@"error:%@",error.description);
+    }
+
 }
 
+- (void)insertEntity:(NSString *)name {
+    Department *department = [NSEntityDescription insertNewObjectForEntityForName:kMapDepartment inManagedObjectContext:self.context];
+    department.createDate = [NSDate date];
+    department.departName = @"WorkRoom";
+    
+    [self update2Location];
+}
+
+- (void)deleteEntity {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:kMapDepartment];
+    
+    NSPredicate *predice =[NSPredicate predicateWithFormat:@"departName == %@",@"WorkRoom"];
+    request.predicate = predice;
+    
+    NSArray * departments = [self.context executeFetchRequest:request error:nil];
+    __weak typeof(self)weakSelf=self;
+    [departments enumerateObjectsUsingBlock:^(Department * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [weakSelf.context deleteObject:obj];
+    }];
+
+    [self update2Location];
+}
+
+- (void)updateEntity {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:kMapDepartment];
+    NSPredicate *predice =[NSPredicate predicateWithFormat:@"departName == %@",@"WorkRoom"];
+    request.predicate = predice;
+    
+    NSArray *departments = [self.context executeFetchRequest:request error:nil];
+    [departments enumerateObjectsUsingBlock:^(Department * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.createDate = [NSDate date];
+    }];
+    
+    [self update2Location];
+}
+
+- (NSArray *)fetchEntities {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:kMapDepartment];
+    NSPredicate *predice =[NSPredicate predicateWithFormat:@"departName == %@",@"WorkRoom"];
+    request.predicate = predice;
+    
+    NSArray *departments = [self.context executeFetchRequest:request error:nil];
+    return departments;
+}
 
 @end
