@@ -16,6 +16,7 @@ static CoreDataHelper2 *sharedCoreDataHelper;
 
 @interface CoreDataHelper2 ()
 @property (nonatomic, strong) NSManagedObjectContext *context;
+
 @end
 
 @implementation CoreDataHelper2
@@ -39,8 +40,7 @@ static CoreDataHelper2 *sharedCoreDataHelper;
     return sharedCoreDataHelper;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self setupData];
