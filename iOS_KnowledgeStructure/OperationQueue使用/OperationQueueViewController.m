@@ -13,20 +13,78 @@
 @end
 
 @implementation OperationQueueViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self addUI];
+    [self setupUI];
+    [self setupLayout];
+    [self setupData];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
 }
-*/
+
+#pragma mark - Private Method
+- (void)addUI {
+    
+}
+
+- (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)setupLayout {
+    
+}
+
+
+- (void)setupData {
+    
+}
+
+- (void)operationQueue1 {
+    NSOperation *operation = [[NSOperation alloc] init];
+    
+    NSOperationQueue *oq = [[NSOperationQueue alloc] init];
+    [oq addOperation:operation];
+    
+    [oq addOperationWithBlock:^{
+        NSLog(@"任务2...");
+    }];
+}
+
+- (void)operationQueue2 {
+    NSOperationQueue *oq = [[NSOperationQueue alloc] init];
+
+
+    NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务1...");
+    }];
+    NSBlockOperation *bo2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务2...");
+    }];
+    
+    [bo2 addDependency:bo];
+    
+    [oq addOperations:@[bo,bo2] waitUntilFinished:NO];
+}
+
+// MARK: overwrite
+
+#pragma mark - Public Method
+
+#pragma mark - Event
+
+#pragma mark - Delegate
+
+#pragma mark - Getter, Setter
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
+
 
 @end
