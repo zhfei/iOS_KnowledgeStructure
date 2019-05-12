@@ -96,6 +96,8 @@
 		915C829E21B23AFA00A7567B /* HybirdViewController+delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829D21B23AFA00A7567B /* HybirdViewController+delegate.m */; };
 		915FB6DB221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */; };
 		915FB6DE221EADA300E985EA /* MyPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FB6DD221EADA300E985EA /* MyPoint.m */; };
+		91617A7422886FCA006D33F2 /* OperationQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91617A7222886FCA006D33F2 /* OperationQueueViewController.m */; };
+		91617A7522886FCA006D33F2 /* OperationQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91617A7322886FCA006D33F2 /* OperationQueueViewController.xib */; };
 		9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */; };
 		91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91655F75222BEEB200738F7B /* GCDFunctionViewController.m */; };
 		9166AB4522564B3C004C6F29 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9166AB3822564B39004C6F29 /* CoreDataHelper.m */; };
@@ -303,6 +305,9 @@
 		915FB6DA221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HybirdViewController+JavaScriptCore.m"; sourceTree = "<group>"; };
 		915FB6DC221EADA300E985EA /* MyPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPoint.h; sourceTree = "<group>"; };
 		915FB6DD221EADA300E985EA /* MyPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPoint.m; sourceTree = "<group>"; };
+		91617A7122886FCA006D33F2 /* OperationQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationQueueViewController.h; sourceTree = "<group>"; };
+		91617A7222886FCA006D33F2 /* OperationQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationQueueViewController.m; sourceTree = "<group>"; };
+		91617A7322886FCA006D33F2 /* OperationQueueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperationQueueViewController.xib; sourceTree = "<group>"; };
 		9162AFA2223E28A3004B4D78 /* LifeCycleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeCycleViewController.xib; sourceTree = "<group>"; };
 		91655F74222BEEB200738F7B /* GCDFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDFunctionViewController.h; sourceTree = "<group>"; };
 		91655F75222BEEB200738F7B /* GCDFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFunctionViewController.m; sourceTree = "<group>"; };
@@ -797,6 +802,16 @@
 			path = "基于UIWebView的混合开发";
 			sourceTree = "<group>";
 		};
+		91617A7022886F90006D33F2 /* OperationQueue使用 */ = {
+			isa = PBXGroup;
+			children = (
+				91617A7122886FCA006D33F2 /* OperationQueueViewController.h */,
+				91617A7222886FCA006D33F2 /* OperationQueueViewController.m */,
+				91617A7322886FCA006D33F2 /* OperationQueueViewController.xib */,
+			);
+			path = "OperationQueue使用";
+			sourceTree = "<group>";
+		};
 		91655F73222BEE7700738F7B /* GCD系统函数使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +967,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91617A7022886F90006D33F2 /* OperationQueue使用 */,
 				911ADFC3227F2CF600722387 /* NetWork使用 */,
 				9112DC49227C968900DF70FE /* Search搜索控制器 */,
 				912651D8227897600029F26B /* LayoutConstraint代码使用 */,
@@ -1287,6 +1303,7 @@
 				91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */,
 				917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */,
 				911D1B31222517DD00DD2C51 /* CoreText_CoreImageVC.xib in Resources */,
+				91617A7522886FCA006D33F2 /* OperationQueueViewController.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				912651DD227897880029F26B /* LayoutConstraintViewController.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
@@ -1403,6 +1420,7 @@
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
+				91617A7422886FCA006D33F2 /* OperationQueueViewController.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
 				91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */,
 				916E3DA3222F9D4B00DBF1F3 /* MockViewController.m in Sources */,
