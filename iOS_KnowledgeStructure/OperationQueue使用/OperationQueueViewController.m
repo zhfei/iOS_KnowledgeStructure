@@ -72,6 +72,22 @@
     [oq addOperations:@[bo,bo2] waitUntilFinished:NO];
 }
 
+- (void)operationQueue3 {
+    NSOperationQueue *oq = [[NSOperationQueue alloc] init];
+    oq.maxConcurrentOperationCount = 1;
+    
+    NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务1...");
+    }];
+    NSBlockOperation *bo2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"任务2...");
+    }];
+    
+    [bo2 addDependency:bo];
+    
+    [oq addOperations:@[bo,bo2] waitUntilFinished:NO];
+}
+
 // MARK: overwrite
 
 #pragma mark - Public Method
