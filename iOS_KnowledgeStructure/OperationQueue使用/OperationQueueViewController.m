@@ -7,6 +7,7 @@
 //
 
 #import "OperationQueueViewController.h"
+#import <NSKeyValueObserving.h>
 
 @interface OperationQueueViewController ()
 
@@ -93,6 +94,9 @@
 #pragma mark - Public Method
 
 #pragma mark - Event
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    
+}
 
 #pragma mark - Delegate
 
