@@ -98,6 +98,17 @@
     
 }
 
+//声明依赖关系，当firstName，lastName任何一个改变，都要触发fullName观察者
++ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
+    if ([key isEqualToString:@"fullName"]) {
+        return [NSSet setWithObjects:@"firstName",@"lastName", nil];
+    }
+}
+//也可以把key写到方法中，直接返回
++ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForFullName:(NSString *)key {
+    return [NSSet setWithObjects:@"firstName",@"lastName", nil];
+}
+
 #pragma mark - Delegate
 
 #pragma mark - Getter, Setter
