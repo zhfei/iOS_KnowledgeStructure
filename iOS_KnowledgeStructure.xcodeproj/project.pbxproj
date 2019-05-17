@@ -31,7 +31,6 @@
 		9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337832233AFE300652F55 /* CoreFoundation.framework */; };
 		9116A2062233C455009BF1BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D337812233AC6500652F55 /* MobileCoreServices.framework */; };
 		91187C0A22818ED300C24802 /* CoreDataHelper2.m in Sources */ = {isa = PBXBuildFile; fileRef = 91187C0922818ED300C24802 /* CoreDataHelper2.m */; };
-		91187C162282E80700C24802 /* Department+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 91187C142282E80700C24802 /* Department+CoreDataProperties.m */; };
 		911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E621D3DA26000DD669 /* UnkonwMessageVC.m */; };
 		911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976E921D3DA6B000DD669 /* UnknownModel.m */; };
 		911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 911976EC21D3DFAE000DD669 /* UnknownModel2.m */; };
@@ -1477,7 +1476,6 @@
 				912651DC227897880029F26B /* LayoutConstraintViewController.m in Sources */,
 				91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */,
 				91198B19222FB8360008DF6B /* Tweet.m in Sources */,
-				91187C162282E80700C24802 /* Department+CoreDataProperties.m in Sources */,
 				91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */,
 				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,

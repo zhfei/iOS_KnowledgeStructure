@@ -7,7 +7,6 @@
 //
 
 #import "OperationQueueViewController.h"
-#import <NSKeyValueObserving.h>
 
 @interface OperationQueueViewController ()
 
@@ -103,7 +102,9 @@
     if ([key isEqualToString:@"fullName"]) {
         return [NSSet setWithObjects:@"firstName",@"lastName", nil];
     }
+    return nil;
 }
+
 //也可以把key写到方法中，直接返回
 + (NSSet<NSString *> *)keyPathsForValuesAffectingValueForFullName:(NSString *)key {
     return [NSSet setWithObjects:@"firstName",@"lastName", nil];

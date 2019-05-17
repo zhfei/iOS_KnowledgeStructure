@@ -123,6 +123,9 @@ class MainTableViewController: UITableViewController {
         case 24:
             let vc = NetWorkViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 25:
+            let vc = ZHFWebServeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 
         default:
             print("未知...")
