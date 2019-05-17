@@ -9,10 +9,14 @@
 #import "ZHFWebServeViewController.h"
 #import <GCDWebServer.h>
 #import <GCDWebServerDataResponse.h>
+#import <GCDWebUploader.h>
 #import <BottomComponentLib/ZHFProgressHUD.h>
 
 @interface ZHFWebServeViewController ()
 @property (nonatomic, strong) GCDWebServer *webServer;
+@property (nonatomic, strong) GCDWebUploader *webUploader;
+
+
 @property (weak, nonatomic) IBOutlet UIButton *serverBtn;
 
 @end
@@ -69,6 +73,15 @@
     return _webServer;
 }
 
+- (GCDWebUploader *)webUploader {
+    if (!_webUploader) {
+        NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        _webUploader = [[GCDWebUploader alloc] initWithUploadDirectory:documentDir];
+        [_webUploader start];
+    }
+    return _webUploader;
+}
+
 #pragma mark - NSCopying
 
 #pragma mark - NSObject
@@ -76,13 +89,18 @@
 
 - (IBAction)serverBtnAction:(UIButton *)sender {
     
-    NSString *path = [NSString stringWithFormat:@"模拟服务器地址： %@",self.webServer.serverURL];
+    NSString *path = [NSString stringWithFormat:@"服务器地址： %@",self.webServer.serverURL];
     
-    [ZHFProgressHUD popMessage:path];
+    [ZHFProgressHUD popupSuccessMessage:path];
     
     NSLog(@"%@",path);
 }
 
 - (IBAction)uploaderAction:(UIButton *)sender {
+    NSString *path = [NSString stringWithFormat:@"上传服务器地址： %@",self.webUploader.serverURL];
+    
+    [ZHFProgressHUD popupSuccessMessage:path];
+    
+    NSLog(@"%@",path);
 }
 @end
