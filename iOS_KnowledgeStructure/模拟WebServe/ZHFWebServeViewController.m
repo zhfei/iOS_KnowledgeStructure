@@ -10,11 +10,14 @@
 #import <GCDWebServer.h>
 #import <GCDWebServerDataResponse.h>
 #import <GCDWebUploader.h>
+#import <GCDWebDAVServer.h>
 #import <BottomComponentLib/ZHFProgressHUD.h>
 
 @interface ZHFWebServeViewController ()
 @property (nonatomic, strong) GCDWebServer *webServer;
 @property (nonatomic, strong) GCDWebUploader *webUploader;
+//用户可以使用任何WebDAV客户端（如Transmit（Mac），ForkLift（Mac）或Cyber​​Duck（Mac / Windows））从iOS应用程序沙箱中的目录上载，下载，删除文件和创建目录。
+@property (nonatomic, strong) GCDWebDAVServer *davServer;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *serverBtn;
@@ -80,6 +83,15 @@
         [_webUploader start];
     }
     return _webUploader;
+}
+
+- (GCDWebDAVServer *)davServer {
+    if (!_davServer) {
+        NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        _davServer = [[GCDWebDAVServer alloc] initWithUploadDirectory:documentDir];
+        [_davServer start];
+    }
+    return _davServer;
 }
 
 #pragma mark - NSCopying

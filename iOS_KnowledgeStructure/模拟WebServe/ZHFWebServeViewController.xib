@@ -58,6 +58,15 @@
                         <action selector="uploaderAction:" destination="-1" eventType="touchUpInside" id="SyA-rm-4CV"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXw-Nz-mgV">
+                    <rect key="frame" x="107" y="364" width="161" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="GVr-ne-aNU"/>
+                        <constraint firstAttribute="height" constant="30" id="yk1-dP-Whx"/>
+                    </constraints>
+                    <state key="normal" title="ftp服务器"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -66,7 +75,9 @@
                 <constraint firstItem="WaT-fJ-TCb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q4g-Vk-XIv"/>
                 <constraint firstItem="UBz-7x-SrA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R80-0E-YZG"/>
                 <constraint firstItem="WaT-fJ-TCb" firstAttribute="top" secondItem="JQz-nV-wNy" secondAttribute="bottom" constant="66" id="iUr-FB-xpP"/>
+                <constraint firstItem="hXw-Nz-mgV" firstAttribute="top" secondItem="WaT-fJ-TCb" secondAttribute="bottom" constant="44" id="nsS-8C-GmX"/>
                 <constraint firstItem="JQz-nV-wNy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qA9-de-9FD"/>
+                <constraint firstItem="hXw-Nz-mgV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uBh-g6-ctw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="130.40000000000001" y="130.88455772113943"/>
