@@ -57,10 +57,16 @@
 }
 
 - (void)setupData {
-    
+
 }
 
-
+- (NSDictionary *)dataToJson {
+    NSError *error;
+    NSString *dataStr = @"{'name':'lose'}";
+    NSData *dataResult = [dataStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:&error];
+    return dict;
+}
 
 #pragma mark - Delegate
 

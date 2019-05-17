@@ -82,6 +82,8 @@
 		914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D858221A469CD00DE6BEC /* GeneralModel.swift */; };
 		914F33F721D5CB47004DAF00 /* CoderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F33F621D5CB47004DAF00 /* CoderModel.m */; };
 		915106F5220425D500F9EF5D /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915106F4220425D500F9EF5D /* RunLoopViewController.m */; };
+		91512F00228E842700FC8B7F /* ZHFWebServeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91512EFE228E842700FC8B7F /* ZHFWebServeViewController.m */; };
+		91512F01228E842700FC8B7F /* ZHFWebServeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91512EFF228E842700FC8B7F /* ZHFWebServeViewController.xib */; };
 		9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C03621FC4DB400BBAAED /* LocationViewController.m */; };
 		9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9153C03721FC4DB400BBAAED /* LocationViewController.xib */; };
 		9153C03C21FC4F1100BBAAED /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153C03B21FC4F1100BBAAED /* LocationManager.m */; };
@@ -278,6 +280,9 @@
 		914F33F621D5CB47004DAF00 /* CoderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoderModel.m; sourceTree = "<group>"; };
 		915106F3220425D500F9EF5D /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		915106F4220425D500F9EF5D /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		91512EFD228E842700FC8B7F /* ZHFWebServeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFWebServeViewController.h; sourceTree = "<group>"; };
+		91512EFE228E842700FC8B7F /* ZHFWebServeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFWebServeViewController.m; sourceTree = "<group>"; };
+		91512EFF228E842700FC8B7F /* ZHFWebServeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFWebServeViewController.xib; sourceTree = "<group>"; };
 		9153C03521FC4DB400BBAAED /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		9153C03621FC4DB400BBAAED /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		9153C03721FC4DB400BBAAED /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
@@ -741,6 +746,16 @@
 			path = "RunLoop点滴";
 			sourceTree = "<group>";
 		};
+		91512EFC228E840300FC8B7F /* 模拟WebServe */ = {
+			isa = PBXGroup;
+			children = (
+				91512EFD228E842700FC8B7F /* ZHFWebServeViewController.h */,
+				91512EFE228E842700FC8B7F /* ZHFWebServeViewController.m */,
+				91512EFF228E842700FC8B7F /* ZHFWebServeViewController.xib */,
+			);
+			path = "模拟WebServe";
+			sourceTree = "<group>";
+		};
 		9153C03421FC4D7700BBAAED /* 定位功能 */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +967,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91512EFC228E840300FC8B7F /* 模拟WebServe */,
 				911ADFC3227F2CF600722387 /* NetWork使用 */,
 				9112DC49227C968900DF70FE /* Search搜索控制器 */,
 				912651D8227897600029F26B /* LayoutConstraint代码使用 */,
@@ -1301,6 +1317,7 @@
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */,
+				91512F01228E842700FC8B7F /* ZHFWebServeViewController.xib in Resources */,
 				9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
@@ -1351,7 +1368,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -1364,7 +1381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
@@ -1458,6 +1475,7 @@
 				917B79182189F95300425A05 /* GCDUtility_Swift.swift in Sources */,
 				913833B9221A945F00AE68F0 /* HitTestScrollViewSuperView.m in Sources */,
 				917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */,
+				91512F00228E842700FC8B7F /* ZHFWebServeViewController.m in Sources */,
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,

@@ -15,7 +15,7 @@ target "iOS_KnowledgeStructure" do
    pod 'WebViewJavascriptBridge', '~> 6.0' #//本地与js调用
    pod 'DZNEmptyDataSet' #空列表占位视图
    pod 'MJRefresh' #空列表占位视图
-   
+   pod 'GCDWebServer', '~> 3.0'#模拟服务器
  
    pod 'BottomComponentLib',:path=>"../BottomComponentLib"
 

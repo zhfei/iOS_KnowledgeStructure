@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CoreDataHelper2 : NSObject
-
+- (NSArray *)fetchEntities API_UNAVAILABLE(macos);
 @end
 
 NS_ASSUME_NONNULL_END
