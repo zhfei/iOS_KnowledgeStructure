@@ -95,7 +95,7 @@ UISearchControllerDelegate,UISearchResultsUpdating>
 
 #pragma mark - Event
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"active"]) {
+    if (object == self.searchController) {
         NSLog(@"change: %@",change);
     } else {
         //子类处理完自己的事件后，交给父类继续处理
