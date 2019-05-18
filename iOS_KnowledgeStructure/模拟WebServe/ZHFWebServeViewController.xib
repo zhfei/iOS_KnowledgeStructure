@@ -66,6 +66,9 @@
                         <constraint firstAttribute="height" constant="30" id="yk1-dP-Whx"/>
                     </constraints>
                     <state key="normal" title="ftp服务器"/>
+                    <connections>
+                        <action selector="davBtnAction:" destination="-1" eventType="touchUpInside" id="Ic1-Fr-vyz"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

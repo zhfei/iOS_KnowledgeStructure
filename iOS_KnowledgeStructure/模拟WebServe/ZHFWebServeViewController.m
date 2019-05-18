@@ -19,7 +19,6 @@
 //用户可以使用任何WebDAV客户端（如Transmit（Mac），ForkLift（Mac）或Cyber​​Duck（Mac / Windows））从iOS应用程序沙箱中的目录上载，下载，删除文件和创建目录。
 @property (nonatomic, strong) GCDWebDAVServer *davServer;
 
-
 @property (weak, nonatomic) IBOutlet UIButton *serverBtn;
 
 @end
@@ -59,6 +58,32 @@
 #pragma mark - Public Method
 
 #pragma mark - Event
+- (IBAction)serverBtnAction:(UIButton *)sender {
+    
+    NSString *path = [NSString stringWithFormat:@"服务器地址： %@",self.webServer.serverURL];
+    
+    [ZHFProgressHUD popupSuccessMessage:path];
+    
+    NSLog(@"%@",path);
+}
+
+- (IBAction)uploaderAction:(UIButton *)sender {
+    NSString *path = [NSString stringWithFormat:@"上传服务器地址： %@",self.webUploader.serverURL];
+    
+    [ZHFProgressHUD popupSuccessMessage:path];
+    
+    NSLog(@"%@",path);
+}
+
+- (IBAction)davBtnAction:(UIButton *)sender {
+    NSString *path = [NSString stringWithFormat:@"ftp服务器地址： %@",self.davServer.serverURL];
+    
+    [ZHFProgressHUD popupSuccessMessage:path];
+    
+    NSLog(@"%@",path);
+
+}
+
 
 #pragma mark - Delegate
 
@@ -80,7 +105,7 @@
     if (!_webUploader) {
         NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         _webUploader = [[GCDWebUploader alloc] initWithUploadDirectory:documentDir];
-        [_webUploader start];
+        [_webUploader startWithPort:8081 bonjourName:nil];
     }
     return _webUploader;
 }
@@ -89,30 +114,16 @@
     if (!_davServer) {
         NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         _davServer = [[GCDWebDAVServer alloc] initWithUploadDirectory:documentDir];
-        [_davServer start];
+        [_davServer startWithPort:8082 bonjourName:nil];
     }
     return _davServer;
 }
+
+
 
 #pragma mark - NSCopying
 
 #pragma mark - NSObject
 
 
-- (IBAction)serverBtnAction:(UIButton *)sender {
-    
-    NSString *path = [NSString stringWithFormat:@"服务器地址： %@",self.webServer.serverURL];
-    
-    [ZHFProgressHUD popupSuccessMessage:path];
-    
-    NSLog(@"%@",path);
-}
-
-- (IBAction)uploaderAction:(UIButton *)sender {
-    NSString *path = [NSString stringWithFormat:@"上传服务器地址： %@",self.webUploader.serverURL];
-    
-    [ZHFProgressHUD popupSuccessMessage:path];
-    
-    NSLog(@"%@",path);
-}
 @end
