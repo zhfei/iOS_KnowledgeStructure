@@ -52,6 +52,8 @@
 		912C58DF2216FA7400839F0B /* ArrayFiltrateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 912C58DE2216FA7400839F0B /* ArrayFiltrateViewModel.m */; };
 		912ED33522154582004F6C05 /* CustomNavigationBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 912ED33422154582004F6C05 /* CustomNavigationBarVC.m */; };
 		912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */; };
+		91323C732291B328006E08F2 /* DispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91323C712291B328006E08F2 /* DispatchSourceViewController.m */; };
+		91323C742291B328006E08F2 /* DispatchSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91323C722291B328006E08F2 /* DispatchSourceViewController.xib */; };
 		9132B5D1223F3BC0009C3062 /* GeneralArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = 9132B5D0223F3BC0009C3062 /* GeneralArithmetic.c */; };
 		913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833932219A71F00AE68F0 /* LifeCycleViewController.m */; };
 		913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833982219B13D00AE68F0 /* LiftCycleHeader.m */; };
@@ -229,6 +231,9 @@
 		912ED33322154582004F6C05 /* CustomNavigationBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarVC.h; sourceTree = "<group>"; };
 		912ED33422154582004F6C05 /* CustomNavigationBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarVC.m; sourceTree = "<group>"; };
 		912ED33622156B1C004F6C05 /* CustomNavigationBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarVC.xib; sourceTree = "<group>"; };
+		91323C702291B328006E08F2 /* DispatchSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSourceViewController.h; sourceTree = "<group>"; };
+		91323C712291B328006E08F2 /* DispatchSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSourceViewController.m; sourceTree = "<group>"; };
+		91323C722291B328006E08F2 /* DispatchSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DispatchSourceViewController.xib; sourceTree = "<group>"; };
 		9132B5CF223F3BC0009C3062 /* GeneralArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralArithmetic.h; sourceTree = "<group>"; };
 		9132B5D0223F3BC0009C3062 /* GeneralArithmetic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneralArithmetic.c; sourceTree = "<group>"; };
 		913833922219A71F00AE68F0 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
@@ -611,6 +616,16 @@
 			path = "自定义NavigationBar";
 			sourceTree = "<group>";
 		};
+		91323C6F2291B306006E08F2 /* DispatchSource使用 */ = {
+			isa = PBXGroup;
+			children = (
+				91323C702291B328006E08F2 /* DispatchSourceViewController.h */,
+				91323C712291B328006E08F2 /* DispatchSourceViewController.m */,
+				91323C722291B328006E08F2 /* DispatchSourceViewController.xib */,
+			);
+			path = "DispatchSource使用";
+			sourceTree = "<group>";
+		};
 		9132B5CE223F3B71009C3062 /* 常见算法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -981,6 +996,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91323C6F2291B306006E08F2 /* DispatchSource使用 */,
 				91512EFC228E840300FC8B7F /* 模拟WebServe */,
 				91617A7022886F90006D33F2 /* OperationQueue使用 */,
 				911ADFC3227F2CF600722387 /* NetWork使用 */,
@@ -1337,6 +1353,7 @@
 				9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
+				91323C742291B328006E08F2 /* DispatchSourceViewController.xib in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
 			);
@@ -1384,8 +1401,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
+				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1393,11 +1411,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomComponentLib.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GCDWebUploader.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
@@ -1458,6 +1477,7 @@
 				91198B18222FB8360008DF6B /* TweetView.m in Sources */,
 				918661402269C8F000BE6600 /* RichTextViewController.m in Sources */,
 				9166AB4F22564DCD004C6F29 /* Student+CoreDataClass.m in Sources */,
+				91323C732291B328006E08F2 /* DispatchSourceViewController.m in Sources */,
 				91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */,
 				91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */,
 				917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */,
