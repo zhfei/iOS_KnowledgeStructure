@@ -96,7 +96,7 @@
             return [GCDWebServerDataResponse responseWithHTML:@" <html> <body> <p> Hello World </ p> </ body> </ html>"];
         }];
         
-        [_webServer startWithPort:8080 bonjourName:nil];
+        [_webServer startWithPort:8080 bonjourName:@"我是局域网web共享"];
     }
     return _webServer;
 }
