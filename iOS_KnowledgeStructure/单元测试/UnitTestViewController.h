@@ -11,6 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UnitTestViewController : UIViewController
+//加
+int plus(int a, int b) ;
+- (NSInteger)add:(NSInteger)a b:(NSInteger)b;
+
+//乘
+long multiply(int a, int b);
 
 @end
 

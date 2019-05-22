@@ -43,6 +43,19 @@
 // MARK: overwrite
 
 #pragma mark - Public Method
+int plus(int a, int b) {
+    return a + b;
+}
+
+long multiply(int a, int b) {
+    return a * b;
+}
+
+- (NSInteger)add:(NSInteger)a b:(NSInteger)b {
+    return a+b;
+}
+
+
 
 #pragma mark - Event
 
