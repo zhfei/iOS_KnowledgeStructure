@@ -70,7 +70,7 @@
     CFSocketContext socketContext = {0,(__bridge void *)(self),NULL,NULL,NULL};
     
     //创建Socket对象
-    //SocketCallBack函数的格式是d定义好的
+    //SocketCallBack函数的格式定义好的
     CFSocketRef socket = CFSocketCreate(kCFAllocatorDefault, AU_IPv4, SOCK_STREAM, IPPROTO_TCP, kCFSocketConnectCallBack, SocketCallBack, &socketContext);
     _socket = socket;
     
@@ -226,7 +226,7 @@ void TCPServerAcceptCallBack(CFSocketRef s, CFSocketCallBackType type, CFDataRef
         //获取连接信息
         struct sockaddr_in *addr_in = (struct sockaddr_in *)name;
         // ----inet_ntoa将网络地址转换成“.”点隔的字符串格式
-        NSLog(@"%s:%d连接进来了",inet_ntoa(addr_in->sin_addr),addr_in->sin_port);
+//        NSLog(@"%s:%d连接进来了",inet_ntoa(addr_in->sin_addr),addr_in->sin_port);
         
         //创建一组可读/写的CFStream
         void * readStreamRef  = NULL;
@@ -302,7 +302,7 @@ void readStream(CFReadStreamRef readStream,
         
         const char *str = "for the lich king！！\n";
         //向客户端输出数据
-        CFWriteStreamWrite(writeStreamRef, (UInt8 *)str, strlen(str) + 1);
+//        CFWriteStreamWrite(writeStreamRef, (UInt8 *)str, strlen(str) + 1);
     }
 }
 

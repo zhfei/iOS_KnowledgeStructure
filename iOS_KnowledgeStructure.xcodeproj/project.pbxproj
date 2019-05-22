@@ -118,6 +118,8 @@
 		916957B021DE214D0026EB3A /* main_int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A721DE214D0026EB3A /* main_int.cpp */; };
 		916957B121DE214D0026EB3A /* main_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916957A921DE214D0026EB3A /* main_Array.cpp */; };
 		916957B221DE214D0026EB3A /* main4.m in Sources */ = {isa = PBXBuildFile; fileRef = 916957AA21DE214D0026EB3A /* main4.m */; };
+		916AA4EB22959B1B001C29CB /* UnitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AA4E922959B1B001C29CB /* UnitTestViewController.m */; };
+		916AA4EC22959B1B001C29CB /* UnitTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916AA4EA22959B1B001C29CB /* UnitTestViewController.xib */; };
 		916DC5D9226453E0003C533B /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916DC5D8226453E0003C533B /* DateViewController.m */; };
 		916E3D9F222F9A3200DBF1F3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916E3D93222F9A3200DBF1F3 /* libOCMock.a */; };
 		916E3DA3222F9D4B00DBF1F3 /* MockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */; };
@@ -341,6 +343,9 @@
 		916957A721DE214D0026EB3A /* main_int.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_int.cpp; sourceTree = "<group>"; };
 		916957A921DE214D0026EB3A /* main_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_Array.cpp; sourceTree = "<group>"; };
 		916957AA21DE214D0026EB3A /* main4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main4.m; sourceTree = "<group>"; };
+		916AA4E822959B1B001C29CB /* UnitTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTestViewController.h; sourceTree = "<group>"; };
+		916AA4E922959B1B001C29CB /* UnitTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestViewController.m; sourceTree = "<group>"; };
+		916AA4EA22959B1B001C29CB /* UnitTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnitTestViewController.xib; sourceTree = "<group>"; };
 		916DC5D7226453E0003C533B /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		916DC5D8226453E0003C533B /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		916E3D93222F9A3200DBF1F3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
@@ -919,6 +924,16 @@
 			path = block_Array;
 			sourceTree = "<group>";
 		};
+		916AA4E722959AE7001C29CB /* 单元测试 */ = {
+			isa = PBXGroup;
+			children = (
+				916AA4E822959B1B001C29CB /* UnitTestViewController.h */,
+				916AA4E922959B1B001C29CB /* UnitTestViewController.m */,
+				916AA4EA22959B1B001C29CB /* UnitTestViewController.xib */,
+			);
+			path = "单元测试";
+			sourceTree = "<group>";
+		};
 		916DC5D622645372003C533B /* Date相关操作 */ = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1011,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				916AA4E722959AE7001C29CB /* 单元测试 */,
 				91323C6F2291B306006E08F2 /* DispatchSource使用 */,
 				91512EFC228E840300FC8B7F /* 模拟WebServe */,
 				91617A7022886F90006D33F2 /* OperationQueue使用 */,
@@ -1337,6 +1353,7 @@
 				91617A7522886FCA006D33F2 /* OperationQueueViewController.xib in Resources */,
 				913833A02219B6C300AE68F0 /* LiftCycleCell.xib in Resources */,
 				912651DD227897880029F26B /* LayoutConstraintViewController.xib in Resources */,
+				916AA4EC22959B1B001C29CB /* UnitTestViewController.xib in Resources */,
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
@@ -1487,6 +1504,7 @@
 				9166AB5022564DCD004C6F29 /* Student+CoreDataProperties.m in Sources */,
 				9153C03821FC4DB400BBAAED /* LocationViewController.m in Sources */,
 				917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */,
+				916AA4EB22959B1B001C29CB /* UnitTestViewController.m in Sources */,
 				9113976921DF3F4600916D59 /* block_VC.m in Sources */,
 				915FB6DB221E9E4300E985EA /* HybirdViewController+JavaScriptCore.m in Sources */,
 				9154487E21E5980600A90A14 /* RedView.m in Sources */,
