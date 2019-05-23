@@ -93,6 +93,7 @@
 		9154487821E597D900A90A14 /* PinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487721E597D900A90A14 /* PinkView.m */; };
 		9154487B21E597F400A90A14 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487A21E597F400A90A14 /* BlueView.m */; };
 		9154487E21E5980600A90A14 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9154487D21E5980600A90A14 /* RedView.m */; };
+		915BD3CD2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BD3CC2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.m */; };
 		915C829621B229F700A7567B /* Hybird.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 915C829521B229F700A7567B /* Hybird.README.md */; };
 		915C829921B22AC400A7567B /* HybirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C829821B22AC400A7567B /* HybirdViewController.m */; };
 		915C829B21B2368100A7567B /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 915C829A21B2368100A7567B /* template.html */; };
@@ -164,6 +165,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		915BD3CF2296893A00DA49B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 917B78CD2189F5B000425A05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 917B78D42189F5B000425A05;
+			remoteInfo = iOS_KnowledgeStructure;
+		};
 		917B78EE2189F5B200425A05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 917B78CD2189F5B000425A05 /* Project object */;
@@ -305,6 +313,9 @@
 		9154487A21E597F400A90A14 /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
 		9154487C21E5980600A90A14 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
 		9154487D21E5980600A90A14 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_KnowledgeStructureTests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		915BD3CC2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KnowledgeStructureTests2.m; sourceTree = "<group>"; };
+		915BD3CE2296893A00DA49B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915BE176224223DC00A2B0B1 /* CodeStandard.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CodeStandard.md; sourceTree = "<group>"; };
 		915C829521B229F700A7567B /* Hybird.README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Hybird.README.md; sourceTree = "<group>"; };
 		915C829721B22AC400A7567B /* HybirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HybirdViewController.h; sourceTree = "<group>"; };
@@ -437,6 +448,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		915BD3C72296893A00DA49B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		917B78D22189F5B000425A05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -811,6 +829,15 @@
 			path = "事件传输链和响应";
 			sourceTree = "<group>";
 		};
+		915BD3CB2296893A00DA49B4 /* iOS_KnowledgeStructureTests2 */ = {
+			isa = PBXGroup;
+			children = (
+				915BD3CC2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.m */,
+				915BD3CE2296893A00DA49B4 /* Info.plist */,
+			);
+			path = iOS_KnowledgeStructureTests2;
+			sourceTree = "<group>";
+		};
 		915BE1742242234E00A2B0B1 /* 代码规范 */ = {
 			isa = PBXGroup;
 			children = (
@@ -992,6 +1019,7 @@
 				917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */,
 				917B78F02189F5B200425A05 /* iOS_KnowledgeStructureTests */,
 				917B78FB2189F5B200425A05 /* iOS_KnowledgeStructureUITests */,
+				915BD3CB2296893A00DA49B4 /* iOS_KnowledgeStructureTests2 */,
 				917B78D62189F5B000425A05 /* Products */,
 				72B5E0BD5A31DEE9FDCFACF5 /* Pods */,
 				8C04402642D8B9933B9C1249 /* Frameworks */,
@@ -1004,6 +1032,7 @@
 				917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */,
 				917B78ED2189F5B200425A05 /* iOS_KnowledgeStructureTests.xctest */,
 				917B78F82189F5B200425A05 /* iOS_KnowledgeStructureUITests.xctest */,
+				915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1240,6 +1269,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		915BD3C92296893A00DA49B4 /* iOS_KnowledgeStructureTests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 915BD3D32296893A00DA49B4 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests2" */;
+			buildPhases = (
+				915BD3C62296893A00DA49B4 /* Sources */,
+				915BD3C72296893A00DA49B4 /* Frameworks */,
+				915BD3C82296893A00DA49B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				915BD3D02296893A00DA49B4 /* PBXTargetDependency */,
+			);
+			name = iOS_KnowledgeStructureTests2;
+			productName = iOS_KnowledgeStructureTests2;
+			productReference = 915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 917B79012189F5B200425A05 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructure" */;
@@ -1307,6 +1354,10 @@
 					91392B892244F3F300AF9A51 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					915BD3C92296893A00DA49B4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 917B78D42189F5B000425A05;
+					};
 					917B78D42189F5B000425A05 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -1338,11 +1389,19 @@
 				917B78EC2189F5B200425A05 /* iOS_KnowledgeStructureTests */,
 				917B78F72189F5B200425A05 /* iOS_KnowledgeStructureUITests */,
 				91392B892244F3F300AF9A51 /* OCLint */,
+				915BD3C92296893A00DA49B4 /* iOS_KnowledgeStructureTests2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		915BD3C82296893A00DA49B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		917B78D32189F5B000425A05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1457,6 +1516,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		915BD3C62296893A00DA49B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915BD3CD2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		917B78D12189F5B000425A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1590,6 +1657,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		915BD3D02296893A00DA49B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */;
+			targetProxy = 915BD3CF2296893A00DA49B4 /* PBXContainerItemProxy */;
+		};
 		917B78EF2189F5B200425A05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */;
@@ -1637,6 +1709,48 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		915BD3D12296893A00DA49B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
+				INFOPLIST_FILE = iOS_KnowledgeStructureTests2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhf.iOS-KnowledgeStructureTests2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_KnowledgeStructure.app/iOS_KnowledgeStructure";
+			};
+			name = Debug;
+		};
+		915BD3D22296893A00DA49B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
+				INFOPLIST_FILE = iOS_KnowledgeStructureTests2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhf.iOS-KnowledgeStructureTests2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_KnowledgeStructure.app/iOS_KnowledgeStructure";
 			};
 			name = Release;
 		};
@@ -1909,6 +2023,15 @@
 			buildConfigurations = (
 				91392B8A2244F3F300AF9A51 /* Debug */,
 				91392B8B2244F3F300AF9A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		915BD3D32296893A00DA49B4 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915BD3D12296893A00DA49B4 /* Debug */,
+				915BD3D22296893A00DA49B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

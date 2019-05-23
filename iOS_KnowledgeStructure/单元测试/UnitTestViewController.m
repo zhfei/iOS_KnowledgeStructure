@@ -7,6 +7,9 @@
 //
 
 #import "UnitTestViewController.h"
+#import <BottomComponentLib/ZHFNetworking.h>
+#import <BottomComponentLib/ZHFRequestParameter.h>
+#import <BottomComponentLib/ZHFProgressHUD.h>
 
 @interface UnitTestViewController ()
 
@@ -55,7 +58,21 @@ long multiply(int a, int b) {
     return a+b;
 }
 
-
+- (void)loaderData:(AsynCompleteBlock)block  {
+    ZHFRequestParameter *para = [[ZHFRequestParameter alloc] init];
+    [ZHFProgressHUD popMessage:@"加载中..."];
+    [ZHFNetworking asyncWithParameter:para success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
+        [ZHFProgressHUD dismissMessage];
+        if (block) {
+            block();
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError *error) {
+        [ZHFProgressHUD dismissMessage];
+        if (block) {
+            block();
+        }
+    }];
+}
 
 #pragma mark - Event
 

@@ -35,7 +35,6 @@
 
 - (void)testAdd {
     NSInteger sum = [self.unitVC add:10 b:10];
-    
     XCTAssert(sum == 10, @"计算错误...");
 }
 

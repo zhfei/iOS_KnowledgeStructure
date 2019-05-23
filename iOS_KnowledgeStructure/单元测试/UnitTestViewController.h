@@ -10,14 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^AsynCompleteBlock)();
+
 @interface UnitTestViewController : UIViewController
+//基本测试
 //加
 int plus(int a, int b) ;
 - (NSInteger)add:(NSInteger)a b:(NSInteger)b;
-
 //乘
 long multiply(int a, int b);
 
+//异步测试
+- (void)loaderData:(AsynCompleteBlock)block;
 @end
 
 NS_ASSUME_NONNULL_END
