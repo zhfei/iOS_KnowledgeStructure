@@ -51,6 +51,8 @@
 }
 
 - (void)testButtonTap {
+    NSMutableArray *argumentsM = [[[NSProcessInfo processInfo] arguments] mutableCopy];
+    [argumentsM removeObject:0];
 
 }
 
