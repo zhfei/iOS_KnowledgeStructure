@@ -123,6 +123,9 @@
     XCUIApplication *app = [[XCUIApplication alloc] init];
     XCUICoordinate *coor = [app coordinateWithNormalizedOffset:CGVectorMake(0, 0)];
     [[coor coordinateWithOffset:CGVectorMake(20, 20)] tap];
+    
+    
+    
 }
 
 @end
