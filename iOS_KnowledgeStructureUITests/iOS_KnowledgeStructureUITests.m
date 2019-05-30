@@ -25,6 +25,8 @@
 
 @interface iOS_KnowledgeStructureUITests : XCTestCase
 @property (nonatomic, strong) LayoutConstraintViewController *lcVC;
+@property (nonatomic, strong) XCUIApplication *app;
+
 @end
 
 @implementation iOS_KnowledgeStructureUITests
@@ -36,7 +38,8 @@
     self.continueAfterFailure = NO;
 
     // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-    [[[XCUIApplication alloc] init] launch];
+    self.app = [[XCUIApplication alloc] init];
+    [self.app launch];
     
     self.lcVC = [LayoutConstraintViewController new];
 
@@ -123,7 +126,10 @@
     XCUIApplication *app = [[XCUIApplication alloc] init];
     XCUICoordinate *coor = [app coordinateWithNormalizedOffset:CGVectorMake(0, 0)];
     [[coor coordinateWithOffset:CGVectorMake(20, 20)] tap];
-    
+}
+
+- (void)textAction {
+    XCUIElement *ele = [self.app.textViews elementBoundByIndex:0];
     
     
 }
