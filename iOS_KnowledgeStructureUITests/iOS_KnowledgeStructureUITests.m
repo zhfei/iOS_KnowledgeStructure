@@ -131,6 +131,7 @@
 - (void)textAction {
     XCUIElement *ele = [self.app.textViews elementBoundByIndex:0];
     
+    [ele typeText:@"hello world"];
     
 }
 
