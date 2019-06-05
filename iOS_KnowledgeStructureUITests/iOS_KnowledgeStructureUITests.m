@@ -130,6 +130,9 @@
 
 - (void)textAction {
     XCUIElement *ele = [self.app.textViews elementBoundByIndex:0];
+    if ([ele waitForExistenceWithTimeout:10]) {
+        XCTAssert(ele.exists);
+    }
     
     [ele typeText:@"hello world"];
     
