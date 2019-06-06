@@ -133,8 +133,9 @@
     if ([ele waitForExistenceWithTimeout:10]) {
         XCTAssert(ele.exists);
     }
-    
+    [ele tap];
     [ele typeText:@"hello world"];
+    
     
 }
 
