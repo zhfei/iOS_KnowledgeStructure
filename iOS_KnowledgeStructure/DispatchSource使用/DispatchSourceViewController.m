@@ -286,12 +286,10 @@ void TCPServerAcceptCallBack(CFSocketRef s, CFSocketCallBackType type, CFDataRef
 //向客户端发送数据
 void readStream(CFReadStreamRef readStream,
                 CFStreamEventType evenType,
-                void *clientCallBackInfo)
-{
+                void *clientCallBackInfo) {
     UInt8 buff[2048];
     
     NSString *aaa = (__bridge NSString *)(clientCallBackInfo);
-    
     NSLog(@"%@", aaa);
     
     // ----从可读的数据流中读取数据，返回值是多少字节读到的，如果为0就是已经全部结束完毕，如果是-1则是数据流没有打开或者其他错误发生
