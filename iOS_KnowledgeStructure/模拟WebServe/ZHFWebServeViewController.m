@@ -105,7 +105,7 @@
     if (!_webUploader) {
         NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         _webUploader = [[GCDWebUploader alloc] initWithUploadDirectory:documentDir];
-        [_webUploader startWithPort:8081 bonjourName:nil];
+        [_webUploader startWithPort:8081 bonjourName:@"uploader服务"];
     }
     return _webUploader;
 }
@@ -114,7 +114,7 @@
     if (!_davServer) {
         NSString *documentDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         _davServer = [[GCDWebDAVServer alloc] initWithUploadDirectory:documentDir];
-        [_davServer startWithPort:8082 bonjourName:nil];
+        [_davServer startWithPort:8082 bonjourName:@"dav服务"];
     }
     return _davServer;
 }
