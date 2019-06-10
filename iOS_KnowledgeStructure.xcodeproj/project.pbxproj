@@ -55,6 +55,8 @@
 		91323C732291B328006E08F2 /* DispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91323C712291B328006E08F2 /* DispatchSourceViewController.m */; };
 		91323C742291B328006E08F2 /* DispatchSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91323C722291B328006E08F2 /* DispatchSourceViewController.xib */; };
 		9132B5D1223F3BC0009C3062 /* GeneralArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = 9132B5D0223F3BC0009C3062 /* GeneralArithmetic.c */; };
+		9134AA3E22AEB18E000DC2AF /* ZHFLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134AA3C22AEB18E000DC2AF /* ZHFLogViewController.m */; };
+		9134AA3F22AEB18E000DC2AF /* ZHFLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9134AA3D22AEB18E000DC2AF /* ZHFLogViewController.xib */; };
 		913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833932219A71F00AE68F0 /* LifeCycleViewController.m */; };
 		913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833982219B13D00AE68F0 /* LiftCycleHeader.m */; };
 		9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9138339A2219B14B00AE68F0 /* LiftCycleHeader.xib */; };
@@ -246,6 +248,9 @@
 		91323C722291B328006E08F2 /* DispatchSourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DispatchSourceViewController.xib; sourceTree = "<group>"; };
 		9132B5CF223F3BC0009C3062 /* GeneralArithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralArithmetic.h; sourceTree = "<group>"; };
 		9132B5D0223F3BC0009C3062 /* GeneralArithmetic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneralArithmetic.c; sourceTree = "<group>"; };
+		9134AA3B22AEB18E000DC2AF /* ZHFLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFLogViewController.h; sourceTree = "<group>"; };
+		9134AA3C22AEB18E000DC2AF /* ZHFLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFLogViewController.m; sourceTree = "<group>"; };
+		9134AA3D22AEB18E000DC2AF /* ZHFLogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHFLogViewController.xib; sourceTree = "<group>"; };
 		913833922219A71F00AE68F0 /* LifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleViewController.h; sourceTree = "<group>"; };
 		913833932219A71F00AE68F0 /* LifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleViewController.m; sourceTree = "<group>"; };
 		913833972219B13D00AE68F0 /* LiftCycleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiftCycleHeader.h; sourceTree = "<group>"; };
@@ -658,6 +663,16 @@
 			path = "常见算法";
 			sourceTree = "<group>";
 		};
+		9134AA3A22AEB16C000DC2AF /* 日志 */ = {
+			isa = PBXGroup;
+			children = (
+				9134AA3B22AEB18E000DC2AF /* ZHFLogViewController.h */,
+				9134AA3C22AEB18E000DC2AF /* ZHFLogViewController.m */,
+				9134AA3D22AEB18E000DC2AF /* ZHFLogViewController.xib */,
+			);
+			path = "日志";
+			sourceTree = "<group>";
+		};
 		913833912219A6D700AE68F0 /* VC生命周期 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,6 +1055,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9134AA3A22AEB16C000DC2AF /* 日志 */,
 				916AA4E722959AE7001C29CB /* 单元测试 */,
 				91323C6F2291B306006E08F2 /* DispatchSource使用 */,
 				91512EFC228E840300FC8B7F /* 模拟WebServe */,
@@ -1418,6 +1434,7 @@
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				911ADFC8227F2D0E00722387 /* NetWorkViewController.xib in Resources */,
+				9134AA3F22AEB18E000DC2AF /* ZHFLogViewController.xib in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
@@ -1538,6 +1555,7 @@
 				910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
+				9134AA3E22AEB18E000DC2AF /* ZHFLogViewController.m in Sources */,
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
 				91617A7422886FCA006D33F2 /* OperationQueueViewController.m in Sources */,
 				914BA0C621B504C200150992 /* Person+Eat.m in Sources */,
