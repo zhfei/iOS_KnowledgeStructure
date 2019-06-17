@@ -19,8 +19,6 @@ target "iOS_KnowledgeStructure" do
    pod 'GCDWebServer', '~> 3.0'#模拟服务器
    pod 'GCDWebServer/WebUploader', '~> 3.0'
    pod 'GCDWebServer/WebDAV', '~> 3.0'
- 
-   pod 'BottomComponentLib',:path=>"../BottomComponentLib"
-
+   pod 'BottomComponentLib',:path=>"../BottomComponentLib",:testspecs => ['BottomComponentLibTests']
 end
 

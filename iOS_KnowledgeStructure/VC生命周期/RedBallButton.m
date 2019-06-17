@@ -7,7 +7,7 @@
 //
 
 #import "RedBallButton.h"
-#import <BottomComponentLib/UIView+Frame.h>
+#import <BottomComponentLib/UIView+BCLib.h>
 
 @implementation RedBallButton
 #pragma mark - Life Cycle
@@ -29,7 +29,7 @@
 
 #pragma mark - Private Method
 - (void)setupUI {
-    CGSize size = self.size;
+    CGSize size = self.frame.size;
     self.titleEdgeInsets = UIEdgeInsetsMake(0, size.width-40, size.height-20, 0);
     self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, size.height-20, size.width-40);
 

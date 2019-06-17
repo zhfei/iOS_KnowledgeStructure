@@ -11,7 +11,7 @@
 #import <Masonry.h>
 #import "LiftCycleCell.h"
 #import "RedBallButton.h"
-#import <BottomComponentLib/UIImage+Custom.h>
+#import <BottomComponentLib/UIImage+BCLib.h>
 #import "PickerViewController.h"
 
 @interface LifeCycleViewController ()

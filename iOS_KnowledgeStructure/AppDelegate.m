@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <BottomComponentLib/UIImage+Custom.h>
+#import <BottomComponentLib/UIImage+BCLib.h>
 // iOS10.0 需要导入
 #import <UserNotifications/UserNotifications.h>
 

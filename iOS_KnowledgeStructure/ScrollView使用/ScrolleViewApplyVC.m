@@ -9,7 +9,7 @@
 #import "ScrolleViewApplyVC.h"
 #import <Masonry.h>
 #import <BottomComponentLib/UIFactory.h>
-#import <BottomComponentLib/UIColor+Transform.h>
+#import <BottomComponentLib/UIColor+BCLib.h>
 #import "Xtrace.h"
 
 #define widthS [UIScreen mainScreen].bounds.size.width

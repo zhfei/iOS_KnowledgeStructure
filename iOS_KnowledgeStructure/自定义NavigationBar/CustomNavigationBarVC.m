@@ -7,8 +7,8 @@
 //
 
 #import "CustomNavigationBarVC.h"
-#import <BottomComponentLib/UIView+Frame.h>
-#import <BottomComponentLib/UIImage+Custom.h>
+#import <BottomComponentLib/UIView+BCLib.h>
+#import <BottomComponentLib/UIImage+BCLib.h>
 
 @interface CustomNavigationBarVC ()<UISearchBarDelegate>
 
@@ -62,7 +62,7 @@
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0,0,widthS-100,35)];
     UISearchBar *searchBar = [[UISearchBar alloc]init];
     searchBar.delegate = self ;
-    searchBar.frame=CGRectMake(0,0,titleView.width,35);
+    searchBar.frame=CGRectMake(0,0,titleView.frame.size.width,35);
     searchBar.layer.cornerRadius=18;
     searchBar.layer.masksToBounds=YES;
     //边框线粗细

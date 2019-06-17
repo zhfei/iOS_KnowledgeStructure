@@ -7,7 +7,7 @@
 //
 
 #import "PhotoSaveAndVisitVc.h"
-#import <BottomComponentLib/UIImage+Custom.h>
+#import <BottomComponentLib/UIImage+BCLib.h>
 #import "PhotoCollectionViewController.h"
 #import <BottomComponentLib/ZHFAlertControlle.h>
 

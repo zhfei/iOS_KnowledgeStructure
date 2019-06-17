@@ -8,7 +8,7 @@
 
 #import "ProgressViewController.h"
 #import "ProgressWindow.h"
-#import <BottomComponentLib/UIButton+ZHFShortCut.h>
+#import <BottomComponentLib/UIButton+BCLib.h>
 #import <BottomComponentLib/Macro.h>
 
 @interface ProgressViewController ()

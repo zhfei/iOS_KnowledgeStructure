@@ -10,7 +10,7 @@
 #import <Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
-#import <BottomComponentLib/UIColor+Transform.h>
+#import <BottomComponentLib/UIColor+BCLib.h>
 
 static NSString *cellID =@"myCell";
 

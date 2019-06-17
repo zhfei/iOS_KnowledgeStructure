@@ -10,7 +10,7 @@
 #import "PickerViewController.h"
 #import <Masonry.h>
 #import "LabelContainer.h"
-#import <BottomComponentLib/UIView+coreAnimation.h>
+#import <BottomComponentLib/UIView+BCLib.h>
 
 CGFloat const kContentHeigh = 244.0;
 
