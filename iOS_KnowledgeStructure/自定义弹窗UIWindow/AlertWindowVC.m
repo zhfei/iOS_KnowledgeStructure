@@ -25,19 +25,32 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
-//    UIAlertAction *ac = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//        NSLog(@"OK...");
-//    }];
-//    [alert addAction:ac];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ac = [UIAlertAction actionWithTitle:@"默认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"OK...");
+    }];
+    [alert addAction:ac];
+    
+    UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"取消...");
+    }];
+    [alert addAction:cancle];
+    
+    UIAlertAction *cancle2 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"第三者...");
+    }];
+    [alert addAction:cancle2];
+    
+    
+    UIColor *color = [UIColor lightGrayColor];
+    [cancle setValue:color forKey:@"titleTextColor"];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
+//    NSArray *arr = @[@(UIWindowLevelNormal),@(UIWindowLevelAlert),@(UIWindowLevelStatusBar)];
+//    NSLog(@"arr: %@",arr);
 //
-//    [self presentViewController:alert animated:YES completion:nil];
-    
-    
-    NSArray *arr = @[@(UIWindowLevelNormal),@(UIWindowLevelAlert),@(UIWindowLevelStatusBar)];
-    NSLog(@"arr: %@",arr);
-    
-    [self showAlertViewController];
+//    [self showAlertViewController];
 //    [self showZHFAlertController];
 }
 
