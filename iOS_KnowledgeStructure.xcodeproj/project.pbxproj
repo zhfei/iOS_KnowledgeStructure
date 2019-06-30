@@ -163,6 +163,12 @@
 		91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D1771F21B43CA1007DB825 /* AlertWindowVC.m */; };
 		91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377A2233A40200652F55 /* AI_ViewController.m */; };
 		91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D3377B2233A40200652F55 /* AI_ViewController.xib */; };
+		91DEE0DF22C895EC00CAEF30 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DEE0DE22C895EC00CAEF30 /* JavaScriptCore.framework */; };
+		91DEE0E122C8965300CAEF30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DEE0E022C8965300CAEF30 /* CoreData.framework */; };
+		91DEE0E322C8969500CAEF30 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DEE0E222C8969500CAEF30 /* UserNotifications.framework */; };
+		91DEE0E722C8A85C00CAEF30 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DEE0E622C8A85B00CAEF30 /* AVFoundation.framework */; };
+		91DEE0E922C8A88A00CAEF30 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DEE0E822C8A88A00CAEF30 /* CoreLocation.framework */; };
+		91DEE0EB22C8A8B900CAEF30 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DEE0EA22C8A8B800CAEF30 /* MapKit.framework */; };
 		91E442BA21C3EB76004F9318 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E442B921C3EB76004F9318 /* TimerViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -446,6 +452,13 @@
 		91D3377B2233A40200652F55 /* AI_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AI_ViewController.xib; sourceTree = "<group>"; };
 		91D337812233AC6500652F55 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		91D337832233AFE300652F55 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		91DEE0DE22C895EC00CAEF30 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		91DEE0E022C8965300CAEF30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		91DEE0E222C8969500CAEF30 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		91DEE0E422C8A80C00CAEF30 /* libBottomComponentLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBottomComponentLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DEE0E622C8A85B00CAEF30 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		91DEE0E822C8A88A00CAEF30 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		91DEE0EA22C8A8B800CAEF30 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		91E442B821C3EB76004F9318 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		91E442B921C3EB76004F9318 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		D6B7DEDBFF1D17A19FEEF288 /* libPods-iOS_KnowledgeStructure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_KnowledgeStructure.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,6 +477,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DEE0EB22C8A8B900CAEF30 /* MapKit.framework in Frameworks */,
+				91DEE0E922C8A88A00CAEF30 /* CoreLocation.framework in Frameworks */,
+				91DEE0E722C8A85C00CAEF30 /* AVFoundation.framework in Frameworks */,
+				91DEE0E322C8969500CAEF30 /* UserNotifications.framework in Frameworks */,
+				91DEE0E122C8965300CAEF30 /* CoreData.framework in Frameworks */,
+				91DEE0DF22C895EC00CAEF30 /* JavaScriptCore.framework in Frameworks */,
 				9116A2062233C455009BF1BB /* MobileCoreServices.framework in Frameworks */,
 				9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */,
 				9116A2022233C29A009BF1BB /* CoreServices.framework in Frameworks */,
@@ -501,6 +520,13 @@
 		8C04402642D8B9933B9C1249 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91DEE0EA22C8A8B800CAEF30 /* MapKit.framework */,
+				91DEE0E822C8A88A00CAEF30 /* CoreLocation.framework */,
+				91DEE0E622C8A85B00CAEF30 /* AVFoundation.framework */,
+				91DEE0E422C8A80C00CAEF30 /* libBottomComponentLib.a */,
+				91DEE0E222C8969500CAEF30 /* UserNotifications.framework */,
+				91DEE0E022C8965300CAEF30 /* CoreData.framework */,
+				91DEE0DE22C895EC00CAEF30 /* JavaScriptCore.framework */,
 				9116A2012233C29A009BF1BB /* CoreServices.framework */,
 				91D337832233AFE300652F55 /* CoreFoundation.framework */,
 				91D337812233AC6500652F55 /* MobileCoreServices.framework */,
@@ -1494,7 +1520,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
 				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
@@ -1509,7 +1535,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
@@ -1780,7 +1806,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1826,6 +1852,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1839,7 +1866,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1879,6 +1906,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1889,7 +1917,8 @@
 			baseConfigurationReference = E37298DACB1F43E7C9FB34D1 /* Pods-iOS_KnowledgeStructure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
+				CC = "$(SRCROOT)/ccache-clang++";
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
@@ -1914,7 +1943,8 @@
 			baseConfigurationReference = 91A800208392FC65C632F464 /* Pods-iOS_KnowledgeStructure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
+				CC = "$(SRCROOT)/ccache-clang++";
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
