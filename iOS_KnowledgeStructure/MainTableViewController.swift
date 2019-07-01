@@ -126,7 +126,11 @@ class MainTableViewController: UITableViewController {
         case 25:
             let vc = ZHFWebServeViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-
+        case 26:
+            let vc = SizeToFitViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            
         default:
             print("未知...")
         }

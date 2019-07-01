@@ -27,3 +27,4 @@
 #import "SearchViewController.h"
 #import "NetWorkViewController.h"
 #import "ZHFWebServeViewController.h"
+#import "SizeToFitViewController.h"

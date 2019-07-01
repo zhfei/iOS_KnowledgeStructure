@@ -144,6 +144,10 @@
 		917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791C2189FB4C00425A05 /* MainTableViewModel.swift */; };
 		917B791F2189FC9300425A05 /* MainTableCoordinater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B791E2189FC9300425A05 /* MainTableCoordinater.swift */; };
 		917BD24A2256468C0085181B /* main_blockArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 917BD2492256468C0085181B /* main_blockArray.cpp */; };
+		917E0C2522CA09AF004573CF /* SizeToFitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E0C2322CA09AF004573CF /* SizeToFitViewController.m */; };
+		917E0C2622CA09AF004573CF /* SizeToFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917E0C2422CA09AF004573CF /* SizeToFitViewController.xib */; };
+		917E0C2B22CA09E7004573CF /* SizeToFitView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E0C2A22CA09E7004573CF /* SizeToFitView1.m */; };
+		917E0C2D22CA09F7004573CF /* SizeToFitView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917E0C2C22CA09F7004573CF /* SizeToFitView1.xib */; };
 		918661402269C8F000BE6600 /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9186613E2269C8F000BE6600 /* RichTextViewController.m */; };
 		918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9186613F2269C8F000BE6600 /* RichTextViewController.xib */; };
 		9193496D2200AE3B00338639 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9193496B2200AE3B00338639 /* Xtrace.mm */; };
@@ -416,6 +420,12 @@
 		917B791E2189FC9300425A05 /* MainTableCoordinater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCoordinater.swift; sourceTree = "<group>"; };
 		917B7920218A09DA00425A05 /* GCDUtility.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GCDUtility.md; sourceTree = "<group>"; };
 		917BD2492256468C0085181B /* main_blockArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_blockArray.cpp; sourceTree = "<group>"; };
+		917E0C2222CA09AF004573CF /* SizeToFitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeToFitViewController.h; sourceTree = "<group>"; };
+		917E0C2322CA09AF004573CF /* SizeToFitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeToFitViewController.m; sourceTree = "<group>"; };
+		917E0C2422CA09AF004573CF /* SizeToFitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeToFitViewController.xib; sourceTree = "<group>"; };
+		917E0C2922CA09E7004573CF /* SizeToFitView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeToFitView1.h; sourceTree = "<group>"; };
+		917E0C2A22CA09E7004573CF /* SizeToFitView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeToFitView1.m; sourceTree = "<group>"; };
+		917E0C2C22CA09F7004573CF /* SizeToFitView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeToFitView1.xib; sourceTree = "<group>"; };
 		9186613D2269C8F000BE6600 /* RichTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
 		9186613E2269C8F000BE6600 /* RichTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
 		9186613F2269C8F000BE6600 /* RichTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RichTextViewController.xib; sourceTree = "<group>"; };
@@ -1081,6 +1091,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				917E0C2122CA098B004573CF /* 视图sizeToFit */,
 				9134AA3A22AEB16C000DC2AF /* 日志 */,
 				916AA4E722959AE7001C29CB /* 单元测试 */,
 				91323C6F2291B306006E08F2 /* DispatchSource使用 */,
@@ -1177,6 +1188,27 @@
 				917B7920218A09DA00425A05 /* GCDUtility.md */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		917E0C2122CA098B004573CF /* 视图sizeToFit */ = {
+			isa = PBXGroup;
+			children = (
+				917E0C2722CA09CC004573CF /* View1 */,
+				917E0C2222CA09AF004573CF /* SizeToFitViewController.h */,
+				917E0C2322CA09AF004573CF /* SizeToFitViewController.m */,
+				917E0C2422CA09AF004573CF /* SizeToFitViewController.xib */,
+			);
+			path = "视图sizeToFit";
+			sourceTree = "<group>";
+		};
+		917E0C2722CA09CC004573CF /* View1 */ = {
+			isa = PBXGroup;
+			children = (
+				917E0C2922CA09E7004573CF /* SizeToFitView1.h */,
+				917E0C2A22CA09E7004573CF /* SizeToFitView1.m */,
+				917E0C2C22CA09F7004573CF /* SizeToFitView1.xib */,
+			);
+			path = View1;
 			sourceTree = "<group>";
 		};
 		9186613C2269C8A400BE6600 /* 富文本 */ = {
@@ -1458,12 +1490,14 @@
 				910F28732216F8980028AB55 /* ArrayFiltrateViewController.xib in Resources */,
 				918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */,
 				916748682238B6C900236986 /* LocationNotificationViewController.xib in Resources */,
+				917E0C2D22CA09F7004573CF /* SizeToFitView1.xib in Resources */,
 				915C829621B229F700A7567B /* Hybird.README.md in Resources */,
 				911ADFC8227F2D0E00722387 /* NetWorkViewController.xib in Resources */,
 				9134AA3F22AEB18E000DC2AF /* ZHFLogViewController.xib in Resources */,
 				9138339B2219B14B00AE68F0 /* LiftCycleHeader.xib in Resources */,
 				914BA0CB21B505B400150992 /* CategoryAnalyze.README.md in Resources */,
 				9153C03921FC4DB400BBAAED /* LocationViewController.xib in Resources */,
+				917E0C2622CA09AF004573CF /* SizeToFitViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
@@ -1643,6 +1677,7 @@
 				91512F00228E842700FC8B7F /* ZHFWebServeViewController.m in Sources */,
 				914D858321A469CD00DE6BEC /* GeneralModel.swift in Sources */,
 				913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */,
+				917E0C2522CA09AF004573CF /* SizeToFitViewController.m in Sources */,
 				919349792201F85300338639 /* RuntimePerson2.m in Sources */,
 				91B90D61222A7FF900EF082F /* EightLockViewController.m in Sources */,
 				914BA0BC21B4D54D00150992 /* ProgressWindow.m in Sources */,
@@ -1670,6 +1705,7 @@
 				9166AB5922565277004C6F29 /* CoreDataViewController.m in Sources */,
 				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
 				913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */,
+				917E0C2B22CA09E7004573CF /* SizeToFitView1.m in Sources */,
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
 				915106F5220425D500F9EF5D /* RunLoopViewController.m in Sources */,
 				917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */,
@@ -1928,6 +1964,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xkc.iOS-KnowledgeStructure";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1954,6 +1991,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xkc.iOS-KnowledgeStructure";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
