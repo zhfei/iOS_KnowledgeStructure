@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "915BD3C92296893A00DA49B4"
-               BuildableName = "iOS_KnowledgeStructureTests2.xctest"
-               BlueprintName = "iOS_KnowledgeStructureTests2"
+               BuildableName = "iOS_KnowledgeStructureTests.xctest"
+               BlueprintName = "iOS_KnowledgeStructureTests"
                ReferencedContainer = "container:iOS_KnowledgeStructure.xcodeproj">
             </BuildableReference>
          </TestableReference>
