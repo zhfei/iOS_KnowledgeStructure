@@ -129,7 +129,9 @@ class MainTableViewController: UITableViewController {
         case 26:
             let vc = SizeToFitViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-            
+        case 27:
+            let vc = CollectionViewToolViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
             
         default:
             print("未知...")

@@ -28,3 +28,4 @@
 #import "NetWorkViewController.h"
 #import "ZHFWebServeViewController.h"
 #import "SizeToFitViewController.h"
+#import "CollectionViewToolViewController.h"

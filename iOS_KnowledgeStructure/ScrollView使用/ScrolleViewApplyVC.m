@@ -70,8 +70,9 @@
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [Xtrace showReturns:NO];
-    [Xtrace traceInstance:self.scrollView];
+//    [Xtrace showReturns:NO];
+//    [Xtrace traceInstance:self.scrollView];
+    [self.view xtrace];
 
     [self.view addSubview:self.scrollView];
     [self scrollImageView];
