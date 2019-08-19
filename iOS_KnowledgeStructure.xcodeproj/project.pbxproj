@@ -124,9 +124,7 @@
 		916AA4EB22959B1B001C29CB /* UnitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916AA4E922959B1B001C29CB /* UnitTestViewController.m */; };
 		916AA4EC22959B1B001C29CB /* UnitTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916AA4EA22959B1B001C29CB /* UnitTestViewController.xib */; };
 		916DC5D9226453E0003C533B /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916DC5D8226453E0003C533B /* DateViewController.m */; };
-		916E3D9F222F9A3200DBF1F3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916E3D93222F9A3200DBF1F3 /* libOCMock.a */; };
 		916E3DA3222F9D4B00DBF1F3 /* MockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */; };
-		916E3DA5222F9DFE00DBF1F3 /* MockViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E3DA4222F9DFE00DBF1F3 /* MockViewControllerTest.m */; };
 		917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */; };
 		917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED92202997300590CF1 /* RuntimePerson6methodSign.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
@@ -135,7 +133,6 @@
 		917B78E22189F5B200425A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917B78E12189F5B200425A05 /* Assets.xcassets */; };
 		917B78E52189F5B200425A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917B78E32189F5B200425A05 /* LaunchScreen.storyboard */; };
 		917B78E82189F5B200425A05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78E72189F5B200425A05 /* main.m */; };
-		917B78F22189F5B200425A05 /* iOS_KnowledgeStructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78F12189F5B200425A05 /* iOS_KnowledgeStructureTests.m */; };
 		917B78FD2189F5B200425A05 /* iOS_KnowledgeStructureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78FC2189F5B200425A05 /* iOS_KnowledgeStructureUITests.m */; };
 		917B790E2189F80300425A05 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B790D2189F80300425A05 /* ThreadViewController.m */; };
 		917B79152189F92C00425A05 /* GCDUtility_OC.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B79132189F92C00425A05 /* GCDUtility_OC.m */; };
@@ -182,13 +179,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		915BD3CF2296893A00DA49B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 917B78CD2189F5B000425A05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 917B78D42189F5B000425A05;
-			remoteInfo = iOS_KnowledgeStructure;
-		};
-		917B78EE2189F5B200425A05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 917B78CD2189F5B000425A05 /* Project object */;
 			proxyType = 1;
@@ -332,7 +322,7 @@
 		9154487A21E597F400A90A14 /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
 		9154487C21E5980600A90A14 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
 		9154487D21E5980600A90A14 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
-		915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_KnowledgeStructureTests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_KnowledgeStructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915BD3CC2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KnowledgeStructureTests2.m; sourceTree = "<group>"; };
 		915BD3CE2296893A00DA49B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915BE176224223DC00A2B0B1 /* CodeStandard.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CodeStandard.md; sourceTree = "<group>"; };
@@ -406,7 +396,6 @@
 		917B78E42189F5B200425A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917B78E62189F5B200425A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917B78E72189F5B200425A05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		917B78ED2189F5B200425A05 /* iOS_KnowledgeStructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_KnowledgeStructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		917B78F12189F5B200425A05 /* iOS_KnowledgeStructureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KnowledgeStructureTests.m; sourceTree = "<group>"; };
 		917B78F32189F5B200425A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917B78F82189F5B200425A05 /* iOS_KnowledgeStructureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_KnowledgeStructureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -507,14 +496,6 @@
 				9116A2032233C2FE009BF1BB /* CoreFoundation.framework in Frameworks */,
 				9116A2022233C29A009BF1BB /* CoreServices.framework in Frameworks */,
 				2F330D6F2885E3B17861754A /* libPods-iOS_KnowledgeStructure.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		917B78EA2189F5B200425A05 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				916E3D9F222F9A3200DBF1F3 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1091,9 +1072,8 @@
 			isa = PBXGroup;
 			children = (
 				917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */,
-				917B78ED2189F5B200425A05 /* iOS_KnowledgeStructureTests.xctest */,
 				917B78F82189F5B200425A05 /* iOS_KnowledgeStructureUITests.xctest */,
-				915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.xctest */,
+				915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1375,9 +1355,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		915BD3C92296893A00DA49B4 /* iOS_KnowledgeStructureTests2 */ = {
+		915BD3C92296893A00DA49B4 /* iOS_KnowledgeStructureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 915BD3D32296893A00DA49B4 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests2" */;
+			buildConfigurationList = 915BD3D32296893A00DA49B4 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests" */;
 			buildPhases = (
 				915BD3C62296893A00DA49B4 /* Sources */,
 				915BD3C72296893A00DA49B4 /* Frameworks */,
@@ -1388,9 +1368,9 @@
 			dependencies = (
 				915BD3D02296893A00DA49B4 /* PBXTargetDependency */,
 			);
-			name = iOS_KnowledgeStructureTests2;
+			name = iOS_KnowledgeStructureTests;
 			productName = iOS_KnowledgeStructureTests2;
-			productReference = 915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests2.xctest */;
+			productReference = 915BD3CA2296893A00DA49B4 /* iOS_KnowledgeStructureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */ = {
@@ -1411,24 +1391,6 @@
 			productName = iOS_KnowledgeStructure;
 			productReference = 917B78D52189F5B000425A05 /* iOS_KnowledgeStructure.app */;
 			productType = "com.apple.product-type.application";
-		};
-		917B78EC2189F5B200425A05 /* iOS_KnowledgeStructureTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 917B79042189F5B200425A05 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests" */;
-			buildPhases = (
-				917B78E92189F5B200425A05 /* Sources */,
-				917B78EA2189F5B200425A05 /* Frameworks */,
-				917B78EB2189F5B200425A05 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				917B78EF2189F5B200425A05 /* PBXTargetDependency */,
-			);
-			name = iOS_KnowledgeStructureTests;
-			productName = iOS_KnowledgeStructureTests;
-			productReference = 917B78ED2189F5B200425A05 /* iOS_KnowledgeStructureTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		917B78F72189F5B200425A05 /* iOS_KnowledgeStructureUITests */ = {
 			isa = PBXNativeTarget;
@@ -1468,10 +1430,6 @@
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
 					};
-					917B78EC2189F5B200425A05 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 917B78D42189F5B000425A05;
-					};
 					917B78F72189F5B200425A05 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 917B78D42189F5B000425A05;
@@ -1492,10 +1450,9 @@
 			projectRoot = "";
 			targets = (
 				917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */,
-				917B78EC2189F5B200425A05 /* iOS_KnowledgeStructureTests */,
 				917B78F72189F5B200425A05 /* iOS_KnowledgeStructureUITests */,
 				91392B892244F3F300AF9A51 /* OCLint */,
-				915BD3C92296893A00DA49B4 /* iOS_KnowledgeStructureTests2 */,
+				915BD3C92296893A00DA49B4 /* iOS_KnowledgeStructureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1543,13 +1500,6 @@
 				91323C742291B328006E08F2 /* DispatchSourceViewController.xib in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
 				917B78E02189F5B000425A05 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		917B78EB2189F5B200425A05 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1752,15 +1702,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		917B78E92189F5B200425A05 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				916E3DA5222F9DFE00DBF1F3 /* MockViewControllerTest.m in Sources */,
-				917B78F22189F5B200425A05 /* iOS_KnowledgeStructureTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		917B78F42189F5B200425A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1777,11 +1718,6 @@
 			isa = PBXTargetDependency;
 			target = 917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */;
 			targetProxy = 915BD3CF2296893A00DA49B4 /* PBXContainerItemProxy */;
-		};
-		917B78EF2189F5B200425A05 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 917B78D42189F5B000425A05 /* iOS_KnowledgeStructure */;
-			targetProxy = 917B78EE2189F5B200425A05 /* PBXContainerItemProxy */;
 		};
 		917B78FA2189F5B200425A05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2037,68 +1973,6 @@
 			};
 			name = Release;
 		};
-		917B79052189F5B200425A05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C7UNH8293N;
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/iOS_KnowledgeStructure/**",
-					"\"$(SRCROOT)/Mock/OCMock\"",
-					"\"$(SRCROOT)/Mock\"/**",
-				);
-				INFOPLIST_FILE = iOS_KnowledgeStructureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Mock/**",
-					"\"$(SRCROOT)/Mock/OCMock\"",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhf.iOS-KnowledgeStructureTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_KnowledgeStructure.app/iOS_KnowledgeStructure";
-			};
-			name = Debug;
-		};
-		917B79062189F5B200425A05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C7UNH8293N;
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/iOS_KnowledgeStructure/**",
-					"\"$(SRCROOT)/Mock/OCMock\"",
-					"\"$(SRCROOT)/Mock\"/**",
-				);
-				INFOPLIST_FILE = iOS_KnowledgeStructureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Mock/**",
-					"\"$(SRCROOT)/Mock/OCMock\"",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhf.iOS-KnowledgeStructureTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_KnowledgeStructure.app/iOS_KnowledgeStructure";
-			};
-			name = Release;
-		};
 		917B79082189F5B200425A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2149,7 +2023,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		915BD3D32296893A00DA49B4 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests2" */ = {
+		915BD3D32296893A00DA49B4 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				915BD3D12296893A00DA49B4 /* Debug */,
@@ -2172,15 +2046,6 @@
 			buildConfigurations = (
 				917B79022189F5B200425A05 /* Debug */,
 				917B79032189F5B200425A05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		917B79042189F5B200425A05 /* Build configuration list for PBXNativeTarget "iOS_KnowledgeStructureTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				917B79052189F5B200425A05 /* Debug */,
-				917B79062189F5B200425A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
