@@ -125,8 +125,6 @@
 		916AA4EC22959B1B001C29CB /* UnitTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916AA4EA22959B1B001C29CB /* UnitTestViewController.xib */; };
 		916DC5D9226453E0003C533B /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916DC5D8226453E0003C533B /* DateViewController.m */; };
 		916E3DA3222F9D4B00DBF1F3 /* MockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */; };
-		9177BE90231437CB00CB32AB /* CollectionStateBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9177BE8E231437CB00CB32AB /* CollectionStateBarViewController.m */; };
-		9177BE91231437CB00CB32AB /* CollectionStateBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9177BE8F231437CB00CB32AB /* CollectionStateBarViewController.xib */; };
 		917B4ED72202990E00590CF1 /* RuntimePerson5resolveInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */; };
 		917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B4ED92202997300590CF1 /* RuntimePerson6methodSign.m */; };
 		917B78DA2189F5B000425A05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917B78D92189F5B000425A05 /* AppDelegate.m */; };
@@ -149,6 +147,8 @@
 		917E0C2D22CA09F7004573CF /* SizeToFitView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917E0C2C22CA09F7004573CF /* SizeToFitView1.xib */; };
 		918661402269C8F000BE6600 /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9186613E2269C8F000BE6600 /* RichTextViewController.m */; };
 		918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9186613F2269C8F000BE6600 /* RichTextViewController.xib */; };
+		91886340231563A500CA7CC0 /* CollectionStateBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188633E231563A500CA7CC0 /* CollectionStateBarViewController.swift */; };
+		91886341231563A500CA7CC0 /* CollectionStateBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9188633F231563A500CA7CC0 /* CollectionStateBarViewController.xib */; };
 		9193496D2200AE3B00338639 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9193496B2200AE3B00338639 /* Xtrace.mm */; };
 		919349732201D68700338639 /* RuntimeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349722201D68700338639 /* RuntimeBase.m */; };
 		919349762201EF0B00338639 /* RuntimeApply1.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349752201EF0B00338639 /* RuntimeApply1.m */; };
@@ -384,9 +384,6 @@
 		916E3DA1222F9D4B00DBF1F3 /* MockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockViewController.h; sourceTree = "<group>"; };
 		916E3DA2222F9D4B00DBF1F3 /* MockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockViewController.m; sourceTree = "<group>"; };
 		916E3DA4222F9DFE00DBF1F3 /* MockViewControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockViewControllerTest.m; sourceTree = "<group>"; };
-		9177BE8D231437CB00CB32AB /* CollectionStateBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionStateBarViewController.h; sourceTree = "<group>"; };
-		9177BE8E231437CB00CB32AB /* CollectionStateBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionStateBarViewController.m; sourceTree = "<group>"; };
-		9177BE8F231437CB00CB32AB /* CollectionStateBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionStateBarViewController.xib; sourceTree = "<group>"; };
 		917B4ED52202990E00590CF1 /* RuntimePerson5resolveInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson5resolveInstance.h; sourceTree = "<group>"; };
 		917B4ED62202990E00590CF1 /* RuntimePerson5resolveInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson5resolveInstance.m; sourceTree = "<group>"; };
 		917B4ED82202997300590CF1 /* RuntimePerson6methodSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson6methodSign.h; sourceTree = "<group>"; };
@@ -427,6 +424,8 @@
 		9186613D2269C8F000BE6600 /* RichTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
 		9186613E2269C8F000BE6600 /* RichTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
 		9186613F2269C8F000BE6600 /* RichTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RichTextViewController.xib; sourceTree = "<group>"; };
+		9188633E231563A500CA7CC0 /* CollectionStateBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStateBarViewController.swift; sourceTree = "<group>"; };
+		9188633F231563A500CA7CC0 /* CollectionStateBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionStateBarViewController.xib; sourceTree = "<group>"; };
 		9193496B2200AE3B00338639 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 		9193496C2200AE3B00338639 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
 		919349712201D68700338639 /* RuntimeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeBase.h; sourceTree = "<group>"; };
@@ -1061,9 +1060,8 @@
 		9177BE8C2314378500CB32AB /* CollectionStateBar状态栏 */ = {
 			isa = PBXGroup;
 			children = (
-				9177BE8D231437CB00CB32AB /* CollectionStateBarViewController.h */,
-				9177BE8E231437CB00CB32AB /* CollectionStateBarViewController.m */,
-				9177BE8F231437CB00CB32AB /* CollectionStateBarViewController.xib */,
+				9188633E231563A500CA7CC0 /* CollectionStateBarViewController.swift */,
+				9188633F231563A500CA7CC0 /* CollectionStateBarViewController.xib */,
 			);
 			path = "CollectionStateBar状态栏";
 			sourceTree = "<group>";
@@ -1507,7 +1505,7 @@
 				917E0C2622CA09AF004573CF /* SizeToFitViewController.xib in Resources */,
 				9154487521E594D800A90A14 /* ChainOfTransformVC.xib in Resources */,
 				912ED33722156B1C004F6C05 /* CustomNavigationBarVC.xib in Resources */,
-				9177BE91231437CB00CB32AB /* CollectionStateBarViewController.xib in Resources */,
+				91886341231563A500CA7CC0 /* CollectionStateBarViewController.xib in Resources */,
 				913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */,
 				9162AFA3223E28A3004B4D78 /* LifeCycleViewController.xib in Resources */,
 				91512F01228E842700FC8B7F /* ZHFWebServeViewController.xib in Resources */,
@@ -1701,6 +1699,7 @@
 				916957AE21DE214D0026EB3A /* main_blockInt.cpp in Sources */,
 				9112DC4D227C96A000DF70FE /* SearchViewController.m in Sources */,
 				91C9DC4E230A8C250041EA91 /* CollectionViewTool.m in Sources */,
+				91886340231563A500CA7CC0 /* CollectionStateBarViewController.swift in Sources */,
 				919349732201D68700338639 /* RuntimeBase.m in Sources */,
 				911976E721D3DA26000DD669 /* UnkonwMessageVC.m in Sources */,
 				917B78E82189F5B200425A05 /* main.m in Sources */,
@@ -1715,7 +1714,6 @@
 				911976EA21D3DA6B000DD669 /* UnknownModel.m in Sources */,
 				917B791B2189FAE500425A05 /* MainTableViewController.swift in Sources */,
 				911D1B34222517FC00DD2C51 /* CoreTextDisplayView.m in Sources */,
-				9177BE90231437CB00CB32AB /* CollectionStateBarViewController.m in Sources */,
 				91187C0A22818ED300C24802 /* CoreDataHelper2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
