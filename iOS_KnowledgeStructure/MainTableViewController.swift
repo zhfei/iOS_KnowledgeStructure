@@ -132,6 +132,11 @@ class MainTableViewController: UITableViewController {
         case 27:
             let vc = CollectionViewToolViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 28:
+            let vc = CollectionStateBarViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            
             
         default:
             print("未知...")
