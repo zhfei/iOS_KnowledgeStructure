@@ -15,6 +15,22 @@ class CollectionStateBarViewController: UIViewController {
     let headerIdentifier = "UICollectionElementKindSectionFooter"
     let footIdentifier = "UICollectionElementKindSectionFooter"
     
+    private var _timer: Timer?
+    var timer: Timer? {
+        get {
+            return _timer;
+        }
+        set {
+            _timer = newValue
+        }
+    }
+    
+    lazy var myTimer: Timer = {
+        return Timer(timeInterval: 1, repeats: true, block: { (time) in
+            
+        })
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +61,7 @@ class CollectionStateBarViewController: UIViewController {
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell");
         self.view.addSubview(collectionView!)
         
-
     }
-    
     
 }
 
