@@ -11,13 +11,10 @@ import UIKit
 class CollectionStateBarViewController: UIViewController {
     
     var collectionView: UICollectionView?
-    let Identifier = "CollectionViewCell"
+    let Identifier = "UICollectionViewCell"
     let headerIdentifier = "UICollectionElementKindSectionFooter"
     let footIdentifier = "UICollectionElementKindSectionFooter"
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,26 +28,23 @@ class CollectionStateBarViewController: UIViewController {
 
         
         let layout = UICollectionViewFlowLayout.init()
-        layout.itemSize = CGSize(width: 60, height: 60)
-        layout.minimumLineSpacing = 5
+        layout.itemSize = CGSize(width: widthS, height: 80)
+        layout.minimumLineSpacing = 20
         layout.minimumInteritemSpacing = 5
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
-        // 设置分区头视图和尾视图宽高
-        layout.headerReferenceSize = CGSize.init(width: widthS, height: 80)
-        layout.footerReferenceSize = CGSize.init(width: widthS, height: 80)
+        layout.sectionInset = UIEdgeInsets.init(top: 10, left: 10, bottom: 10, right: 10)
+//        // 设置分区头视图和尾视图宽高
+//        layout.headerReferenceSize = CGSize.init(width: widthS, height: 80)
+//        layout.footerReferenceSize = CGSize.init(width: widthS, height: 80)
         
         
-        collectionView = UICollectionView.init(frame: CGRect(x:0, y:64, width:widthS, height:400), collectionViewLayout: layout)
-        collectionView?.backgroundColor = UIColor.white
+        collectionView = UICollectionView.init(frame: CGRect(x:0, y:100, width:widthS, height:100), collectionViewLayout: layout)
+        collectionView?.backgroundColor = UIColor.lightGray
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell");
         self.view.addSubview(collectionView!)
-
         
-        // 注册cell
-        collectionView?.register(UINib.init(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifier)
 
     }
     
