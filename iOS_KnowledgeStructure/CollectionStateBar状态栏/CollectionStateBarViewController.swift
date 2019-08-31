@@ -15,19 +15,14 @@ class CollectionStateBarViewController: UIViewController {
     let headerIdentifier = "UICollectionElementKindSectionFooter"
     let footIdentifier = "UICollectionElementKindSectionFooter"
     
-    private var _timer: Timer?
-    var timer: Timer? {
-        get {
-            return _timer;
-        }
-        set {
-            _timer = newValue
-        }
-    }
+    var currentIndexPath: IndexPath?
+    
     
     lazy var myTimer: Timer = {
-        return Timer(timeInterval: 1, repeats: true, block: { (time) in
-            
+        return Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+            print("打印...")
+            self.currentIndexPath = IndexPath(item: (self.currentIndexPath?.row)!+1, section: 0);
+            self.collectionView?.scrollToItem(at: self.currentIndexPath!, at: UICollectionViewScrollPosition.centeredVertically, animated: true);
         })
     }()
     
@@ -41,7 +36,6 @@ class CollectionStateBarViewController: UIViewController {
     
     func setupUI() {
         let widthS = UIScreen.main.bounds.size.width
-
         
         let layout = UICollectionViewFlowLayout.init()
         layout.itemSize = CGSize(width: widthS, height: 80)
@@ -61,6 +55,12 @@ class CollectionStateBarViewController: UIViewController {
         collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell");
         self.view.addSubview(collectionView!)
         
+        
+        currentIndexPath = IndexPath(row: 0, section: 0);
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        _ = self.myTimer
     }
     
 }
@@ -71,7 +71,7 @@ extension CollectionStateBarViewController: UICollectionViewDataSource,UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18
+        return 100
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
