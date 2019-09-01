@@ -5,20 +5,6 @@
 //  Created by 周飞 on 2018/10/31.
 //  Copyright © 2018年 zhf. All rights reserved.
 
-#import <XCTest/XCUIApplication.h>
-#import <XCTest/XCUIDevice.h>
-#import <XCTest/XCUICoordinate.h>
-#import <XCTest/XCUIElement.h>
-#import <XCTest/XCUIElementQuery.h>
-#import <XCTest/XCUIElementTypes.h>
-#import <XCTest/XCUIElementAttributes.h>
-#import <XCTest/XCUIElementTypeQueryProvider.h>
-#import <XCTest/XCUIKeyboardKeys.h>
-#import <XCTest/XCUIRemote.h>
-#import <XCTest/XCUIScreen.h>
-#import <XCTest/XCUIScreenshot.h>
-#import <XCTest/XCUIScreenshotProviding.h>
-#import <XCTest/XCUISiriService.h>
 
 #import <XCTest/XCTest.h>
 #import "LayoutConstraintViewController.h"

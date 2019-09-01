@@ -22,6 +22,10 @@ target "iOS_KnowledgeStructure" do
    pod 'BottomComponentLib',:path=>"../BottomComponentLib"#,:testspecs => ['BottomComponentLibTests']
 end
 
+target 'iOS_KnowledgeStructureUITests' do
+    pod 'KIF'
+end
+
 
 post_install do |installer_representation|
     installer_representation.pods_project.targets.each do |target|
