@@ -38,6 +38,16 @@
                ReferencedContainer = "container:iOS_KnowledgeStructure.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "917B78F72189F5B200425A05"
+               BuildableName = "iOS_KnowledgeStructureUITests.xctest"
+               BlueprintName = "iOS_KnowledgeStructureUITests"
+               ReferencedContainer = "container:iOS_KnowledgeStructure.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
