@@ -34,6 +34,11 @@ class CollectionStateBarViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.myTimer.invalidate();
+    }
+    
     func setupUI() {
         let widthS = UIScreen.main.bounds.size.width
         
