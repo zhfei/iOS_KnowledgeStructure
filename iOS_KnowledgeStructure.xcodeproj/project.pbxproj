@@ -164,6 +164,8 @@
 		91ACEA9B21A44BF300249FA8 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9A21A44BF300249FA8 /* TestModel.swift */; };
 		91B8F1ED231D7132006D1AEF /* iOS_KnowledgeStructure2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B8F1EC231D7132006D1AEF /* iOS_KnowledgeStructure2UITests.m */; };
 		91B90D61222A7FF900EF082F /* EightLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B90D60222A7FF900EF082F /* EightLockViewController.m */; };
+		91C2DB3423328660003E4E3A /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C2DB3223328660003E4E3A /* FilterViewController.m */; };
+		91C2DB3523328660003E4E3A /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C2DB3323328660003E4E3A /* FilterViewController.xib */; };
 		91C9DC49230A8C000041EA91 /* CollectionViewToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9DC47230A8C000041EA91 /* CollectionViewToolViewController.m */; };
 		91C9DC4A230A8C000041EA91 /* CollectionViewToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C9DC48230A8C000041EA91 /* CollectionViewToolViewController.xib */; };
 		91C9DC4E230A8C250041EA91 /* CollectionViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9DC4D230A8C250041EA91 /* CollectionViewTool.m */; };
@@ -458,6 +460,9 @@
 		91B8F1EC231D7132006D1AEF /* iOS_KnowledgeStructure2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KnowledgeStructure2UITests.m; sourceTree = "<group>"; };
 		91B90D5F222A7FF900EF082F /* EightLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightLockViewController.h; sourceTree = "<group>"; };
 		91B90D60222A7FF900EF082F /* EightLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightLockViewController.m; sourceTree = "<group>"; };
+		91C2DB3123328660003E4E3A /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		91C2DB3223328660003E4E3A /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		91C2DB3323328660003E4E3A /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 		91C9DC46230A8C000041EA91 /* CollectionViewToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewToolViewController.h; sourceTree = "<group>"; };
 		91C9DC47230A8C000041EA91 /* CollectionViewToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewToolViewController.m; sourceTree = "<group>"; };
 		91C9DC48230A8C000041EA91 /* CollectionViewToolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewToolViewController.xib; sourceTree = "<group>"; };
@@ -1106,6 +1111,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91C2DB3023328639003E4E3A /* 筛选器 */,
 				9177BE8C2314378500CB32AB /* CollectionStateBar状态栏 */,
 				91C9DC45230A8B6A0041EA91 /* CollectionView自定义工具 */,
 				917E0C2122CA098B004573CF /* 视图sizeToFit */,
@@ -1318,6 +1324,24 @@
 			path = "八种多线程锁";
 			sourceTree = "<group>";
 		};
+		91C2DB3023328639003E4E3A /* 筛选器 */ = {
+			isa = PBXGroup;
+			children = (
+				91C2DB3623328683003E4E3A /* FilterController */,
+				91C2DB3123328660003E4E3A /* FilterViewController.h */,
+				91C2DB3223328660003E4E3A /* FilterViewController.m */,
+				91C2DB3323328660003E4E3A /* FilterViewController.xib */,
+			);
+			path = "筛选器";
+			sourceTree = "<group>";
+		};
+		91C2DB3623328683003E4E3A /* FilterController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FilterController;
+			sourceTree = "<group>";
+		};
 		91C9DC45230A8B6A0041EA91 /* CollectionView自定义工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1525,6 +1549,7 @@
 				91512F01228E842700FC8B7F /* ZHFWebServeViewController.xib in Resources */,
 				9166AB5B225653A6004C6F29 /* CoreDataViewController.xib in Resources */,
 				915C829B21B2368100A7567B /* template.html in Resources */,
+				91C2DB3523328660003E4E3A /* FilterViewController.xib in Resources */,
 				9149F4FB221BF30C00C001A1 /* list.plist in Resources */,
 				91323C742291B328006E08F2 /* DispatchSourceViewController.xib in Resources */,
 				917B78E22189F5B200425A05 /* Assets.xcassets in Resources */,
@@ -1742,6 +1767,7 @@
 				915FB6DE221EADA300E985EA /* MyPoint.m in Sources */,
 				9166AB5922565277004C6F29 /* CoreDataViewController.m in Sources */,
 				913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */,
+				91C2DB3423328660003E4E3A /* FilterViewController.m in Sources */,
 				913833992219B13D00AE68F0 /* LiftCycleHeader.m in Sources */,
 				917E0C2B22CA09E7004573CF /* SizeToFitView1.m in Sources */,
 				9154487821E597D900A90A14 /* PinkView.m in Sources */,
