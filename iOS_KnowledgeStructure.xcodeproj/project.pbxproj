@@ -68,6 +68,7 @@
 		913833B9221A945F00AE68F0 /* HitTestScrollViewSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833B8221A945F00AE68F0 /* HitTestScrollViewSuperView.m */; };
 		913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833BB221A947A00AE68F0 /* HitTestScrollView.m */; };
 		913833BF221AB05500AE68F0 /* RedBallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 913833BE221AB05500AE68F0 /* RedBallButton.m */; };
+		913953C42339BAE4003345AA /* ButtonSetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 913953C32339BAE4003345AA /* ButtonSetHelper.m */; };
 		913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */; };
 		913B2B9921FDB91800840EDA /* PhotoSaveAndVisitVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */; };
 		913B2B9C21FDBC4F00840EDA /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B2B9B21FDBC4F00840EDA /* PhotoCollectionViewController.m */; };
@@ -284,6 +285,8 @@
 		913833BB221A947A00AE68F0 /* HitTestScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestScrollView.m; sourceTree = "<group>"; };
 		913833BD221AB05500AE68F0 /* RedBallButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedBallButton.h; sourceTree = "<group>"; };
 		913833BE221AB05500AE68F0 /* RedBallButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedBallButton.m; sourceTree = "<group>"; };
+		913953C22339BAE4003345AA /* ButtonSetHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonSetHelper.h; sourceTree = "<group>"; };
+		913953C32339BAE4003345AA /* ButtonSetHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonSetHelper.m; sourceTree = "<group>"; };
 		913B2B9521FDB91800840EDA /* PhotoSaveAndVisitVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoSaveAndVisitVc.h; sourceTree = "<group>"; };
 		913B2B9621FDB91800840EDA /* PhotoSaveAndVisitVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSaveAndVisitVc.m; sourceTree = "<group>"; };
 		913B2B9721FDB91800840EDA /* PhotoSaveAndVisitVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoSaveAndVisitVc.xib; sourceTree = "<group>"; };
@@ -768,6 +771,15 @@
 				913833BB221A947A00AE68F0 /* HitTestScrollView.m */,
 			);
 			path = "手指在ScrollView范围外滑动问题";
+			sourceTree = "<group>";
+		};
+		913953C12339BAD7003345AA /* ButtonSetHelper */ = {
+			isa = PBXGroup;
+			children = (
+				913953C22339BAE4003345AA /* ButtonSetHelper.h */,
+				913953C32339BAE4003345AA /* ButtonSetHelper.m */,
+			);
+			path = ButtonSetHelper;
 			sourceTree = "<group>";
 		};
 		913B2B9421FDB82300840EDA /* 照片的保存和访问 */ = {
@@ -1327,6 +1339,7 @@
 		91C2DB3023328639003E4E3A /* 筛选器 */ = {
 			isa = PBXGroup;
 			children = (
+				913953C12339BAD7003345AA /* ButtonSetHelper */,
 				91C2DB3623328683003E4E3A /* FilterController */,
 				91C2DB3123328660003E4E3A /* FilterViewController.h */,
 				91C2DB3223328660003E4E3A /* FilterViewController.m */,
@@ -1674,6 +1687,7 @@
 				91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */,
 				910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
+				913953C42339BAE4003345AA /* ButtonSetHelper.m in Sources */,
 				914BA0C321B5049100150992 /* Person.m in Sources */,
 				9134AA3E22AEB18E000DC2AF /* ZHFLogViewController.m in Sources */,
 				911976ED21D3DFAE000DD669 /* UnknownModel2.m in Sources */,
