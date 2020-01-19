@@ -37,6 +37,8 @@
 		91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B11222FB8360008DF6B /* TwitterConnection.m */; };
 		91198B18222FB8360008DF6B /* TweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B13222FB8360008DF6B /* TweetView.m */; };
 		91198B19222FB8360008DF6B /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91198B15222FB8360008DF6B /* Tweet.m */; };
+		911A24EC23D49AD5005B9CD0 /* UnionPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A24EB23D49AD5005B9CD0 /* UnionPerson.m */; };
+		911A24EF23D4AA3B005B9CD0 /* BitCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A24EE23D4AA3B005B9CD0 /* BitCalculator.m */; };
 		911ADFC7227F2D0E00722387 /* NetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ADFC5227F2D0E00722387 /* NetWorkViewController.m */; };
 		911ADFC8227F2D0E00722387 /* NetWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911ADFC6227F2D0E00722387 /* NetWorkViewController.xib */; };
 		911D1B30222517DD00DD2C51 /* CoreText_CoreImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911D1B2E222517DD00DD2C51 /* CoreText_CoreImageVC.m */; };
@@ -150,6 +152,8 @@
 		918661412269C8F000BE6600 /* RichTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9186613F2269C8F000BE6600 /* RichTextViewController.xib */; };
 		91886340231563A500CA7CC0 /* CollectionStateBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188633E231563A500CA7CC0 /* CollectionStateBarViewController.swift */; };
 		91886341231563A500CA7CC0 /* CollectionStateBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9188633F231563A500CA7CC0 /* CollectionStateBarViewController.xib */; };
+		91932A7F23D29B11004AF015 /* BitOperationPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91932A7E23D29B11004AF015 /* BitOperationPerson.m */; };
+		91932A8223D2B61A004AF015 /* BitFieldPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91932A8123D2B61A004AF015 /* BitFieldPerson.m */; };
 		9193496D2200AE3B00338639 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9193496B2200AE3B00338639 /* Xtrace.mm */; };
 		919349732201D68700338639 /* RuntimeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349722201D68700338639 /* RuntimeBase.m */; };
 		919349762201EF0B00338639 /* RuntimeApply1.m in Sources */ = {isa = PBXBuildFile; fileRef = 919349752201EF0B00338639 /* RuntimeApply1.m */; };
@@ -233,6 +237,10 @@
 		91198B14222FB8360008DF6B /* TweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetView.h; sourceTree = "<group>"; };
 		91198B15222FB8360008DF6B /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		91198B16222FB8360008DF6B /* TwitterConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnection.h; sourceTree = "<group>"; };
+		911A24EA23D49AD5005B9CD0 /* UnionPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnionPerson.h; sourceTree = "<group>"; };
+		911A24EB23D49AD5005B9CD0 /* UnionPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnionPerson.m; sourceTree = "<group>"; };
+		911A24ED23D4AA3B005B9CD0 /* BitCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitCalculator.h; sourceTree = "<group>"; };
+		911A24EE23D4AA3B005B9CD0 /* BitCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitCalculator.m; sourceTree = "<group>"; };
 		911ADFC4227F2D0E00722387 /* NetWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkViewController.h; sourceTree = "<group>"; };
 		911ADFC5227F2D0E00722387 /* NetWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkViewController.m; sourceTree = "<group>"; };
 		911ADFC6227F2D0E00722387 /* NetWorkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetWorkViewController.xib; sourceTree = "<group>"; };
@@ -436,6 +444,10 @@
 		9186613F2269C8F000BE6600 /* RichTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RichTextViewController.xib; sourceTree = "<group>"; };
 		9188633E231563A500CA7CC0 /* CollectionStateBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStateBarViewController.swift; sourceTree = "<group>"; };
 		9188633F231563A500CA7CC0 /* CollectionStateBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionStateBarViewController.xib; sourceTree = "<group>"; };
+		91932A7D23D29B11004AF015 /* BitOperationPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitOperationPerson.h; sourceTree = "<group>"; };
+		91932A7E23D29B11004AF015 /* BitOperationPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitOperationPerson.m; sourceTree = "<group>"; };
+		91932A8023D2B61A004AF015 /* BitFieldPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitFieldPerson.h; sourceTree = "<group>"; };
+		91932A8123D2B61A004AF015 /* BitFieldPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitFieldPerson.m; sourceTree = "<group>"; };
 		9193496B2200AE3B00338639 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 		9193496C2200AE3B00338639 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
 		919349712201D68700338639 /* RuntimeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeBase.h; sourceTree = "<group>"; };
@@ -1123,6 +1135,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91932A7C23D29AC8004AF015 /* 位运算 */,
 				91C2DB3023328639003E4E3A /* 筛选器 */,
 				9177BE8C2314378500CB32AB /* CollectionStateBar状态栏 */,
 				91C9DC45230A8B6A0041EA91 /* CollectionView自定义工具 */,
@@ -1255,6 +1268,21 @@
 				9186613F2269C8F000BE6600 /* RichTextViewController.xib */,
 			);
 			path = "富文本";
+			sourceTree = "<group>";
+		};
+		91932A7C23D29AC8004AF015 /* 位运算 */ = {
+			isa = PBXGroup;
+			children = (
+				91932A7D23D29B11004AF015 /* BitOperationPerson.h */,
+				91932A7E23D29B11004AF015 /* BitOperationPerson.m */,
+				91932A8023D2B61A004AF015 /* BitFieldPerson.h */,
+				91932A8123D2B61A004AF015 /* BitFieldPerson.m */,
+				911A24EA23D49AD5005B9CD0 /* UnionPerson.h */,
+				911A24EB23D49AD5005B9CD0 /* UnionPerson.m */,
+				911A24ED23D4AA3B005B9CD0 /* BitCalculator.h */,
+				911A24EE23D4AA3B005B9CD0 /* BitCalculator.m */,
+			);
+			path = "位运算";
 			sourceTree = "<group>";
 		};
 		9193496A2200AE1200338639 /* Xtrace函数调用追踪 */ = {
@@ -1685,6 +1713,7 @@
 				91ACEA9721A446CF00249FA8 /* DecoderEncoderVC.swift in Sources */,
 				9193497C2201FE7C00338639 /* RuntimePerson2+Associated.m in Sources */,
 				91198B17222FB8360008DF6B /* TwitterConnection.m in Sources */,
+				911A24EF23D4AA3B005B9CD0 /* BitCalculator.m in Sources */,
 				910F28722216F8980028AB55 /* ArrayFiltrateViewController.m in Sources */,
 				914BA0BF21B4D56200150992 /* ProgressViewController.m in Sources */,
 				913953C42339BAE4003345AA /* ButtonSetHelper.m in Sources */,
@@ -1702,6 +1731,7 @@
 				9166AB4822564B3C004C6F29 /* GooseEgg.xcdatamodeld in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
+				911A24EC23D49AD5005B9CD0 /* UnionPerson.m in Sources */,
 				917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */,
 				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,
 				913833952219A71F00AE68F0 /* LifeCycleViewController.m in Sources */,
@@ -1734,6 +1764,7 @@
 				912651DC227897880029F26B /* LayoutConstraintViewController.m in Sources */,
 				91655F76222BEEB200738F7B /* GCDFunctionViewController.m in Sources */,
 				91198B19222FB8360008DF6B /* Tweet.m in Sources */,
+				91932A8223D2B61A004AF015 /* BitFieldPerson.m in Sources */,
 				91934982220202A200338639 /* RuntimePerson4jsonDict.m in Sources */,
 				913833BC221A947A00AE68F0 /* HitTestScrollView.m in Sources */,
 				913B2B9821FDB91800840EDA /* PhotoSaveAndVisitVc.m in Sources */,
@@ -1760,6 +1791,7 @@
 				916957B121DE214D0026EB3A /* main_Array.cpp in Sources */,
 				913833AE221A8F9900AE68F0 /* HitTestButton.m in Sources */,
 				917B791D2189FB4C00425A05 /* MainTableViewModel.swift in Sources */,
+				91932A7F23D29B11004AF015 /* BitOperationPerson.m in Sources */,
 				916957B221DE214D0026EB3A /* main4.m in Sources */,
 				916DC5D9226453E0003C533B /* DateViewController.m in Sources */,
 				916957AF21DE214D0026EB3A /* main1.m in Sources */,

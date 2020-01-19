@@ -8,9 +8,13 @@
 
 #import "CollectionViewToolViewController.h"
 #import "CollectionViewTool.h"
+#import "BitFieldPerson.h"
 #import <Masonry.h>
 
 @interface CollectionViewToolViewController ()
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSArray *friends;
+@property (nonatomic, assign) NSInteger age;
 
 @end
 
@@ -20,6 +24,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    self.name = @"jack";
+    self.friends = @[@"tom",@"lucy"];
+    self.age = 20;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -30,19 +39,18 @@
     [tool mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(50);
         make.left.and.right.mas_equalTo(0);
-        make.top.mas_equalTo(200);
+        make.top.mas_equalTo(20);
     }];
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    BitFieldPerson *bfP = [[BitFieldPerson alloc] init];
+    
+    NSLog(@"%d,%d,%d,",bfP.heigh,bfP.rich,bfP.handsome);
 }
-*/
+
+
 
 @end
