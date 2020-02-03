@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "VariableParamFunction.h"
 
 void(^completeBlock3)(NSString *);
 void(^completeBlock4)(NSString *);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        
+        VariableParamFunction *vp = [VariableParamFunction new];
+        [vp demoSelector:@"sel" param:@"1",@"2",@"3",@"4",@"5", nil];
         
         __block NSMutableArray *friends = [NSMutableArray array];;
         void(^completeBlock)(NSString *) = ^(NSString *name) {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -175,6 +175,7 @@
 		91C9DC4A230A8C000041EA91 /* CollectionViewToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C9DC48230A8C000041EA91 /* CollectionViewToolViewController.xib */; };
 		91C9DC4E230A8C250041EA91 /* CollectionViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C9DC4D230A8C250041EA91 /* CollectionViewTool.m */; };
 		91C9DC50230A8C330041EA91 /* CollectionViewTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C9DC4F230A8C330041EA91 /* CollectionViewTool.xib */; };
+		91CCE3A723E84B2D0026A277 /* VariableParamFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCE3A623E84B2D0026A277 /* VariableParamFunction.m */; };
 		91D1772021B43CA1007DB825 /* AlertWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D1771F21B43CA1007DB825 /* AlertWindowVC.m */; };
 		91D3377C2233A40200652F55 /* AI_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D3377A2233A40200652F55 /* AI_ViewController.m */; };
 		91D3377D2233A40200652F55 /* AI_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D3377B2233A40200652F55 /* AI_ViewController.xib */; };
@@ -484,6 +485,8 @@
 		91C9DC4C230A8C250041EA91 /* CollectionViewTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewTool.h; sourceTree = "<group>"; };
 		91C9DC4D230A8C250041EA91 /* CollectionViewTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTool.m; sourceTree = "<group>"; };
 		91C9DC4F230A8C330041EA91 /* CollectionViewTool.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewTool.xib; sourceTree = "<group>"; };
+		91CCE3A523E84B2D0026A277 /* VariableParamFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariableParamFunction.h; sourceTree = "<group>"; };
+		91CCE3A623E84B2D0026A277 /* VariableParamFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariableParamFunction.m; sourceTree = "<group>"; };
 		91D1771E21B43CA1007DB825 /* AlertWindowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertWindowVC.h; sourceTree = "<group>"; };
 		91D1771F21B43CA1007DB825 /* AlertWindowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertWindowVC.m; sourceTree = "<group>"; };
 		91D337792233A40200652F55 /* AI_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AI_ViewController.h; sourceTree = "<group>"; };
@@ -1135,6 +1138,7 @@
 		917B78D72189F5B000425A05 /* iOS_KnowledgeStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91CCE3A423E84A7E0026A277 /* 可变参数函数 */,
 				91932A7C23D29AC8004AF015 /* 位运算 */,
 				91C2DB3023328639003E4E3A /* 筛选器 */,
 				9177BE8C2314378500CB32AB /* CollectionStateBar状态栏 */,
@@ -1404,6 +1408,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		91CCE3A423E84A7E0026A277 /* 可变参数函数 */ = {
+			isa = PBXGroup;
+			children = (
+				91CCE3A523E84B2D0026A277 /* VariableParamFunction.h */,
+				91CCE3A623E84B2D0026A277 /* VariableParamFunction.m */,
+			);
+			path = "可变参数函数";
+			sourceTree = "<group>";
+		};
 		91D1771D21B43C4B007DB825 /* 自定义弹窗UIWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -1653,24 +1666,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
-				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomComponentLib.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GCDWebUploader.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KnowledgeStructure/Pods-iOS_KnowledgeStructure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF91A914C2944D71EDFC9FB7 /* [CP] Check Pods Manifest.lock */ = {
@@ -1731,6 +1735,7 @@
 				9166AB4822564B3C004C6F29 /* GooseEgg.xcdatamodeld in Sources */,
 				9122AD1B21BD620F00A9E3BD /* StringRetainCountVC.m in Sources */,
 				914BA0C921B5050E00150992 /* Person+Drink.m in Sources */,
+				91CCE3A723E84B2D0026A277 /* VariableParamFunction.m in Sources */,
 				911A24EC23D49AD5005B9CD0 /* UnionPerson.m in Sources */,
 				917B4EDA2202997300590CF1 /* RuntimePerson6methodSign.m in Sources */,
 				9120F20221FEFBA900E5B90C /* ScrolleViewApplyVC.m in Sources */,
