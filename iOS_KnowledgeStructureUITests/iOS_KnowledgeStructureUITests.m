@@ -7,10 +7,9 @@
 
 
 #import <XCTest/XCTest.h>
-#import "LayoutConstraintViewController.h"
 
 @interface iOS_KnowledgeStructureUITests : XCTestCase
-@property (nonatomic, strong) LayoutConstraintViewController *lcVC;
+
 @property (nonatomic, strong) XCUIApplication *app;
 
 @end
@@ -27,7 +26,6 @@
     self.app = [[XCUIApplication alloc] init];
     [self.app launch];
     
-    self.lcVC = [LayoutConstraintViewController new];
 
     // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
 }

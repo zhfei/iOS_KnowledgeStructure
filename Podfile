@@ -23,7 +23,7 @@ target "iOS_KnowledgeStructure" do
 end
 
 target 'iOS_KnowledgeStructureUITests' do
-    pod 'KIF'
+#    pod 'KIF'
 end
 
 
