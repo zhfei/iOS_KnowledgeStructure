@@ -8,7 +8,7 @@
 
 #import "LocationManager.h"
 #import <CoreLocation/CoreLocation.h>
-#import <BottomComponentLib/ZHFAlertControlle.h>
+#import <BottomComponentLib/BCAlertController.h>
 
 @interface LocationManager () <CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -75,7 +75,7 @@ SingletonM(LocationManager)
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"error:%@",error);
-    [ZHFAlertControlle showWithTitle:@"定位失败" message:@"" btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
+    [BCAlertController showWithTitle:@"定位失败" message:@"" btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
         
     }];
 }

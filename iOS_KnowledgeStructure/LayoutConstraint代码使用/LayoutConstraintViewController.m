@@ -7,6 +7,7 @@
 //
 
 #import "LayoutConstraintViewController.h"
+#import <Masonry.h>
 
 static CGFloat const kMarginValue = 60.f;
 
@@ -18,6 +19,9 @@ static CGFloat const kMarginValue = 60.f;
 @property (nonatomic, strong) UIView *blueView;
 
 @property (nonatomic, strong) UIButton *button;
+@property (weak, nonatomic) IBOutlet UIButton *conBtn;
+
+
 @end
 
 @implementation LayoutConstraintViewController
@@ -30,6 +34,23 @@ static CGFloat const kMarginValue = 60.f;
     [self setupUI];
     [self setupLayout];
     [self setupData];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.titleLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.titleLabel.constraints enumerateObjectsUsingBlock:^(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.firstAttribute == NSLayoutAttributeWidth) {
+            obj.constant = arc4random_uniform(100);
+            NSLog(@"obj.constant:%f",obj.constant);
+        }
+    }];
+    [self.titleLabel setNeedsUpdateConstraints];
+    [self.titleLabel setNeedsLayout];
+    
+//    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.width.mas_equalTo(arc4random_uniform(100));
+//    }];
+    
 }
 
 #pragma mark - Getter, Setter
@@ -115,6 +136,7 @@ static CGFloat const kMarginValue = 60.f;
     [self.view addConstraints:constraints3];
 
 }
+
 
 #pragma mark - Delegate
 

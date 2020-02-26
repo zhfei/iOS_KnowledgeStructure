@@ -10,7 +10,7 @@
 
 @implementation VariableParamFunction
 
-- (void)demoSelector:(NSString *)fmt param:(NSString *)param1, ... NS_REQUIRES_NIL_TERMINATION{
+- (void)demoSelector:(NSString *)fmt param:(NSString *)param1, ... NS_REQUIRES_NIL_TERMINATION {
     //1.定义可变参数列表
     va_list vpList;
     

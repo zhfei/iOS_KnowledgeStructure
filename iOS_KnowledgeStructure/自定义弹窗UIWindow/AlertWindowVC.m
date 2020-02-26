@@ -9,8 +9,8 @@
 #import "AlertWindowVC.h"
 #import "ProgressWindow.h"
 #import "ProgressViewController.h"
-#import <BottomComponentLib/ZHFAlertControlle.h>
-#import "ZFAlertViewController.h"
+#import <BottomComponentLib/BCAlertController.h>
+#import "BCAlertController.h"
 
 @interface AlertWindowVC ()
 @property (nonatomic, strong)UIWindow *window;
@@ -51,26 +51,26 @@
 //    NSLog(@"arr: %@",arr);
 //
 //    [self showAlertViewController];
-//    [self showZHFAlertController];
+//    [self showBCAlertControllerr];
 }
 
 - (void)showProgressWindow {
     ProgressWindow *window = [ProgressWindow sharedProgressWindow];
     window.hidden = NO;
 //    ProgressViewController *pvc = [ProgressViewController new];
-    ZFAlertViewController *pvc = [ZFAlertViewController new];
+    BCAlertController *pvc = [BCAlertController new];
     
     
     [window.rootViewController presentViewController:pvc animated:NO completion:nil];
 }
 
 - (void)showAlertViewController {
-    ZFAlertViewController *alertVC = [ZFAlertViewController alertViewController:ZFAlertTypeInput];
+    BCAlertController *alertVC = [BCAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
     [alertVC showAlertVC];
 }
 
-- (void)showZHFAlertController {
-    [ZHFAlertControlle showWithTitle:@"标题" message:@"内容" btn1Title:@"子标题" btn1Handle:^(UIAlertAction * _Nullable action) {
+- (void)showBCAlertControllerr {
+    [BCAlertController showWithTitle:@"标题" message:@"内容" btn1Title:@"子标题" btn1Handle:^(UIAlertAction * _Nullable action) {
         NSLog(@"点击了。。");
     }];
 }

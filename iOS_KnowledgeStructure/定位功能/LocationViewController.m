@@ -8,7 +8,7 @@
 
 #import "LocationViewController.h"
 #import "LocationManager.h"
-#import <BottomComponentLib/ZHFAlertControlle.h>
+#import <BottomComponentLib/BCAlertController.h>
 
 @interface LocationViewController ()
 
@@ -28,7 +28,7 @@
     [[LocationManager sharedLocationManager] startLocation:^(NSString * _Nonnull location) {
         NSLog(@"当前地址为：%@",location);
         
-        [ZHFAlertControlle showWithTitle:@"当前地址" message:location btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
+        [BCAlertController showWithTitle:@"当前地址" message:location btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
             
         }];
     }];

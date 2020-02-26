@@ -7,7 +7,7 @@
 //
 
 #import "CollectionViewTool.h"
-#import "ZHFAlertControlle.h"
+#import "BCAlertController.h"
 #import <Masonry.h>
 
 const CGFloat leftMargin = 20;
@@ -65,7 +65,7 @@ const CGFloat topMargin = 10;
 
 #pragma mark - Event
 - (void)btnAction:(UIButton *)sender {
-    [ZHFAlertControlle showWithTitle:[sender currentTitle] message:nil btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
+    [BCAlertController showWithTitle:[sender currentTitle] message:nil btn1Title:@"确定" btn1Handle:^(UIAlertAction * _Nullable action) {
         
     }];
 }

@@ -11,7 +11,7 @@
 #import <GCDWebServerDataResponse.h>
 #import <GCDWebUploader.h>
 #import <GCDWebDAVServer.h>
-#import <BottomComponentLib/ZHFProgressHUD.h>
+#import <BottomComponentLib/BCProgressHUD.h>
 
 @interface ZHFWebServeViewController ()
 @property (nonatomic, strong) GCDWebServer *webServer;
@@ -62,7 +62,7 @@
     
     NSString *path = [NSString stringWithFormat:@"服务器地址： %@",self.webServer.serverURL];
     
-    [ZHFProgressHUD popupSuccessMessage:path];
+    [BCProgressHUD popupSuccessMessage:path];
     
     NSLog(@"%@",path);
 }
@@ -70,7 +70,7 @@
 - (IBAction)uploaderAction:(UIButton *)sender {
     NSString *path = [NSString stringWithFormat:@"上传服务器地址： %@",self.webUploader.serverURL];
     
-    [ZHFProgressHUD popupSuccessMessage:path];
+    [BCProgressHUD popupSuccessMessage:path];
     
     NSLog(@"%@",path);
 }
@@ -78,7 +78,7 @@
 - (IBAction)davBtnAction:(UIButton *)sender {
     NSString *path = [NSString stringWithFormat:@"ftp服务器地址： %@",self.davServer.serverURL];
     
-    [ZHFProgressHUD popupSuccessMessage:path];
+    [BCProgressHUD popupSuccessMessage:path];
     
     NSLog(@"%@",path);
 
