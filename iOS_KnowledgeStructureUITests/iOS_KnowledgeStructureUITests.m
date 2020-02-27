@@ -119,8 +119,40 @@
     }
     [ele tap];
     [ele typeText:@"hello world"];
+}
+
+#pragma mark - 多应用联合测试
+- (void)testUninTest {
+    //返回UITest Target设置中 Target Application指定的Target对象
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    //使用bundleID获取另一个app 的实例
+    XCUIApplication *bundleApp = [[XCUIApplication alloc] initWithBundleIdentifier:@"otherApp.bundleID"];
+    
+    //启动当前app
+    [app launch];
+    //启动另一个app
+    [bundleApp launch];
     
     
+    //做一些事情
+    
+    //回到当前app
+    [app activate];
+}
+
+
+#pragma mark - 手动截屏
+- (void)testScreenshot {
+    //获取截图对象
+    XCUIScreenshot *screeshot = [self.app screenshot];
+    
+    //实例一个附件对象
+    XCTAttachment *att = [XCTAttachment attachmentWithScreenshot:screeshot];
+    //附件存储策略
+    att.lifetime = XCTAttachmentLifetimeKeepAlways;
+    att.name = @"我的附件截图";
+    
+    [self addAttachment:att];
 }
 
 @end
